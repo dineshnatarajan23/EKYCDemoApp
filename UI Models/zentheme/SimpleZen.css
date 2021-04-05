@@ -1,0 +1,410 @@
+/* Body */
+
+body{
+}
+
+/* Body - End */
+
+/* Header */
+
+.header{
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+/* Header - End */
+
+/* Control Container */
+
+.um-control {
+    min-height: 50px;
+    margin-bottom: 25px;
+}
+
+.um-control.border{
+    border: 1px solid;
+}
+
+.um-control.border-2{
+    border-width: 2px;
+}
+
+/* Control Container - End */
+
+/* Canvas */
+
+.um-canvas-container {
+    justify-content: center;
+}
+
+canvas.um-canvas {
+    border: none;
+}
+
+.um-canvas-container canvas.responsive{
+    width: 100%;
+    height: auto;
+}
+
+/* Camvase - End */
+
+/* Button */
+
+.um-control .mat-button, .um-control .mat-flat-button, .um-control .mat-icon-button, .um-control .mat-stroked-button, .um-control .mat-raised-button {
+}
+
+.mat-stroked-button:not([class*=mat-elevation-z]), .mat-flat-button:not([class*=mat-elevation-z]) {
+}
+
+.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
+}
+
+.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
+}
+
+.mat-fab.mat-primary, .mat-flat-button.mat-primary, .mat-mini-fab.mat-primary, .mat-raised-button.mat-primary {
+}
+
+.mat-fab.mat-primary, .mat-flat-button.mat-primary, .mat-mini-fab.mat-primary, .mat-raised-button.mat-primary {
+}
+
+.mat-flat-button:not([class*=mat-elevation-z]) {
+}
+
+.um-mat-button {
+}
+
+.mat-flat-button, .mat-raised-button, .mat-fab, .mat-mini-fab {
+}
+
+.mat-button, .mat-raised-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button, .mat-fab, .mat-mini-fab {
+}
+
+.mat-fab, .mat-flat-button, .mat-mini-fab, .mat-raised-button {
+}
+
+.mat-button, .mat-fab, .mat-flat-button, .mat-icon-button, .mat-mini-fab, .mat-raised-button, .mat-stroked-button {
+}
+
+.mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button {
+}
+
+/* Button - End */
+
+
+/* Label */
+
+.um-mat-label {
+    font-size: 11pt;
+}
+
+.input-top-label{
+    padding: 0px;
+    margin-bottom: 0px !important;
+    min-height: 0;
+    font-weight: bold;
+}
+
+.input-side-label .um-mat-label{
+    width: 25%;
+}
+
+.input-side-label .um-control{
+    margin-bottom: 0;
+}
+
+/* Label - End */
+
+/* Text Input */
+
+.mat-form-field{
+    font-size: 12pt;
+    padding: 2px;
+    border-bottom: 1px solid;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 0;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-infix{
+    padding: 0;
+    border: 0;
+    min-height: 32px;
+    padding-left: 5px;
+    padding-top: 7px;
+}
+
+.mat-form-field-label-wrapper{
+    padding: 0;
+    top: 0;
+}
+
+.mat-form-field .mat-form-field-label {
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-label {
+    color: rgba(48, 48, 48, 0.54);
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-label {
+    display: none !important;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline{
+    display: none !important;
+}
+
+/* Text Input - End */
+
+/* Checkbox - Checkbox Group */
+
+.mat-checkbox-label {
+    font-size: 11pt;
+}
+
+/* Checkbox - Checkbox Group - End */
+
+/* Radio Group */
+
+.mat-radio-label-content {
+    font-size: 11pt;
+}
+
+/* Radio Group - End */
+
+/* Slide Toggle */
+
+.mat-slide-toggle-content {
+    font-size: 11pt !important;
+}
+
+/* Slide Toggle - End */
+
+/* Slider */
+
+.mat-slider-label {
+    display: none;
+}
+
+.mat-slider-min-value:not(.mat-slider-thumb-label-showing) .mat-slider-thumb {
+    border: 0;
+}
+
+/* Slider - End */
+
+
+/* Rating */
+
+ngb-rating span {
+    font-size: 48px;
+    margin-right: 25px;
+}
+
+/* Rating - End */
+
+/* Attachment */
+
+.um-choose-file {
+	position: absolute;
+	right: 0;
+	bottom: -46px;
+}
+
+
+.attachment {
+    position: relative;
+    border-bottom: 1px solid;
+    margin-bottom: 30px;
+}
+
+.attachment .mat-list-base {
+    padding-top: 20px;
+}
+
+/* Attachment - End */
+
+/* Attachment List */
+
+.um-attachment-list .um-mat-label {
+    display: none;
+}
+
+.um-attachment-list .mat-list {
+    min-height: 40px;
+    border-bottom: 1px solid;
+}
+
+/* Attachment List - End */
+
+/* Signature Pad */
+
+.signature-pad {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid;
+}
+
+/* Signature Pad - End */
+
+/* Tabs */
+
+.mat-tab-header {
+    border:0;
+}
+
+.mat-tab-label-content .um-mat-label {
+    text-shadow: none;
+    font-weight: normal;
+}
+
+.mat-tab-label {
+    opacity: 100% !important;
+    margin-right: 5px;
+    border: 1px solid;
+	border-left: 3px solid;
+	box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.mat-tab-label-active .um-mat-label {
+    font-size: 12pt;
+    border-bottom: 2px solid;
+}
+
+.mat-ink-bar{
+    display: none !important;
+}
+
+.mat-tab-body-wrapper {
+    border: none;
+    min-height: 300px;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.mat-tab-body {
+    padding: 10px;
+}
+
+/* Tabs - End */
+
+
+/* Accordion */
+
+.mat-expansion-panel-body {
+    padding: 10px !important;
+}
+
+.mat-expansion-panel-header{
+    border-bottom: 1px solid;
+}
+
+.mat-expansion-panel-header-description{
+	display: none !important;
+}
+
+.mat-expansion-panel-header-title {
+    font-size: 11pt;
+}
+
+/* Accordion - End */
+
+/* Data Grid */
+
+.jexcel_search {
+    margin-top: 7px;
+}
+
+/* Data Grid - End */
+
+
+/* List */
+
+.mat-list-item {
+    /* min-height: 75px; */
+}
+
+.mat-list-item .um-subtitle, .mat-list-item .um-subtittle {
+    font-size: 11pt !important;
+}
+
+.mat-list-item .um-tittle {
+    font-size: 14pt !important;
+}
+
+.mat-list-item:hover .um-tittle {
+    margin-bottom: 7px;
+}
+
+/* List - End */
+
+
+/* Carousel Wide */
+
+.container-fluid .carousel {
+    width: 100%;
+}
+
+/* Carousel Wide - End */
+
+
+/* Icons */
+
+.um-icon {
+    margin: 8px;
+    height: auto;
+    width: auto;
+}
+
+.um-icon.um-icon-xs{
+    font-size: 18pt;
+}
+
+.um-icon.um-icon-sm{
+    font-size: 24pt;
+}
+
+.um-icon.um-icon-md{
+    font-size: 30pt;
+}
+
+.um-icon.um-icon-lg{
+    font-size: 36pt;
+}
+
+.um-icon.um-icon-xl{
+    font-size: 42pt;
+}
+
+/* Icons - End */
+
+
+/* Breadcrumb */
+
+
+/* Breadcrumb - End */
+
+
+/* Progress Bar */
+
+/* Progress Bar - End */
+
+/* Hyper Link */
+
+a:link, a:visited, a:hover, a:active {
+    font-size: 11pt;
+}
+
+/* Hyper Link - End */
+
+
+/* Ticker */
+
+.ticker-container {
+    border-radius: 3px;
+}
+
+.ticker-item{
+    font-size: 11pt;
+}
+
+/* Ticker - End */

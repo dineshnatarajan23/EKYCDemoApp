@@ -1,0 +1,28 @@
+:root {
+
+    --zen-body-bg-color: #fcc472;
+    --zen-body-bg-img: none;
+   
+    --zen-pri-color: #ffffff;
+    --zen-pri-lighten-color: #fafafa;
+    --zen-sec-color: #303030;
+    --zen-bg-contrast1-color: #303030;
+    --zen-bg-contrast2-color: #ffffff;
+    --zen-bg-contrast3-color: #dddddd;
+    
+    --zen-control-bg-color: transparent;
+    --zen-control-border-color: #dddddd;
+    
+    --zen-flush-color: #fcc472;
+    
+    --zen-box-shadow:  0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+
+    --zen-body-bg-attachment: scroll;
+    --zen-body-bg-blend: normal;
+    --zen-body-bg-clip: border-box;
+    --zen-body-bg-origin: padding-box;
+    --zen-body-bg-position: 0% 0%;
+    --zen-body-bg-repeat: repeat;
+    --zen-body-bg-size: auto;
+    
+}

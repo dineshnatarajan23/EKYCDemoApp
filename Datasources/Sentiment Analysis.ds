@@ -1,0 +1,20 @@
+{
+    "webServiceContent": [],
+    "filePath": "C:\\Studio_Workspace\\Workspace\\default_user\\Projects\\EquatorEKYC\\Datasources\\Sentiment Analysis.ds",
+    "content": {
+        "datasourceType": 4,
+        "modifiedOn": "2021-03-28 01:03:28.965",
+        "datasourceProperties": {
+            "skillId": "0d929009-e561-4380-9347-dd53f4bf4251",
+            "providerId": "be7891c0-ab67-469b-bb59-6adb1d9b94b5",
+            "skillCode": "AWS_SENTIMENT",
+            "providerInstance": "74e85870-2893-44ac-8e21-c0fd082395c3",
+            "id": "f71d9474-2aa8-4182-974b-0c724877bbf4",
+            "engineId": "fd421a3d-142a-41b5-bbb2-f99071544b5a"
+        },
+        "name": "Sentiment Analysis",
+        "id": "2c824ced-9462-469a-b4b5-682d05e91ef4",
+        "applicationId": "c0170262-7475-49ff-b442-cccb284a6213",
+        "createdOn": "2021-03-28 01:03:28.965"
+    }
+}

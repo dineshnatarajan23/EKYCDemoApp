@@ -1,0 +1,38 @@
+{"editors": {
+    "customClasses": {},
+    "variables": {},
+    "pages": [{
+        "pageLifeCycle": {
+            "selectedlifecycle": "",
+            "lifeCycle": []
+        },
+        "defaultPage": true,
+        "validName": true,
+        "name": "View1",
+        "id": "xxx_3982014",
+        "validUrl": true,
+        "routingUrl": "view1",
+        "content": {
+            "css": "",
+            "wrapperclasses": "",
+            "wrapperstyles": "",
+            "html": "<div ui-modeller-type=\"header\" id='header-pqikobz9cgj' class=\"header\"><span>View-1<\/span><\/div>"
+        }
+    }],
+    "assets": [],
+    "isValid": true,
+    "index": 0,
+    "id": "mdt_visual_editor_root",
+    "validations": {},
+    "url": "/rest",
+    "customVariables": {
+        "checksum_old": "",
+        "list": [],
+        "checksum_new": ""
+    },
+    "assetsChecksum": {
+        "checksum_old": "",
+        "checksum_new": ""
+    },
+    "globalCss": ""
+}}

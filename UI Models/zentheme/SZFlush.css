@@ -1,0 +1,208 @@
+.header{
+    background-color: var(--zen-pri-lighten-color);
+}
+
+.um-mat-label{
+    color: var(--zen-white-color);
+}
+
+.mat-form-field{
+    background-color: var(--zen-pri-color);
+    color: var(--zen-bg-contrast1-color);
+    border: 1px solid;
+    border-color: var(--zen-bg-contrast3-color);
+}
+
+.mat-radio-button.mat-primary.mat-radio-checked .mat-radio-outer-circle {
+    border-color: var(--zen-pri-color);
+}
+
+
+.mat-select-arrow {
+    color: var(--zen-bg-contrast1-color);
+}
+
+.mat-form-field-autofill-control {
+    color: var(--zen-bg-contrast1-color);
+}
+
+.jexcel_search {
+    background-color: transparent;
+}
+
+.jexcel>tbody>tr>td {
+    background-color: var(--zen-bg-contrast2-color);
+    border-bottom-color: var(--zen-bg-contrast3-color);
+}
+
+.mat-list-item .um-tittle {
+    color: var(--zen-bg-contrast1-color);
+}
+
+.mat-list-item .um-subtitle, .mat-list-item .um-subtittle {
+    color: var(--zen-bg-contrast1-color);
+}
+
+.mat-tab-label-content .um-mat-label {
+    color: var(--zen-bg-contrast1-color);
+}
+
+.mat-tab-group .mat-form-field {
+    color: var(--zen-bg-contrast1-color);
+    border-color: var(--zen-contrast1-color);
+}
+
+.mat-tab-group .mat-fab.mat-primary, 
+.mat-tab-group .mat-flat-button.mat-primary, 
+.mat-tab-group .mat-mini-fab.mat-primary, 
+.mat-tab-group .mat-raised-button.mat-primary {
+    background-color: var(--zen-flush-color);
+}
+
+.mat-tab-group .mat-flat-button.mat-primary:hover, 
+.mat-tab-group .mat-raised-button.mat-primary:hover, 
+.mat-tab-group .mat-fab.mat-primary:hover, 
+.mat-tab-group .mat-mini-fab.mat-primary:hover {
+    background-color: var(--zen-bg-contrast3-color);
+}
+
+
+.mat-expansion-panel-header-title {
+    color: var(--zen-bg-contrast1-color);
+}
+
+.mat-expansion-indicator::after {
+    color: var(--zen-bg-contrast1-color);
+}
+
+.mat-expansion-panel .mat-form-field {
+    color: var(--zen-bg-contrast1-color);
+    border-color: var(--zen-bg-contrast1-color);
+}
+
+.mat-expansion-panel .mat-fab.mat-primary, 
+.mat-expansion-panel .mat-flat-button.mat-primary, 
+.mat-expansion-panel .mat-mini-fab.mat-primary, 
+.mat-expansion-panel .mat-raised-button.mat-primary {
+    background-color: var(--zen-flush-color);
+}
+
+.mat-expansion-panel .mat-flat-button.mat-primary:hover, 
+.mat-expansion-panel .mat-raised-button.mat-primary:hover, 
+.mat-expansion-panel .mat-fab.mat-primary:hover, 
+.mat-expansion-panel .mat-mini-fab.mat-primary:hover {
+    background-color: var(--zen-bg-contrast3-color);
+}
+
+.mat-dialog-container .mat-fab.mat-primary, 
+.mat-dialog-container .mat-flat-button.mat-primary, 
+.mat-dialog-container .mat-mini-fab.mat-primary, 
+.mat-dialog-container .mat-raised-button.mat-primary {
+    background-color: var(--zen-flush-color);
+}
+
+.mat-dialog-container .mat-flat-button.mat-primary:hover, 
+.mat-dialog-container .mat-raised-button.mat-primary:hover, 
+.mat-dialog-container .mat-fab.mat-primary:hover, 
+.mat-dialog-container .mat-mini-fab.mat-primary:hover {
+    background-color: var(--zen-bg-contrast3-color);
+}
+
+
+
+a:link, a:visited, a:hover, a:active {
+    color: var(--zen-bg-contrast1-color);
+}
+
+.breadcrumb {
+    background-color: var(--zen-bg-contrast2-color);
+}
+
+a.breadcrumb-item:hover, a.breadcrumb-item:visited {
+    color: var(--zen-bg-contrast1-color);
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: var(--zen-bg-contrast1-color);
+}
+
+.mat-progress-bar-fill::after {
+    background-color: var(--zen-bg-contrast1-color);
+}
+
+.mat-progress-bar-buffer {
+    background-color: var(--zen-bg-contrast2-color);
+}
+
+.ticker-container {
+    background-color: var(--zen-bg-contrast2-color);
+}
+
+.ticker-item {
+    color: var(--zen-bg-contrast1-color);
+}
+
+
+
+/* Datepicker */
+
+.mat-datepicker-toggle-default-icon{
+    fill: var(--zen-bg-contrast1-color);
+}
+
+.mat-datepicker-content, 
+.mat-datepicker-toggle, 
+.mat-datepicker-content .mat-calendar-next-button, 
+.mat-datepicker-content .mat-calendar-previous-button,
+.mat-calendar-table-header,
+.mat-calendar-body-label,
+.mat-calendar-body-cell-content
+{
+    color: var(--zen-bg-contrast2-color);
+}
+
+.mat-datepicker-content .mat-calendar{
+    background-color: var(--zen-bg-contrast1-color);
+}
+
+.mat-calendar-cell-semi-selected{
+    background-color: var(--zen-bg-contrast2-color);
+    color: var(--zen-bg-contrast1-color);
+}
+
+.mat-calendar-body-selected{
+    background-color: var(--zen-bg-contrast1-color);
+    color: var(--zen-bg-contrast2-color);
+}
+
+.mat-calendar-cell-semi-selected .mat-calendar-body-cell-content{
+    color: var(--zen-bg-contrast1-color);
+}
+
+.mat-calendar-body-cell-content.mat-calendar-body-semi-selected{
+    color: var(--zen-bg-contrast1-color);
+}
+
+.mat-calendar-body-begin-range:not(.mat-calendar-body-end-range),
+.mat-calendar-body-end-range:not(.mat-calendar-body-begin-range)
+{
+    background-color: var(--zen-bg-contrast2-color);
+}
+
+.mat-calendar-cell-over>.mat-calendar-body-cell-content{
+    background-color: var(--zen-bg-contrast1-color);
+    color: var(--zen-bg-contrast2-color);
+}
+
+.mat-calendar-body-cell:not(.mat-calendar-body-disabled):hover>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected), 
+.cdk-keyboard-focused .mat-calendar-body-active>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected), 
+.cdk-program-focused .mat-calendar-body-active>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected){
+    background-color: var(--zen-bg-contrast1-color);
+    color: var(--zen-bg-contrast2-color);
+}
+
+.mat-calendar-arrow {
+    border-top-color: var(--zen-bg-contrast2-color);
+}
+
+/* Datepicker - End */

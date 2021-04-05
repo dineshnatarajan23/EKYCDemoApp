@@ -1,0 +1,20 @@
+{
+    "webServiceContent": [],
+    "filePath": "C:\\Studio_Workspace\\Workspace\\default_user\\Projects\\EquatorEKYC\\Datasources\\Translate.ds",
+    "content": {
+        "datasourceType": 4,
+        "modifiedOn": "2021-03-28 01:03:29.128",
+        "datasourceProperties": {
+            "skillId": "b7234463-0717-4d21-a6f4-5bb988c8043d",
+            "providerId": "03b22020-c61a-4f3d-aadc-4a5b3d4bc443",
+            "skillCode": "ASG_TRANSLATE",
+            "providerInstance": "543e253b-80c7-47b6-9f69-7dda44dbe27c",
+            "id": "4e2dbae5-2bc1-4b53-b346-b48684f8968e",
+            "engineId": "0d9809cc-2a19-494a-9973-b98e7d6737fd"
+        },
+        "name": "Translate",
+        "id": "ff88e54b-29cb-4118-93b3-87cb015944fa",
+        "applicationId": "c0170262-7475-49ff-b442-cccb284a6213",
+        "createdOn": "2021-03-28 01:03:29.128"
+    }
+}

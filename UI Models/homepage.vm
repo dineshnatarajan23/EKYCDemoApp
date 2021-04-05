@@ -1,0 +1,1045 @@
+{"editors": {
+    "tabName": "homepage.vm",
+    "variables": {},
+    "packIcon": {
+        "fileJson": "",
+        "fileName": "",
+        "displayName": "",
+        "source": "",
+        "projectName": "",
+        "type": "image"
+    },
+    "isValid": true,
+    "index": 0,
+    "url": "/rest",
+    "customVariables": {
+        "checksum_old": "",
+        "list": [],
+        "checksum_new": 0
+    },
+    "customClasses": {"um-container": ["row-tiles"]},
+    "pages": [{
+        "pageLifeCycle": {
+            "selectedlifecycle": "",
+            "lifeCycle": []
+        },
+        "checksum_old": 2807038978,
+        "defaultPage": true,
+        "validName": true,
+        "name": "View1",
+        "id": "xxx_3982014",
+        "validUrl": true,
+        "routingUrl": "view1",
+        "content": {
+            "css": ".wrapper_asg_bkgrd",
+            "wrapperclasses": ["wrapper_asg_bkgrd"],
+            "wrapperstyles": "",
+            "html": "<div ui-modeller-type=\"um-container\" id=\"um-container-d8vzcgtz2n6\" class=\"container-fluid section banner-box\"><div ui-modeller-type=\"um-container\" id=\"um-container-q53hk8p2v5\"><img ui-modeller-type=\"image\" global=\"true\" src=\"http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/a408a925-9189-4827-8594-d960037c4e1e\" alt=\"\" id=\"image-ueqzttb2gr\" variable-id-mapping=\"{&quot;Reference&quot;:&quot;11e45dbc-63d1-4939-ae9f-70d86766dadc&quot;}\" validations-id-mapping=\"{&quot;Id&quot;:&quot;80a24be2-70ef-49cb-b5d2-61773fe0dff2&quot;,&quot;Reference&quot;:&quot;2527754f-41ed-4a0e-a6c7-1c0d660eec17&quot;}\" value=\"banner-fhd.jpg-BankTheme\" srcval=\"assets/banner-fhd.jpg\" class=\"banner-img\"/><div ui-modeller-type=\"um-container\" id=\"um-container-qmb6t7uc6ea\" class=\"section hero-box container-fluid\"><div ui-modeller-type=\"um-container\" id=\"um-container-84rj7l7f0bn\" class=\"row\"><div ui-modeller-type=\"um-container\" id=\"um-container-50238wdeiuv\" class=\"col\"><div ui-modeller-type=\"um-container\" id=\"um-container-txkr0atywzp\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Hassle Free Banking'\" validations-id-mapping=\"{&quot;Id&quot;:&quot;4ac25c39-2678-4c34-a5cc-eab25c9e9abc&quot;,&quot;Reference *&quot;:&quot;b0bea48a-9248-4309-a116-2e69e9e94c63&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;d3af5058-32ee-4f83-94e6-ff36c0c1e4f8&quot;}\" id=\"label-iv572cddekk\" class=\"hero-text\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-wif49vxykca\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Grow Your Wealth With Us'\" id=\"label-ro7f0tu5r2a\" validations-id-mapping=\"{&quot;Id&quot;:&quot;cc7b7052-928b-4559-97dc-96bd9a0021cc&quot;,&quot;Reference *&quot;:&quot;94435374-381e-4900-ac52-7a24ca2bdc94&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;55852f37-bc66-4ad0-b8ae-5b80d7fc2f2b&quot;}\" class=\"hero-subtext\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-ozdol67wefs\" class=\"hero-buttonbar\"><button ui-modeller-type=\"button\" label=\"Apply KYC\" color=\"primary\" mat-flat-button=\"\" badgecolor=\"#ff4081\" badgesize=\"small\" badgeposition=\"above after\" badgetextcolor=\"#ffffff\" badgeoverlap=\"yes\" iconpos=\"left\" id=\"button-186dz5kz219i\" validations-id-mapping=\"{&quot;Id&quot;:&quot;82182260-b588-48e1-8be3-5b34e60f6a25&quot;}\" webservices=\"{&quot;click&quot;:{&quot;disableEditor&quot;:false,&quot;isSaved&quot;:true,&quot;name&quot;:&quot;click&quot;,&quot;content&quot;:&quot;{\\&quot;collaboration\\&quot;:{},\\&quot;process\\&quot;:{\\&quot;id\\&quot;:\\&quot;Process_1\\&quot;,\\&quot;endEvent\\&quot;:{\\&quot;id\\&quot;:\\&quot;EndEvent_8xa9mt7\\&quot;,\\&quot;name\\&quot;:\\&quot;\\&quot;,\\&quot;businessProp\\&quot;:{\\&quot;blockId\\&quot;:\\&quot;EndEvent_8xa9mt7\\&quot;},\\&quot;type\\&quot;:\\&quot;bpmn:endEvent\\&quot;,\\&quot;incoming\\&quot;:\\&quot;SequenceFlow_ugchbq\\&quot;},\\&quot;packRouteTask\\&quot;:{\\&quot;id\\&quot;:\\&quot;PackRouteTask_vc9j0b\\&quot;,\\&quot;name\\&quot;:\\&quot;Route to KYC\\&quot;,\\&quot;businessProp\\&quot;:{\\&quot;packName\\&quot;:\\&quot;{\\\\\\&quot;id\\\\\\&quot;:\\\\\\&quot;da75420d-fd65-4c9b-8822-50cfc8ba427f\\\\\\&quot;,\\\\\\&quot;name\\\\\\&quot;:\\\\\\&quot;ApplyKYC.rp\\\\\\&quot;}\\&quot;,\\&quot;blockId\\&quot;:\\&quot;PackRouteTask_vc9j0b\\&quot;},\\&quot;events\\&quot;:[],\\&quot;type\\&quot;:\\&quot;bpmn:packRouteTask\\&quot;,\\&quot;outgoing\\&quot;:\\&quot;SequenceFlow_ugchbq\\&quot;,\\&quot;incoming\\&quot;:\\&quot;SequenceFlow_hcpvt\\&quot;},\\&quot;startEvent\\&quot;:{\\&quot;id\\&quot;:\\&quot;StartEvent_idv01q\\&quot;,\\&quot;name\\&quot;:\\&quot;\\&quot;,\\&quot;businessProp\\&quot;:{\\&quot;blockId\\&quot;:\\&quot;StartEvent_idv01q\\&quot;},\\&quot;type\\&quot;:\\&quot;bpmn:startEvent\\&quot;,\\&quot;outgoing\\&quot;:\\&quot;SequenceFlow_mpszgk\\&quot;},\\&quot;functionalTask\\&quot;:{\\&quot;id\\&quot;:\\&quot;FunctionalTask_lw0tfs\\&quot;,\\&quot;name\\&quot;:\\&quot;\\&quot;,\\&quot;businessProp\\&quot;:{\\&quot;functionName\\&quot;:\\&quot;token\\&quot;,\\&quot;functionBody\\&quot;:\\&quot;let settings = JSON.parse(localStorage.getItem(window.location.href.split(\\\\\\&quot;/\\\\\\&quot;)[3]+'__mowbly__.__settings__'));\\\\r\\\\nlet token = settings ? settings['authtoken'] : '';\\\\r\\\\ntoken = token.replace(\\\\\\&quot;Bearer\\\\\\&quot;, \\\\\\&quot;\\\\\\&quot;).trim();\\\\r\\\\nsettings['authtoken'] = token;\\\\r\\\\nwindow.localStorage.setItem(window.location.href.split(\\\\\\&quot;/\\\\\\&quot;)[3]+\\\\\\&quot;__mowbly__.__settings__\\\\\\&quot;, JSON.stringify(settings));\\&quot;,\\&quot;blockId\\&quot;:\\&quot;FunctionalTask_lw0tfs\\&quot;},\\&quot;events\\&quot;:[],\\&quot;type\\&quot;:\\&quot;bpmn:functionalTask\\&quot;,\\&quot;outgoing\\&quot;:\\&quot;SequenceFlow_hcpvt\\&quot;,\\&quot;incoming\\&quot;:\\&quot;SequenceFlow_mpszgk\\&quot;},\\&quot;sequenceFlow\\&quot;:[{\\&quot;id\\&quot;:\\&quot;SequenceFlow_ugchbq\\&quot;,\\&quot;sourceRef\\&quot;:\\&quot;PackRouteTask_vc9j0b\\&quot;,\\&quot;targetRef\\&quot;:\\&quot;EndEvent_8xa9mt7\\&quot;,\\&quot;businessProp\\&quot;:{},\\&quot;type\\&quot;:\\&quot;bpmn:sequenceFlow\\&quot;,\\&quot;name\\&quot;:\\&quot;\\&quot;},{\\&quot;id\\&quot;:\\&quot;SequenceFlow_mpszgk\\&quot;,\\&quot;sourceRef\\&quot;:\\&quot;StartEvent_idv01q\\&quot;,\\&quot;targetRef\\&quot;:\\&quot;FunctionalTask_lw0tfs\\&quot;,\\&quot;businessProp\\&quot;:{},\\&quot;type\\&quot;:\\&quot;bpmn:sequenceFlow\\&quot;,\\&quot;name\\&quot;:\\&quot;\\&quot;},{\\&quot;id\\&quot;:\\&quot;SequenceFlow_hcpvt\\&quot;,\\&quot;sourceRef\\&quot;:\\&quot;FunctionalTask_lw0tfs\\&quot;,\\&quot;targetRef\\&quot;:\\&quot;PackRouteTask_vc9j0b\\&quot;,\\&quot;businessProp\\&quot;:{},\\&quot;type\\&quot;:\\&quot;bpmn:sequenceFlow\\&quot;,\\&quot;name\\&quot;:\\&quot;\\&quot;}]},\\&quot;BPMNDiagram\\&quot;:{\\&quot;BPMNPlane\\&quot;:{\\&quot;BPMNEdge\\&quot;:[{\\&quot;id\\&quot;:\\&quot;SequenceFlow_ugchbq_ve\\&quot;,\\&quot;waypoint\\&quot;:[{\\&quot;x\\&quot;:\\&quot;660\\&quot;,\\&quot;y\\&quot;:\\&quot;235.00000427246093\\&quot;},{\\&quot;x\\&quot;:\\&quot;688\\&quot;,\\&quot;y\\&quot;:\\&quot;235.00000427246093\\&quot;},{\\&quot;x\\&quot;:\\&quot;688\\&quot;,\\&quot;y\\&quot;:\\&quot;343\\&quot;},{\\&quot;x\\&quot;:\\&quot;716\\&quot;,\\&quot;y\\&quot;:\\&quot;343\\&quot;}],\\&quot;bpmnElement\\&quot;:\\&quot;SequenceFlow_ugchbq\\&quot;},{\\&quot;id\\&quot;:\\&quot;SequenceFlow_mpszgk_ve\\&quot;,\\&quot;waypoint\\&quot;:[{\\&quot;x\\&quot;:\\&quot;336\\&quot;,\\&quot;y\\&quot;:\\&quot;121\\&quot;},{\\&quot;x\\&quot;:\\&quot;490\\&quot;,\\&quot;y\\&quot;:\\&quot;121.00000427246094\\&quot;}],\\&quot;bpmnElement\\&quot;:\\&quot;SequenceFlow_mpszgk\\&quot;},{\\&quot;id\\&quot;:\\&quot;SequenceFlow_hcpvt_ve\\&quot;,\\&quot;waypoint\\&quot;:[{\\&quot;x\\&quot;:\\&quot;575\\&quot;,\\&quot;y\\&quot;:\\&quot;141.98000427246095\\&quot;},{\\&quot;x\\&quot;:\\&quot;575\\&quot;,\\&quot;y\\&quot;:\\&quot;214.02000427246094\\&quot;}],\\&quot;bpmnElement\\&quot;:\\&quot;SequenceFlow_hcpvt\\&quot;}],\\&quot;BPMNShape\\&quot;:[{\\&quot;id\\&quot;:\\&quot;EndEvent_8xa9mt7_ve\\&quot;,\\&quot;Bounds\\&quot;:{\\&quot;x\\&quot;:716,\\&quot;y\\&quot;:325,\\&quot;cx\\&quot;:734,\\&quot;cy\\&quot;:343,\\&quot;width\\&quot;:36,\\&quot;height\\&quot;:36},\\&quot;bpmnElement\\&quot;:\\&quot;EndEvent_8xa9mt7\\&quot;},{\\&quot;id\\&quot;:\\&quot;PackRouteTask_vc9j0b_ve\\&quot;,\\&quot;Bounds\\&quot;:{\\&quot;x\\&quot;:490,\\&quot;y\\&quot;:214.02000427246094,\\&quot;cx\\&quot;:575,\\&quot;cy\\&quot;:235.00000381469727,\\&quot;width\\&quot;:170,\\&quot;height\\&quot;:41.959999084472656},\\&quot;bpmnElement\\&quot;:\\&quot;PackRouteTask_vc9j0b\\&quot;},{\\&quot;id\\&quot;:\\&quot;StartEvent_idv01q_ve\\&quot;,\\&quot;Bounds\\&quot;:{\\&quot;x\\&quot;:300,\\&quot;y\\&quot;:103,\\&quot;cx\\&quot;:318,\\&quot;cy\\&quot;:121,\\&quot;width\\&quot;:36,\\&quot;height\\&quot;:36},\\&quot;bpmnElement\\&quot;:\\&quot;StartEvent_idv01q\\&quot;},{\\&quot;id\\&quot;:\\&quot;FunctionalTask_lw0tfs_ve\\&quot;,\\&quot;Bounds\\&quot;:{\\&quot;x\\&quot;:490,\\&quot;y\\&quot;:100.02000427246094,\\&quot;cx\\&quot;:575,\\&quot;cy\\&quot;:121.00000381469727,\\&quot;width\\&quot;:170,\\&quot;height\\&quot;:41.959999084472656},\\&quot;bpmnElement\\&quot;:\\&quot;FunctionalTask_lw0tfs\\&quot;}]},\\&quot;id\\&quot;:\\&quot;Process_1_ve\\&quot;,\\&quot;bpmnElement\\&quot;:\\&quot;Process_1\\&quot;}}&quot;,&quot;id&quot;:&quot;process_editor_click 1599033166059&quot;,&quot;description&quot;:&quot;&quot;,&quot;eventType&quot;:0,&quot;scriptId&quot;:&quot;scriptID_o8ka2bsq&quot;}}\" smvariables=\"{}\" smopened=\"none\" class=\"um-button-icon um-mat-button um-primary-button mat-flat-button mat-primary hero-button\"><span data-invisible=\"\" id=\"span-ghiy00topm8\" data-label-wrapper=\"\" class=\"mat-button-wrapper\">Apply KYC<\/span><div data-invisible=\"\" matripple=\"\" id=\"div-piwx27480j\" class=\"mat-button-ripple mat-ripple\"><\/div><div data-invisible=\"\" id=\"div-17cgb20qjc4h\" class=\"mat-button-focus-overlay\"><\/div><span data-menu-wrapper=\"\" id=\"span-i2q8z7xnpzd\" class=\"button-menu-span\"><\/span><\/button><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-lvu9ob14f5\" class=\"col\"><div ui-modeller-type=\"um-container\" id=\"um-container-5v11tq1x2me\"><mat-label ui-modeller-type=\"label\" ng-model=\"' '\" id=\"label-5x8vc9pe5\" validations-id-mapping=\"{&quot;Id&quot;:&quot;de1afc21-a538-4773-ba14-455b1b043869&quot;,&quot;Reference *&quot;:&quot;7c20164d-3089-426e-a12c-ce1f8be42b8d&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;443665e3-45f3-4668-a5dc-18101076a65a&quot;}\" class=\"um-mat-label\">\n                   Label here\n                  <\/mat-label><\/div><\/div><\/div><\/div><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-o3b5aqdayl\" class=\"header-menu p-0 container-fluid\"><div ui-modeller-type=\"um-container\" id=\"um-container-cckew7jelk8\" class=\"row p-0\"><div ui-modeller-type=\"um-container\" id=\"um-container-8exb4td6qf\" class=\"m-0 col-4\"><div ui-modeller-type=\"um-container\" id=\"um-container-xk09k3pv5zj\" class=\"logobar\"><a ui-modeller-type=\"hyperlink\" defaultstyle=\"true\" label=\"Meridien & Equator Bank\" redirection=\"&quot;https://www.google.com/&quot;\" target=\"New Tab\" href=\"javascript:void(0);\" id=\"hyperlink-3bke280i9um\" validations-id-mapping=\"{&quot;Id&quot;:&quot;db81dd24-5a2a-4117-aa91-b62d3f7b70b2&quot;}\" variable-id-mapping=\"{}\" class=\"logo\">Meridien & Equator Bank<\/a><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-edzz26fefd\" class=\"col m-0\"><div ui-modeller-type=\"um-container\" id=\"um-container-mivj8s5za2f\" class=\"menubar\"><a ui-modeller-type=\"hyperlink\" defaultstyle=\"true\" label=\"Home\" redirection=\"&quot;https://www.google.com/&quot;\" target=\"New Tab\" href=\"javascript:void(0);\" validations-id-mapping=\"{&quot;Id&quot;:&quot;9b8bd886-e7ca-4a7d-8618-d97f58677c6b&quot;}\" id=\"hyperlink-2fy3nkwhnul\" variable-id-mapping=\"{}\" class=\"menu-item\">Home<\/a><a ui-modeller-type=\"hyperlink\" defaultstyle=\"true\" label=\"About Us\" redirection=\"&quot;https://www.google.com/&quot;\" target=\"New Tab\" href=\"javascript:void(0);\" validations-id-mapping=\"{&quot;Id&quot;:&quot;154aa9fd-4a09-429e-91f6-ddb6576f68ed&quot;}\" variable-id-mapping=\"{}\" id=\"hyperlink-vq4prtsmfki\" class=\"menu-item\">About Us<\/a><a ui-modeller-type=\"hyperlink\" defaultstyle=\"true\" label=\"Products\" redirection=\"&quot;https://www.google.com/&quot;\" target=\"New Tab\" href=\"javascript:void(0);\" validations-id-mapping=\"{&quot;Id&quot;:&quot;ac5f76e9-abcf-4243-bbef-4329ee69b4d5&quot;}\" variable-id-mapping=\"{}\" id=\"hyperlink-1c2t5cqi8hx\" class=\"menu-item\">Products<\/a><a ui-modeller-type=\"hyperlink\" defaultstyle=\"true\" label=\"Services\" redirection=\"&quot;https://www.google.com/&quot;\" target=\"New Tab\" href=\"javascript:void(0);\" validations-id-mapping=\"{&quot;Id&quot;:&quot;50884477-8594-42ef-9d51-6e80e7d862ab&quot;}\" variable-id-mapping=\"{}\" id=\"hyperlink-xqcaq4vw0zk\" class=\"menu-item\">Services<\/a><a ui-modeller-type=\"hyperlink\" defaultstyle=\"true\" label=\"Locations\" redirection=\"&quot;https://www.google.com/&quot;\" target=\"New Tab\" href=\"javascript:void(0);\" validations-id-mapping=\"{&quot;Id&quot;:&quot;b3fe2fef-2590-4828-85d1-3519dbc82d3a&quot;}\" variable-id-mapping=\"{}\" id=\"hyperlink-65c36hcoigp\" class=\"menu-item\">Locations<\/a><a ui-modeller-type=\"hyperlink\" defaultstyle=\"true\" label=\"Login\" redirection=\"&quot;https://www.google.com/&quot;\" target=\"New Tab\" href=\"javascript:void(0);\" validations-id-mapping=\"{&quot;Id&quot;:&quot;9b313a04-f077-4839-8a5f-832348888cc2&quot;}\" variable-id-mapping=\"{}\" id=\"hyperlink-eqxang4o3b8\" class=\"menu-item\">Login<\/a><\/div><\/div><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-3eqkwj94ont\" class=\"container featured-box\"><div ui-modeller-type=\"um-container\" id=\"um-container-fsq6x48hur7\" class=\"row p-0\"><div ui-modeller-type=\"um-container\" id=\"um-container-ffvnyci2fi7\" class=\"col-lg-3 col-sm-6 col-md-6 feature m-0 feature-border\"><div ui-modeller-type=\"um-container\" id=\"um-container-lvexmz07bc\" class=\"feature-img\"><img ui-modeller-type=\"image\" global=\"true\" src=\"http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/09aa65d7-331f-446c-9719-a95cf0a37955\" alt=\"\" id=\"image-b455sl80qvd\" validations-id-mapping=\"{&quot;Id&quot;:&quot;a88bb18d-e092-48a6-92ad-d9a46034bdcd&quot;,&quot;Reference&quot;:&quot;20bd5d23-7b9a-428b-b7f4-6ab48c1a505e&quot;}\" variable-id-mapping=\"{&quot;Reference&quot;:&quot;dca317a4-a002-41a5-b33b-af67ee81edcc&quot;}\" value=\"piggy.png-BankTheme\" srcval=\"assets/piggy.png\"/><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-lz1yq7r1uf\" class=\"feature-title\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Transparent Pricing'\" validations-id-mapping=\"{&quot;Id&quot;:&quot;08d2f55a-9dc5-4e03-96da-7229a44aaea2&quot;,&quot;Reference *&quot;:&quot;f4145704-3e03-4213-96d9-7d07736f68ab&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;6fdc3739-ee45-42f6-bec6-480bc995df5f&quot;}\" id=\"label-n9vwviebfpa\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-qpnuwl4s8b\" class=\"um-control feature-subtitle\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan'\" id=\"label-5fdby00m32k\" validations-id-mapping=\"{&quot;Id&quot;:&quot;32859a3d-179f-40b2-9ac8-ea235cb01697&quot;,&quot;Reference *&quot;:&quot;d5625dd2-50b5-4325-bffd-1f80bec86f37&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;cab86cd6-0590-4b72-a557-0c2f3c57df16&quot;}\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-5lntijea3xg\"><a ui-modeller-type=\"hyperlink\" defaultstyle=\"true\" label=\"Know More\" redirection=\"&quot;https://www.google.com/&quot;\" target=\"New Tab\" href=\"javascript:void(0);\" validations-id-mapping=\"{&quot;Id&quot;:&quot;de2722a9-b8fb-4310-94b1-1b446ab582c4&quot;}\" id=\"hyperlink-agweo6lefi\" class=\"feature-link\">Know More<\/a><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-5kye8gsh9lo\" class=\"col-lg-3 col-sm-6 col-md-6 feature m-0 feature-border\"><div ui-modeller-type=\"um-container\" id=\"um-container-gwyd86xpj09\" class=\"feature-img\"><img ui-modeller-type=\"image\" global=\"true\" src=\"http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/5106c18b-859c-49ab-90dc-b83bc696c756\" alt=\"\" id=\"image-6jang3w796w\" validations-id-mapping=\"{&quot;Id&quot;:&quot;26b85f78-3464-47e0-9635-f1ff1512c499&quot;,&quot;Reference&quot;:&quot;ffdbc4aa-4e4c-4973-aefd-306e60d71abe&quot;}\" variable-id-mapping=\"{&quot;Reference&quot;:&quot;ec956400-0393-45d7-aafb-d060bd298aa8&quot;}\" value=\"secure.png-BankTheme\" srcval=\"assets/secure.png\"/><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-wjlnhnpcfdp\" class=\"feature-title\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Fully Encrypted'\" validations-id-mapping=\"{&quot;Id&quot;:&quot;dff57e2e-f2fd-4939-bdc5-3a4ea0e072af&quot;,&quot;Reference *&quot;:&quot;8b46265f-f1a1-41bd-ac5a-6a30b727e799&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;1c5a9230-f9ab-475e-83bf-718e854a4901&quot;}\" id=\"label-07tbowpu6ro\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-dsgbwm4hg4\" class=\"um-control feature-subtitle\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan'\" id=\"label-h54sjvzs47m\" validations-id-mapping=\"{&quot;Id&quot;:&quot;b73e2164-55e5-402a-b6e6-621a56cb6dc0&quot;,&quot;Reference *&quot;:&quot;0dc0a593-6cc3-4be3-beb4-b4ad381b2c4e&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;9ce5b320-c31f-4b2d-b646-630eea5b2529&quot;}\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-osj512e8lw9\"><a ui-modeller-type=\"hyperlink\" defaultstyle=\"true\" label=\"Know More\" redirection=\"&quot;https://www.google.com/&quot;\" target=\"New Tab\" href=\"javascript:void(0);\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"hyperlink-2x42xded6xk\" class=\"feature-link\">Know More<\/a><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-jdcsxprgnce\" class=\"col-lg-3 col-sm-6 col-md-6 feature m-0 feature-border\"><div ui-modeller-type=\"um-container\" id=\"um-container-rw8u83lups\" class=\"feature-img\"><img ui-modeller-type=\"image\" global=\"true\" src=\"http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/3c6e6db0-17ff-462e-b18e-ce0726561c26\" alt=\"\" id=\"image-i9hjma4d00n\" validations-id-mapping=\"{&quot;Id&quot;:&quot;dc635d4c-a12d-4a77-8e5b-10f2a8077008&quot;,&quot;Reference&quot;:&quot;580b0b86-f750-4354-9e84-3070bc1c9fa1&quot;}\" variable-id-mapping=\"{&quot;Reference&quot;:&quot;bc7bb000-38c7-41fb-b3ce-22c5b23a8a7e&quot;}\" value=\"wallet.png-BankTheme\" srcval=\"assets/wallet.png\"/><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-phkg94cfdh\" class=\"feature-title\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Instant Cashout'\" validations-id-mapping=\"{&quot;Id&quot;:&quot;2f4a7737-25e6-4bf2-9a88-433aa0c4e3e5&quot;,&quot;Reference *&quot;:&quot;16899cb4-bd49-4af8-acee-2432942c6021&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;614f1634-d122-402a-be6b-7c97a2b980ed&quot;}\" id=\"label-6ac1grtnays\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-e4zimbeoec\" class=\"um-control feature-subtitle\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan'\" id=\"label-2945cfvf17h\" validations-id-mapping=\"{&quot;Id&quot;:&quot;208e4b06-e917-491f-b367-d1d1fec4a47d&quot;,&quot;Reference *&quot;:&quot;8d4202f6-1063-418f-a790-45e900b92518&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;f3b931ca-6571-49bf-8027-654366b80408&quot;}\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-n7t275kiiwm\"><a ui-modeller-type=\"hyperlink\" defaultstyle=\"true\" label=\"Know More\" redirection=\"&quot;https://www.google.com/&quot;\" target=\"New Tab\" href=\"javascript:void(0);\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"hyperlink-qfykla1sime\" class=\"feature-link\">Know More<\/a><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-7tp9yqzzcl\" class=\"col-lg-3 col-sm-6 col-md-6 feature m-0\"><div ui-modeller-type=\"um-container\" id=\"um-container-3pagpxm5bj4\" class=\"feature-img\"><img ui-modeller-type=\"image\" global=\"true\" src=\"http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/1d029efa-d951-4e65-85a4-a71755c73fde\" alt=\"\" id=\"image-olj45vw08sl\" validations-id-mapping=\"{&quot;Id&quot;:&quot;23065861-20e9-4bb7-a0b7-f9b2fbb5159c&quot;,&quot;Reference&quot;:&quot;ecb8f084-2436-494d-af9b-ab104408ad65&quot;}\" variable-id-mapping=\"{&quot;Reference&quot;:&quot;804d862b-83fa-45a3-89c9-801f4382e4d8&quot;}\" value=\"verified.png-BankTheme\" srcval=\"assets/verified.png\"/><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-7noqug5u8s\" class=\"feature-title\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Safe and Secure'\" id=\"label-iqznjyufp6\" validations-id-mapping=\"{&quot;Id&quot;:&quot;b761314d-9adb-4390-b4e2-521e1960b6b7&quot;,&quot;Reference *&quot;:&quot;cf832303-7a86-45d7-acfd-0e82f104ea8e&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;0da23e5c-db07-457d-90db-206d59d3f4fc&quot;}\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-jp9nc3pz3vi\" class=\"um-control feature-subtitle\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan'\" id=\"label-cwm8boxz14j\" validations-id-mapping=\"{&quot;Id&quot;:&quot;2480fcf9-6fa4-4d86-ae3e-29fa3fa41fa9&quot;,&quot;Reference *&quot;:&quot;c0175dd8-0842-42ce-8504-cd6464af0d9c&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;00b6495a-727e-44bf-bdf2-b9c913dd6710&quot;}\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-0bshflldkvc\"><a ui-modeller-type=\"hyperlink\" defaultstyle=\"true\" label=\"Know More\" redirection=\"&quot;https://www.google.com/&quot;\" target=\"New Tab\" href=\"javascript:void(0);\" id=\"hyperlink-dh7zxna74j\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" class=\"feature-link\">Know More<\/a><\/div><\/div><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-ep36tog3dy\" class=\"container-fluid webcopy-box\"><div ui-modeller-type=\"um-container\" id=\"um-container-n6jv80yejm\" class=\"container\"><div ui-modeller-type=\"um-container\" id=\"um-container-tbl79u5oim\" class=\"row\"><div ui-modeller-type=\"um-container\" id=\"um-container-p6ri36rk8lc\" class=\"col\"><div ui-modeller-type=\"um-container\" id=\"um-container-fw5adglniq7\" class=\"webcopy-title\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Freelancers, entrepreneurs, and sole traders'\" id=\"label-ey9tuk4irtl\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-2szxwiyaiqw\" class=\"webcopy-content\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"label-40fvchrplyw\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-80oe9kdmvdk\" class=\"row\"><div ui-modeller-type=\"um-container\" id=\"um-container-2uy5mlrz4uo\" class=\"col webcopy-list\"><div ui-modeller-type=\"um-container\" id=\"um-container-d0p6dq5i2bg\" class=\"webcopy-listitem\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Free plan available'\" id=\"label-mzwcckc1odc\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-fi4rskfvrd\" class=\"webcopy-listitem\"><mat-label ui-modeller-type=\"label\" ng-model=\"'100% transparent costs'\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"label-ru3k0m8q29k\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-zxendrcte9d\" class=\"webcopy-listitem\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Realtime spending overview'\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"label-6okv9apjtck\">\n                   Label here\n                  <\/mat-label><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-yomiu7cxb4g\" class=\"col webcopy-list\"><div ui-modeller-type=\"um-container\" id=\"um-container-9k7g711du2i\" class=\"webcopy-listitem\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Full privacy compliance'\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"label-3vovgzgg4oq\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-nzxpiwruo8p\" class=\"webcopy-listitem\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Commitment free'\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"label-rn27jvgfmac\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-bblybq33z6t\" class=\"webcopy-listitem\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Debit Mastercard included'\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"label-gbsaeu6s66c\">\n                   Label here\n                  <\/mat-label><\/div><\/div><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-igeueowzxbk\" class=\"col webcopy-imgbox\"><div ui-modeller-type=\"um-container\" id=\"um-container-v6zkl17srhl\" class=\"webcopy-img\"><img ui-modeller-type=\"image\" global=\"true\" src=\"http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/1d17714e-83b4-4be8-ac3e-f13bd7c4c030\" alt=\"\" id=\"image-27vz9oekf29\" validations-id-mapping=\"{&quot;Id&quot;:&quot;fa893dee-1ade-4760-bd62-791a7a15cb6c&quot;,&quot;Reference&quot;:&quot;e62d7114-10ea-4fa2-81fa-780d25749ece&quot;}\" variable-id-mapping=\"{&quot;Reference&quot;:&quot;aaf9efee-8c49-45b0-bc8b-a48519cec5b3&quot;}\" value=\"marketing__two_color.png-BankTheme\" srcval=\"assets/marketing__two_color.png\"/><\/div><\/div><\/div><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-xhhhhdnu5ki\" class=\"container-fluid webcopy-box webcopy-box-alt\"><div ui-modeller-type=\"um-container\" id=\"um-container-qbe6k9rkiae\" class=\"container\"><div ui-modeller-type=\"um-container\" id=\"um-container-l482157es4i\" class=\"row\"><div ui-modeller-type=\"um-container\" id=\"um-container-wat68o1myqb\" class=\"col webcopy-imgbox\"><div ui-modeller-type=\"um-container\" id=\"um-container-anmwcezlvr\" class=\"webcopy-img\"><img ui-modeller-type=\"image\" global=\"true\" src=\"http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/0d58a164-70b1-4137-8423-03904a625f5d\" alt=\"\" validations-id-mapping=\"{&quot;Id&quot;:&quot;59145045-f66a-4f24-ade7-caacb062cfeb&quot;,&quot;Reference&quot;:&quot;375e348a-c66d-45a3-bd11-e5ec609a1c7b&quot;}\" variable-id-mapping=\"{&quot;Reference&quot;:&quot;bf4c9c5d-33e7-4156-bc52-90741c2dec6e&quot;}\" value=\"large-enterprise.png-BankTheme\" id=\"image-n7z0ifx89tb\" srcval=\"assets/large-enterprise.png\"/><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-wabclf3i4zr\" class=\"col\"><div ui-modeller-type=\"um-container\" id=\"um-container-djp250qfxbn\" class=\"webcopy-title\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Small to medium-sized businesses'\" validations-id-mapping=\"{&quot;Id&quot;:&quot;460f9ee8-d3cb-4e38-85b3-99c7449b0ad5&quot;,&quot;Reference *&quot;:&quot;3506e6c7-4eec-466e-9913-8abe8cc76163&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;5b6b6c03-bccc-41dd-8385-a419dd12c841&quot;}\" id=\"label-e7mwqu8m2bg\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-6eg2zu0kw13\" class=\"webcopy-content\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"label-0bz3ze3c5z16\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-ffuh4815au4\" class=\"row\"><div ui-modeller-type=\"um-container\" id=\"um-container-bdwm7de5lor\" class=\"col webcopy-list\"><div ui-modeller-type=\"um-container\" id=\"um-container-yco1sf85i4c\" class=\"webcopy-listitem\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Easy transfers'\" validations-id-mapping=\"{&quot;Id&quot;:&quot;bb51f3dd-4b64-49ae-94c0-3c651226b46b&quot;,&quot;Reference *&quot;:&quot;9f9ebcbd-c5b0-4cbb-b289-1b5e00cb806b&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;52eef0ce-0768-4ea5-be87-3f952f7e9d25&quot;}\" id=\"label-xwbt6k4zd5b\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-ac89myjyj0p\" class=\"webcopy-listitem\"><mat-label ui-modeller-type=\"label\" ng-model=\"'A powerful open API'\" validations-id-mapping=\"{&quot;Id&quot;:&quot;1c3f24d8-8d53-4947-8f0a-ba4dc6ecc9ad&quot;,&quot;Reference *&quot;:&quot;72eb67f3-ff88-45fd-8787-38296a6117b0&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;27f98124-b630-4526-8ddc-dc009ab453b7&quot;}\" id=\"label-qx6vctcqws\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-r7nyajgpvtq\" class=\"webcopy-listitem\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Business without borders'\" validations-id-mapping=\"{&quot;Id&quot;:&quot;ce57b466-14f2-4a08-a43f-2acac596cc4e&quot;,&quot;Reference *&quot;:&quot;5ad30f31-212a-4af5-b2ef-b2aca7364c31&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;ff45a3c0-fbab-4a04-b8f3-447360093124&quot;}\" id=\"label-v6p7mcd4xh\">\n                   Label here\n                  <\/mat-label><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-15hmg60xg4v\" class=\"col webcopy-list\"><div ui-modeller-type=\"um-container\" id=\"um-container-r461gtrnqhi\" class=\"webcopy-listitem\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Deposit cheques instantly'\" validations-id-mapping=\"{&quot;Id&quot;:&quot;ff463c28-8e54-4abe-b6d2-455d64383e73&quot;,&quot;Reference *&quot;:&quot;540f5e4a-9b5f-4f67-8c8b-9e22a512a399&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;3d19bb89-dbc2-43ac-a827-e8040611c7fb&quot;}\" id=\"label-p15lq431il\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-6rzrj7imp8\" class=\"webcopy-listitem\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Coverage around the world'\" validations-id-mapping=\"{&quot;Id&quot;:&quot;3ba8ffb5-0109-42b1-8e3e-13197c42d8ec&quot;,&quot;Reference *&quot;:&quot;f2a67abb-4bb9-4064-88a7-5b380ea86400&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;2b07b019-3539-4285-be65-5a05ccb2c641&quot;}\" id=\"label-te1cd3t7rl\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-zf0at7ei6hr\" class=\"webcopy-listitem\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Affliates and partnerships'\" validations-id-mapping=\"{&quot;Id&quot;:&quot;972508a3-baa4-4dd6-b9a7-1bcc47205a50&quot;,&quot;Reference *&quot;:&quot;4235b4b8-a5f5-45d9-bc05-4c8f94c4e0f5&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;848a6758-d26c-422b-9e9c-6bc5396ba17b&quot;}\" id=\"label-m4gy690beib\">\n                   Label here\n                  <\/mat-label><\/div><\/div><\/div><\/div><\/div><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-0khk6850isgo\" class=\"container-fluid webcopy-box\"><div ui-modeller-type=\"um-container\" id=\"um-container-0hqxwnz95ofd\" class=\"container\"><div ui-modeller-type=\"um-container\" id=\"um-container-wqv2xywrvu\" class=\"row\"><div ui-modeller-type=\"um-container\" id=\"um-container-nffnjex7uj9\" class=\"col\"><div ui-modeller-type=\"um-container\" id=\"um-container-dgck7dgs41\" class=\"webcopy-title\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Large or enterprise level businesses'\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"label-9zbhcye07th\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-3y8b4cu4wag\" class=\"webcopy-content\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"label-3htsi8f1o8s\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-m8kr7j147z\" class=\"row\"><div ui-modeller-type=\"um-container\" id=\"um-container-zyb6n4mlpz8\" class=\"col webcopy-list\"><div ui-modeller-type=\"um-container\" id=\"um-container-8rvjtcy91iv\" class=\"webcopy-listitem\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Corporate cards'\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"label-wjuu9htq21b\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-9rdolsi0827\" class=\"webcopy-listitem\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Automated accounting'\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"label-fln7relbkqa\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-bbpj66sp3dr\" class=\"webcopy-listitem\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Premium support'\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"label-gyswx44y57\">\n                   Label here\n                  <\/mat-label><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-f08o3m9pi99\" class=\"col webcopy-list\"><div ui-modeller-type=\"um-container\" id=\"um-container-qlmin4w8sal\" class=\"webcopy-listitem\"><mat-label ui-modeller-type=\"label\" ng-model=\"'International payments'\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"label-p37mltf8t5h\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-kgir3xo0w9m\" class=\"webcopy-listitem\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Request features'\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"label-16xcd6z5s1o\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-uy2a7nj59kf\" class=\"webcopy-listitem\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Direct debit'\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"label-fyw59use5p\">\n                   Label here\n                  <\/mat-label><\/div><\/div><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-wclha512tpb\" class=\"col webcopy-imgbox\"><div ui-modeller-type=\"um-container\" id=\"um-container-06zd80uiq38k\" class=\"webcopy-img\"><img ui-modeller-type=\"image\" global=\"true\" src=\"http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/46bb6dd4-3106-4e79-b2eb-a7c9b26e813f\" alt=\"\" validations-id-mapping=\"{&quot;Id&quot;:&quot;30ff9433-81ef-41b4-9deb-6e4871dcf4ef&quot;,&quot;Reference&quot;:&quot;4e7b178b-1617-48e8-b831-f85df49e3084&quot;}\" variable-id-mapping=\"{&quot;Reference&quot;:&quot;674dd251-2a80-463c-99f5-fc87ab5c6279&quot;}\" value=\"easy-hero.png-BankTheme\" id=\"image-h746vouve2\" srcval=\"assets/easy-hero.png\"/><\/div><\/div><\/div><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-7yl3fu6hyfh\" class=\"container-fluid webcopy-box webcopy-box-alt2\"><div ui-modeller-type=\"um-container\" id=\"um-container-773y8208t95\" class=\"container\"><div ui-modeller-type=\"um-container\" id=\"um-container-vmxakvjtbx\" class=\"um-control\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Our Features'\" id=\"label-7fxi8v3uce\" validations-id-mapping=\"{&quot;Id&quot;:&quot;c5e9f143-1f54-4a0f-89a0-a9076e41b9df&quot;,&quot;Reference *&quot;:&quot;bdb9d0c2-2b48-44ca-af88-056836539f45&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;dcfc9cd1-e081-42d9-93f5-9188fe2148c9&quot;}\" class=\"webcopy-features-heading\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-2kf9clxcfhz\" class=\"um-control\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'\" validations-id-mapping=\"{&quot;Id&quot;:&quot;0fc09654-8d03-4de8-9a08-9bf707a16449&quot;,&quot;Reference *&quot;:&quot;6be271de-7de3-4dd1-94b2-34865dd6b1c6&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;3d96e622-727c-4b2d-a414-3243190a3cf7&quot;}\" id=\"label-d0trh9lpxa4\" class=\"webcopy-features-desc\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-zkkpkkjvoe\" class=\"row row-tiles\"><div ui-modeller-type=\"um-container\" id=\"um-container-59lyqg35aqe\" class=\"col-lg-4 col-sm-6 col-md-6 single-features-box\"><div ui-modeller-type=\"um-container\" id=\"um-container-fd5svnl52x\" class=\"feature-img\"><img ui-modeller-type=\"image\" global=\"true\" src=\"http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/95148ab9-05f3-4d96-982d-103adb44d7fb\" alt=\"\" id=\"image-7vzmytjzjq8\" validations-id-mapping=\"{&quot;Id&quot;:&quot;c83ec066-8baf-4da7-ad71-3e847be44e0d&quot;,&quot;Reference&quot;:&quot;836382e9-3a36-4559-9ff2-fa7bc6770283&quot;}\" variable-id-mapping=\"{&quot;Reference&quot;:&quot;4ab42b83-d49e-4b63-8abe-d3c3ce04ec15&quot;}\" value=\"gears.png-BankTheme\" srcval=\"assets/gears.png\"/><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-zgyc5p2w3z\" class=\"feature-title\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Incredible Infrastructure'\" id=\"label-jql1dlwmn0r\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-jafsqqln24\" class=\"um-control feature-subtitle\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan'\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"label-tmss529kngp\" class=\"um-mat-label\">\n                   Label here\n                  <\/mat-label><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-lw96jqy5ns\" class=\"col-lg-4 col-sm-6 col-md-6 single-features-box\"><div ui-modeller-type=\"um-container\" id=\"um-container-v3z8l9f4bke\" class=\"feature-img\"><img ui-modeller-type=\"image\" global=\"true\" src=\"http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/01ae8bbb-9bcb-4c2e-8f76-4ca771f147c7\" alt=\"\" validations-id-mapping=\"{&quot;Id&quot;:&quot;f8081425-5361-4fd3-8d3a-a5110601f631&quot;,&quot;Reference&quot;:&quot;8125c8a7-5dfd-48da-aa33-e5abd0346984&quot;}\" variable-id-mapping=\"{&quot;Reference&quot;:&quot;066585a4-c968-42bf-b8e3-b5fd6b965861&quot;}\" value=\"mail.png-BankTheme\" id=\"image-iepjxc6fp7b\" srcval=\"assets/mail.png\"/><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-lsgto9iu79\" class=\"feature-title\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Email Notifications'\" validations-id-mapping=\"{&quot;Id&quot;:&quot;1fb9b9f2-bc6e-44b8-86f0-408569476ce0&quot;,&quot;Reference *&quot;:&quot;99a4f620-949b-402b-a0c1-27fb81a3e8d6&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;90067077-ffa1-4277-aa2f-c0b29bca2106&quot;}\" id=\"label-2h0j0j7lf9d\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-s85kb8wxcho\" class=\"um-control feature-subtitle\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan'\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"label-0hxngd8iyqzn\" class=\"um-mat-label\">\n                   Label here\n                  <\/mat-label><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-r1ow79kka9\" class=\"col-lg-4 col-sm-6 col-md-6 single-features-box\"><div ui-modeller-type=\"um-container\" id=\"um-container-w99hql29k8\" class=\"feature-img\"><img ui-modeller-type=\"image\" global=\"true\" src=\"http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/6d6b5d7c-bfe0-4c87-86f2-f67d67ead03a\" alt=\"\" validations-id-mapping=\"{&quot;Id&quot;:&quot;b0c435bb-aee2-4bd3-8622-cdb0c79fdf75&quot;,&quot;Reference&quot;:&quot;9f556746-1048-424e-b2bd-560cb3cef73e&quot;}\" variable-id-mapping=\"{&quot;Reference&quot;:&quot;5c4d493c-69d6-4106-92b1-d56da938f846&quot;}\" value=\"dashboard.png-BankTheme\" id=\"image-1s4kif2s31h\" srcval=\"assets/dashboard.png\"/><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-vjio814eabr\" class=\"feature-title\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Simple Dashboard'\" validations-id-mapping=\"{&quot;Id&quot;:&quot;b03deefc-c766-43d7-9f6e-f84cffa2f813&quot;,&quot;Reference *&quot;:&quot;e0e85022-5af4-41bc-8ada-f69f646ef46e&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;90beb4a4-0f45-4eb4-98f6-1f9253146a41&quot;}\" id=\"label-cltxvzlb8n\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-2xqi2m73lsu\" class=\"um-control feature-subtitle\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan'\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"label-lcdczvp9n8m\" class=\"um-mat-label\">\n                   Label here\n                  <\/mat-label><\/div><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-57at3n08up\" class=\"row row-tiles\"><div ui-modeller-type=\"um-container\" id=\"um-container-7e8f6igpg0w\" class=\"col-lg-4 col-sm-6 col-md-6 single-features-box\"><div ui-modeller-type=\"um-container\" id=\"um-container-t12lormn2d9\" class=\"feature-img\"><img ui-modeller-type=\"image\" global=\"true\" src=\"http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/25a7d651-612e-4a2a-a898-843af0a64940\" alt=\"\" validations-id-mapping=\"{&quot;Id&quot;:&quot;c423742b-7881-46f8-9312-3070e7a1a906&quot;,&quot;Reference&quot;:&quot;ae81e0a2-581b-41b9-a3aa-7906f4a16bec&quot;}\" variable-id-mapping=\"{&quot;Reference&quot;:&quot;6dae3e2b-eecf-4b40-b6da-00be3d76d36c&quot;}\" value=\"info.png-BankTheme\" id=\"image-unlrfcrhan\" srcval=\"assets/info.png\"/><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-t2ynk7xzd1\" class=\"feature-title\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Information Retrieval'\" validations-id-mapping=\"{&quot;Id&quot;:&quot;703f2d6c-3cbe-47e9-8921-030351018825&quot;,&quot;Reference *&quot;:&quot;a6325028-c988-4a8d-83b5-ff0bc7fafa3d&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;71d86dff-96c4-4ac7-a762-0b13b1cd077c&quot;}\" id=\"label-29lrbvdcesd\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-h9nyrh2w0c7\" class=\"um-control feature-subtitle\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan'\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"label-1w1ubonb1aj\" class=\"um-mat-label\">\n                   Label here\n                  <\/mat-label><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-f3pczqj4pb\" class=\"col-lg-4 col-sm-6 col-md-6 single-features-box\"><div ui-modeller-type=\"um-container\" id=\"um-container-hm59clomwqr\" class=\"feature-img\"><img ui-modeller-type=\"image\" global=\"true\" src=\"http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/2140d88d-2a47-4ec5-81b7-0747082e9902\" alt=\"\" validations-id-mapping=\"{&quot;Id&quot;:&quot;10566822-9b78-4645-9057-f8bbf5ed12c9&quot;,&quot;Reference&quot;:&quot;381fe26c-f837-4aa7-88c0-6ea6a455e033&quot;}\" variable-id-mapping=\"{&quot;Reference&quot;:&quot;2fbf6503-a195-4bd4-a26d-7bfedcb01d35&quot;}\" value=\"pointer.png-BankTheme\" id=\"image-pst2vdmv35\" srcval=\"assets/pointer.png\"/><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-bu44yozdaqa\" class=\"feature-title\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Drag and Drop Functionality'\" validations-id-mapping=\"{&quot;Id&quot;:&quot;0812f645-5300-45e0-84cc-94cf64afcd7b&quot;,&quot;Reference *&quot;:&quot;96ec1d92-fdef-44e4-a187-3a0b6078ca5d&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;d83ffd55-1680-4443-afed-1ad717e87ac8&quot;}\" id=\"label-ik1pmdhnjyc\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-cbjjyp0znh\" class=\"um-control feature-subtitle\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan'\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"label-lp96np9bg6\" class=\"um-mat-label\">\n                   Label here\n                  <\/mat-label><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-ygt0huqurf\" class=\"col-lg-4 col-sm-6 col-md-6 single-features-box\"><div ui-modeller-type=\"um-container\" id=\"um-container-8uwvivxz6v5\" class=\"feature-img\"><img ui-modeller-type=\"image\" global=\"true\" src=\"http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/af43136b-abd5-4db2-8cd3-4f4d2d864825\" alt=\"\" validations-id-mapping=\"{&quot;Id&quot;:&quot;6aea7db4-65d3-4cd5-93c3-aaf515a75f9b&quot;,&quot;Reference&quot;:&quot;75738a4c-fe96-4f10-91c7-b3e4158add00&quot;}\" variable-id-mapping=\"{&quot;Reference&quot;:&quot;34c437b2-af8a-4041-aef6-6eb90d8f378a&quot;}\" value=\"notifications.png-BankTheme\" id=\"image-3rbcs13r7fc\" srcval=\"assets/notifications.png\"/><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-sgipvumppnl\" class=\"feature-title\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Deadline Reminders'\" validations-id-mapping=\"{&quot;Id&quot;:&quot;578e0fea-03fd-48fc-b620-18c21a11342c&quot;,&quot;Reference *&quot;:&quot;94a36911-0924-45ad-afe3-05849d863ec5&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;31a7a241-3bf4-453e-a813-953c7bf8af1b&quot;}\" id=\"label-0tmu28fhff7\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-0pqy3i7bu1x9\" class=\"um-control feature-subtitle\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan'\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"label-tj12kmpcg4b\" class=\"um-mat-label\">\n                   Label here\n                  <\/mat-label><\/div><\/div><\/div><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-yb900nid42\" class=\"container-fluid webcopy-box\"><div ui-modeller-type=\"um-container\" id=\"um-container-piswvqaieps\" class=\"container\"><div ui-modeller-type=\"um-container\" id=\"um-container-0cvbzsqs98ja\" class=\"row\"><div ui-modeller-type=\"um-container\" id=\"um-container-hdubv9oqtn\" class=\"col\"><div ui-modeller-type=\"um-container\" id=\"um-container-nctnuu827wq\" class=\"webcopy-title\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Easy Payment to borrow free get a better filling at home'\" validations-id-mapping=\"{&quot;Id&quot;:&quot;88f5da6b-d6dd-48c7-a750-7e14eb19d665&quot;,&quot;Reference *&quot;:&quot;796399e3-645e-4155-998a-a436d7b0b867&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;5a4b9ffb-47f3-4683-b87e-9d4dbdbe3704&quot;}\" id=\"label-ot427mb8ujb\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-hntzrh55bj\" class=\"webcopy-content\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'\" validations-id-mapping=\"{}\" variable-id-mapping=\"{}\" id=\"label-wi6yozt5ua\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-irrr3kjun6p\" class=\"webcopy-content\"><mat-label ui-modeller-type=\"label\" ng-model=\"'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'\" validations-id-mapping=\"{&quot;Id&quot;:&quot;9476ace7-85f6-4388-88b0-7c22928b289a&quot;,&quot;Reference *&quot;:&quot;87643ad9-535d-4548-9efc-bb3bcd939dfb&quot;}\" variable-id-mapping=\"{&quot;Reference *&quot;:&quot;9d3640f3-1f54-4532-b893-a913286fed29&quot;}\" id=\"label-j0nm1bt1tol\">\n                   Label here\n                  <\/mat-label><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-oswkvhbgg2\" class=\"webcopy-buttonbar\"><button ui-modeller-type=\"button\" label=\"GET STARTED\" color=\"primary\" mat-flat-button=\"\" badgecolor=\"#ff4081\" badgesize=\"small\" badgeposition=\"above after\" badgetextcolor=\"#ffffff\" badgeoverlap=\"yes\" iconpos=\"left\" id=\"button-wq91ei5kvxq\" validations-id-mapping=\"{&quot;Id&quot;:&quot;e81fcc5f-2732-4694-a039-bb1b77e659e2&quot;}\" class=\"um-button-icon um-mat-button um-primary-button mat-flat-button mat-primary webcopy-button\"><span data-invisible=\"\" id=\"span-iqhr8bedl3\" data-label-wrapper=\"\" class=\"mat-button-wrapper\">GET STARTED<\/span><div data-invisible=\"\" matripple=\"\" id=\"div-mp63255tj7f\" class=\"mat-button-ripple mat-ripple\"><\/div><div data-invisible=\"\" id=\"div-65vionij8x8\" class=\"mat-button-focus-overlay\"><\/div><span data-menu-wrapper=\"\" id=\"span-yn2ivous36o\" class=\"button-menu-span\"><\/span><\/button><\/div><\/div><div ui-modeller-type=\"um-container\" id=\"um-container-ftqf7ddx8xh\" class=\"col webcopy-imgbox\"><div ui-modeller-type=\"um-container\" id=\"um-container-qxbyir9186d\" class=\"webcopy-img\"><img ui-modeller-type=\"image\" global=\"true\" src=\"http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/4dd6f5ff-6075-4866-8ce7-80ecb1bf163a\" alt=\"\" validations-id-mapping=\"{&quot;Id&quot;:&quot;1dc8dd1d-950c-4917-9295-27d4730ac190&quot;,&quot;Reference&quot;:&quot;ee72bafa-aab7-48f0-aa1b-7781dd6bfe3c&quot;}\" variable-id-mapping=\"{&quot;Reference&quot;:&quot;a770a7b8-6c55-4762-a5fb-4d089c63942a&quot;}\" value=\"career.png-BankTheme\" id=\"image-zfsgzsih5fp\" srcval=\"assets/career.png\"/><\/div><\/div><\/div><\/div><\/div>"
+        },
+        "checksum_new": 1311293058
+    }],
+    "assets": [
+        {
+            "fileJson": "{\"name\":\"banner-fhd.jpg\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/EKYCDemoApp/UI Models/BankTheme\",\"parentId\":\"6d13cfba-14c0-4eaf-8fe2-9f4c565f0fc0\",\"id\":\"a408a925-9189-4827-8594-d960037c4e1e\",\"projectId\":\"682b6794-55a7-4470-b973-ed67c592e3cb\",\"displayName\":\"banner-fhd.jpg-BankTheme\"}",
+            "fileName": "banner-fhd.jpg",
+            "displayName": "banner-fhd.jpg-BankTheme",
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/a408a925-9189-4827-8594-d960037c4e1e",
+            "projectName": "EquatorEKYC",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"piggy.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/EKYCDemoApp/UI Models/BankTheme\",\"parentId\":\"6d13cfba-14c0-4eaf-8fe2-9f4c565f0fc0\",\"id\":\"09aa65d7-331f-446c-9719-a95cf0a37955\",\"projectId\":\"682b6794-55a7-4470-b973-ed67c592e3cb\",\"displayName\":\"piggy.png-BankTheme\"}",
+            "fileName": "piggy.png",
+            "displayName": "piggy.png-BankTheme",
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/09aa65d7-331f-446c-9719-a95cf0a37955",
+            "projectName": "EquatorEKYC",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"secure.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/EKYCDemoApp/UI Models/BankTheme\",\"parentId\":\"6d13cfba-14c0-4eaf-8fe2-9f4c565f0fc0\",\"id\":\"5106c18b-859c-49ab-90dc-b83bc696c756\",\"projectId\":\"682b6794-55a7-4470-b973-ed67c592e3cb\",\"displayName\":\"secure.png-BankTheme\"}",
+            "fileName": "secure.png",
+            "displayName": "secure.png-BankTheme",
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/5106c18b-859c-49ab-90dc-b83bc696c756",
+            "projectName": "EquatorEKYC",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"wallet.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/EKYCDemoApp/UI Models/BankTheme\",\"parentId\":\"6d13cfba-14c0-4eaf-8fe2-9f4c565f0fc0\",\"id\":\"3c6e6db0-17ff-462e-b18e-ce0726561c26\",\"projectId\":\"682b6794-55a7-4470-b973-ed67c592e3cb\",\"displayName\":\"wallet.png-BankTheme\"}",
+            "fileName": "wallet.png",
+            "displayName": "wallet.png-BankTheme",
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/3c6e6db0-17ff-462e-b18e-ce0726561c26",
+            "projectName": "EquatorEKYC",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"verified.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/EKYCDemoApp/UI Models/BankTheme\",\"parentId\":\"6d13cfba-14c0-4eaf-8fe2-9f4c565f0fc0\",\"id\":\"1d029efa-d951-4e65-85a4-a71755c73fde\",\"projectId\":\"682b6794-55a7-4470-b973-ed67c592e3cb\",\"displayName\":\"verified.png-BankTheme\"}",
+            "fileName": "verified.png",
+            "displayName": "verified.png-BankTheme",
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/1d029efa-d951-4e65-85a4-a71755c73fde",
+            "projectName": "EquatorEKYC",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"marketing__two_color.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/EKYCDemoApp/UI Models/BankTheme\",\"parentId\":\"6d13cfba-14c0-4eaf-8fe2-9f4c565f0fc0\",\"id\":\"1d17714e-83b4-4be8-ac3e-f13bd7c4c030\",\"projectId\":\"682b6794-55a7-4470-b973-ed67c592e3cb\",\"displayName\":\"marketing__two_color.png-BankTheme\"}",
+            "fileName": "marketing__two_color.png",
+            "displayName": "marketing__two_color.png-BankTheme",
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/1d17714e-83b4-4be8-ac3e-f13bd7c4c030",
+            "projectName": "EquatorEKYC",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"marketing__two_color.png\",\"type\":9,\"parentName\":\"images\",\"location\":\"/banktheme/UI Models/images\",\"parentId\":\"8658cc75-dd38-4a56-a887-bae05f0a5f93\",\"id\":\"47ab3fd4-3eb3-4c8c-8b9e-4df24f6eb0d2\",\"projectId\":\"7a86de24-e936-45fb-8f9d-b5a716ff666f\",\"displayName\":\"marketing__two_color.png-images\"}",
+            "fileName": "marketing__two_color.png",
+            "displayName": {
+                "parentName": "images",
+                "displayName": "marketing__two_color.png-images",
+                "name": "marketing__two_color.png",
+                "location": "/banktheme/UI Models/images",
+                "id": "47ab3fd4-3eb3-4c8c-8b9e-4df24f6eb0d2",
+                "type": 9,
+                "projectId": "7a86de24-e936-45fb-8f9d-b5a716ff666f",
+                "parentId": "8658cc75-dd38-4a56-a887-bae05f0a5f93"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/7a86de24-e936-45fb-8f9d-b5a716ff666f/files/47ab3fd4-3eb3-4c8c-8b9e-4df24f6eb0d2",
+            "projectName": "banktheme",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"career.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/EKYCDemoApp/UI Models/BankTheme\",\"parentId\":\"6d13cfba-14c0-4eaf-8fe2-9f4c565f0fc0\",\"id\":\"4dd6f5ff-6075-4866-8ce7-80ecb1bf163a\",\"projectId\":\"682b6794-55a7-4470-b973-ed67c592e3cb\",\"displayName\":\"career.png-BankTheme\"}",
+            "fileName": "career.png",
+            "displayName": "career.png-BankTheme",
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/4dd6f5ff-6075-4866-8ce7-80ecb1bf163a",
+            "projectName": "EquatorEKYC",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"large-enterprise.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/EKYCDemoApp/UI Models/BankTheme\",\"parentId\":\"6d13cfba-14c0-4eaf-8fe2-9f4c565f0fc0\",\"id\":\"0d58a164-70b1-4137-8423-03904a625f5d\",\"projectId\":\"682b6794-55a7-4470-b973-ed67c592e3cb\",\"displayName\":\"large-enterprise.png-BankTheme\"}",
+            "fileName": "large-enterprise.png",
+            "displayName": "large-enterprise.png-BankTheme",
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/0d58a164-70b1-4137-8423-03904a625f5d",
+            "projectName": "EquatorEKYC",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"gears.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/EKYCDemoApp/UI Models/BankTheme\",\"parentId\":\"6d13cfba-14c0-4eaf-8fe2-9f4c565f0fc0\",\"id\":\"95148ab9-05f3-4d96-982d-103adb44d7fb\",\"projectId\":\"682b6794-55a7-4470-b973-ed67c592e3cb\",\"displayName\":\"gears.png-BankTheme\"}",
+            "fileName": "gears.png",
+            "displayName": "gears.png-BankTheme",
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/95148ab9-05f3-4d96-982d-103adb44d7fb",
+            "projectName": "EquatorEKYC",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"mail.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/EKYCDemoApp/UI Models/BankTheme\",\"parentId\":\"6d13cfba-14c0-4eaf-8fe2-9f4c565f0fc0\",\"id\":\"01ae8bbb-9bcb-4c2e-8f76-4ca771f147c7\",\"projectId\":\"682b6794-55a7-4470-b973-ed67c592e3cb\",\"displayName\":\"mail.png-BankTheme\"}",
+            "fileName": "mail.png",
+            "displayName": "mail.png-BankTheme",
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/01ae8bbb-9bcb-4c2e-8f76-4ca771f147c7",
+            "projectName": "EquatorEKYC",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"dashboard.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/EKYCDemoApp/UI Models/BankTheme\",\"parentId\":\"6d13cfba-14c0-4eaf-8fe2-9f4c565f0fc0\",\"id\":\"6d6b5d7c-bfe0-4c87-86f2-f67d67ead03a\",\"projectId\":\"682b6794-55a7-4470-b973-ed67c592e3cb\",\"displayName\":\"dashboard.png-BankTheme\"}",
+            "fileName": "dashboard.png",
+            "displayName": "dashboard.png-BankTheme",
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/6d6b5d7c-bfe0-4c87-86f2-f67d67ead03a",
+            "projectName": "EquatorEKYC",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"info.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/EKYCDemoApp/UI Models/BankTheme\",\"parentId\":\"6d13cfba-14c0-4eaf-8fe2-9f4c565f0fc0\",\"id\":\"25a7d651-612e-4a2a-a898-843af0a64940\",\"projectId\":\"682b6794-55a7-4470-b973-ed67c592e3cb\",\"displayName\":\"info.png-BankTheme\"}",
+            "fileName": "info.png",
+            "displayName": "info.png-BankTheme",
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/25a7d651-612e-4a2a-a898-843af0a64940",
+            "projectName": "EquatorEKYC",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"pointer.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/EKYCDemoApp/UI Models/BankTheme\",\"parentId\":\"6d13cfba-14c0-4eaf-8fe2-9f4c565f0fc0\",\"id\":\"2140d88d-2a47-4ec5-81b7-0747082e9902\",\"projectId\":\"682b6794-55a7-4470-b973-ed67c592e3cb\",\"displayName\":\"pointer.png-BankTheme\"}",
+            "fileName": "pointer.png",
+            "displayName": "pointer.png-BankTheme",
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/2140d88d-2a47-4ec5-81b7-0747082e9902",
+            "projectName": "EquatorEKYC",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"notifications.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/EKYCDemoApp/UI Models/BankTheme\",\"parentId\":\"6d13cfba-14c0-4eaf-8fe2-9f4c565f0fc0\",\"id\":\"af43136b-abd5-4db2-8cd3-4f4d2d864825\",\"projectId\":\"682b6794-55a7-4470-b973-ed67c592e3cb\",\"displayName\":\"notifications.png-BankTheme\"}",
+            "fileName": "notifications.png",
+            "displayName": "notifications.png-BankTheme",
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/af43136b-abd5-4db2-8cd3-4f4d2d864825",
+            "projectName": "EquatorEKYC",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"easy-hero.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/EKYCDemoApp/UI Models/BankTheme\",\"parentId\":\"6d13cfba-14c0-4eaf-8fe2-9f4c565f0fc0\",\"id\":\"46bb6dd4-3106-4e79-b2eb-a7c9b26e813f\",\"projectId\":\"682b6794-55a7-4470-b973-ed67c592e3cb\",\"displayName\":\"easy-hero.png-BankTheme\"}",
+            "fileName": "easy-hero.png",
+            "displayName": "easy-hero.png-BankTheme",
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/46bb6dd4-3106-4e79-b2eb-a7c9b26e813f",
+            "projectName": "EquatorEKYC",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"banner-fhd.jpg\",\"type\":9,\"parentName\":\"images\",\"location\":\"/banktheme/UI Models/images\",\"parentId\":\"554e29f2-f229-4374-9f89-bd2062bb3250\",\"id\":\"cd499c14-211d-4e1f-91f1-94b87522d0e3\",\"projectId\":\"fafcceeb-4e3b-40ad-9442-f6bee73c6c07\",\"displayName\":\"banner-fhd.jpg-images\"}",
+            "fileName": "banner-fhd.jpg",
+            "displayName": {
+                "parentName": "images",
+                "displayName": "banner-fhd.jpg-images",
+                "name": "banner-fhd.jpg",
+                "location": "/banktheme/UI Models/images",
+                "id": "cd499c14-211d-4e1f-91f1-94b87522d0e3",
+                "type": 9,
+                "projectId": "fafcceeb-4e3b-40ad-9442-f6bee73c6c07",
+                "parentId": "554e29f2-f229-4374-9f89-bd2062bb3250"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/fafcceeb-4e3b-40ad-9442-f6bee73c6c07/files/cd499c14-211d-4e1f-91f1-94b87522d0e3",
+            "projectName": "banktheme",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"piggy.png\",\"type\":9,\"parentName\":\"images\",\"location\":\"/banktheme/UI Models/images\",\"parentId\":\"554e29f2-f229-4374-9f89-bd2062bb3250\",\"id\":\"30eb7e93-0c87-4ac7-9c96-fb86d251dc02\",\"projectId\":\"fafcceeb-4e3b-40ad-9442-f6bee73c6c07\",\"displayName\":\"piggy.png-images\"}",
+            "fileName": "piggy.png",
+            "displayName": {
+                "parentName": "images",
+                "displayName": "piggy.png-images",
+                "name": "piggy.png",
+                "location": "/banktheme/UI Models/images",
+                "id": "30eb7e93-0c87-4ac7-9c96-fb86d251dc02",
+                "type": 9,
+                "projectId": "fafcceeb-4e3b-40ad-9442-f6bee73c6c07",
+                "parentId": "554e29f2-f229-4374-9f89-bd2062bb3250"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/fafcceeb-4e3b-40ad-9442-f6bee73c6c07/files/30eb7e93-0c87-4ac7-9c96-fb86d251dc02",
+            "projectName": "banktheme",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"secure.png\",\"type\":9,\"parentName\":\"images\",\"location\":\"/banktheme/UI Models/images\",\"parentId\":\"554e29f2-f229-4374-9f89-bd2062bb3250\",\"id\":\"67139bbf-2d72-4153-a85f-9f4f4a355cda\",\"projectId\":\"fafcceeb-4e3b-40ad-9442-f6bee73c6c07\",\"displayName\":\"secure.png-images\"}",
+            "fileName": "secure.png",
+            "displayName": {
+                "parentName": "images",
+                "displayName": "secure.png-images",
+                "name": "secure.png",
+                "location": "/banktheme/UI Models/images",
+                "id": "67139bbf-2d72-4153-a85f-9f4f4a355cda",
+                "type": 9,
+                "projectId": "fafcceeb-4e3b-40ad-9442-f6bee73c6c07",
+                "parentId": "554e29f2-f229-4374-9f89-bd2062bb3250"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/fafcceeb-4e3b-40ad-9442-f6bee73c6c07/files/67139bbf-2d72-4153-a85f-9f4f4a355cda",
+            "projectName": "banktheme",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"wallet.png\",\"type\":9,\"parentName\":\"images\",\"location\":\"/banktheme/UI Models/images\",\"parentId\":\"554e29f2-f229-4374-9f89-bd2062bb3250\",\"id\":\"acd6226b-ec9d-4e26-90be-5c74d512eab7\",\"projectId\":\"fafcceeb-4e3b-40ad-9442-f6bee73c6c07\",\"displayName\":\"wallet.png-images\"}",
+            "fileName": "wallet.png",
+            "displayName": {
+                "parentName": "images",
+                "displayName": "wallet.png-images",
+                "name": "wallet.png",
+                "location": "/banktheme/UI Models/images",
+                "id": "acd6226b-ec9d-4e26-90be-5c74d512eab7",
+                "type": 9,
+                "projectId": "fafcceeb-4e3b-40ad-9442-f6bee73c6c07",
+                "parentId": "554e29f2-f229-4374-9f89-bd2062bb3250"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/fafcceeb-4e3b-40ad-9442-f6bee73c6c07/files/acd6226b-ec9d-4e26-90be-5c74d512eab7",
+            "projectName": "banktheme",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"verified.png\",\"type\":9,\"parentName\":\"images\",\"location\":\"/banktheme/UI Models/images\",\"parentId\":\"554e29f2-f229-4374-9f89-bd2062bb3250\",\"id\":\"b30fb052-3071-43e7-b325-fcddf5007036\",\"projectId\":\"fafcceeb-4e3b-40ad-9442-f6bee73c6c07\",\"displayName\":\"verified.png-images\"}",
+            "fileName": "verified.png",
+            "displayName": {
+                "parentName": "images",
+                "displayName": "verified.png-images",
+                "name": "verified.png",
+                "location": "/banktheme/UI Models/images",
+                "id": "b30fb052-3071-43e7-b325-fcddf5007036",
+                "type": 9,
+                "projectId": "fafcceeb-4e3b-40ad-9442-f6bee73c6c07",
+                "parentId": "554e29f2-f229-4374-9f89-bd2062bb3250"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/fafcceeb-4e3b-40ad-9442-f6bee73c6c07/files/b30fb052-3071-43e7-b325-fcddf5007036",
+            "projectName": "banktheme",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"marketing__two_color.png\",\"type\":9,\"parentName\":\"images\",\"location\":\"/banktheme/UI Models/images\",\"parentId\":\"554e29f2-f229-4374-9f89-bd2062bb3250\",\"id\":\"9de8a590-a8a0-4796-882e-e324e96e5f7d\",\"projectId\":\"fafcceeb-4e3b-40ad-9442-f6bee73c6c07\",\"displayName\":\"marketing__two_color.png-images\"}",
+            "fileName": "marketing__two_color.png",
+            "displayName": {
+                "parentName": "images",
+                "displayName": "marketing__two_color.png-images",
+                "name": "marketing__two_color.png",
+                "location": "/banktheme/UI Models/images",
+                "id": "9de8a590-a8a0-4796-882e-e324e96e5f7d",
+                "type": 9,
+                "projectId": "fafcceeb-4e3b-40ad-9442-f6bee73c6c07",
+                "parentId": "554e29f2-f229-4374-9f89-bd2062bb3250"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/fafcceeb-4e3b-40ad-9442-f6bee73c6c07/files/9de8a590-a8a0-4796-882e-e324e96e5f7d",
+            "projectName": "banktheme",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"career.png\",\"type\":9,\"parentName\":\"images\",\"location\":\"/banktheme/UI Models/images\",\"parentId\":\"554e29f2-f229-4374-9f89-bd2062bb3250\",\"id\":\"64046dc3-31fd-435d-a73c-dcd58ff83c9a\",\"projectId\":\"fafcceeb-4e3b-40ad-9442-f6bee73c6c07\",\"displayName\":\"career.png-images\"}",
+            "fileName": "career.png",
+            "displayName": {
+                "parentName": "images",
+                "displayName": "career.png-images",
+                "name": "career.png",
+                "location": "/banktheme/UI Models/images",
+                "id": "64046dc3-31fd-435d-a73c-dcd58ff83c9a",
+                "type": 9,
+                "projectId": "fafcceeb-4e3b-40ad-9442-f6bee73c6c07",
+                "parentId": "554e29f2-f229-4374-9f89-bd2062bb3250"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/fafcceeb-4e3b-40ad-9442-f6bee73c6c07/files/64046dc3-31fd-435d-a73c-dcd58ff83c9a",
+            "projectName": "banktheme",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"large-enterprise.png\",\"type\":9,\"parentName\":\"images\",\"location\":\"/banktheme/UI Models/images\",\"parentId\":\"554e29f2-f229-4374-9f89-bd2062bb3250\",\"id\":\"014af7e8-ca31-4efd-8105-4ce397a15957\",\"projectId\":\"fafcceeb-4e3b-40ad-9442-f6bee73c6c07\",\"displayName\":\"large-enterprise.png-images\"}",
+            "fileName": "large-enterprise.png",
+            "displayName": {
+                "parentName": "images",
+                "displayName": "large-enterprise.png-images",
+                "name": "large-enterprise.png",
+                "location": "/banktheme/UI Models/images",
+                "id": "014af7e8-ca31-4efd-8105-4ce397a15957",
+                "type": 9,
+                "projectId": "fafcceeb-4e3b-40ad-9442-f6bee73c6c07",
+                "parentId": "554e29f2-f229-4374-9f89-bd2062bb3250"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/fafcceeb-4e3b-40ad-9442-f6bee73c6c07/files/014af7e8-ca31-4efd-8105-4ce397a15957",
+            "projectName": "banktheme",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"gears.png\",\"type\":9,\"parentName\":\"images\",\"location\":\"/banktheme/UI Models/images\",\"parentId\":\"554e29f2-f229-4374-9f89-bd2062bb3250\",\"id\":\"bff5722f-0e5d-48b4-a924-61cfb64f014d\",\"projectId\":\"fafcceeb-4e3b-40ad-9442-f6bee73c6c07\",\"displayName\":\"gears.png-images\"}",
+            "fileName": "gears.png",
+            "displayName": {
+                "parentName": "images",
+                "displayName": "gears.png-images",
+                "name": "gears.png",
+                "location": "/banktheme/UI Models/images",
+                "id": "bff5722f-0e5d-48b4-a924-61cfb64f014d",
+                "type": 9,
+                "projectId": "fafcceeb-4e3b-40ad-9442-f6bee73c6c07",
+                "parentId": "554e29f2-f229-4374-9f89-bd2062bb3250"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/fafcceeb-4e3b-40ad-9442-f6bee73c6c07/files/bff5722f-0e5d-48b4-a924-61cfb64f014d",
+            "projectName": "banktheme",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"mail.png\",\"type\":9,\"parentName\":\"images\",\"location\":\"/banktheme/UI Models/images\",\"parentId\":\"554e29f2-f229-4374-9f89-bd2062bb3250\",\"id\":\"01ed4f32-782f-40ab-8bc8-324c6f2e6a80\",\"projectId\":\"fafcceeb-4e3b-40ad-9442-f6bee73c6c07\",\"displayName\":\"mail.png-images\"}",
+            "fileName": "mail.png",
+            "displayName": {
+                "parentName": "images",
+                "displayName": "mail.png-images",
+                "name": "mail.png",
+                "location": "/banktheme/UI Models/images",
+                "id": "01ed4f32-782f-40ab-8bc8-324c6f2e6a80",
+                "type": 9,
+                "projectId": "fafcceeb-4e3b-40ad-9442-f6bee73c6c07",
+                "parentId": "554e29f2-f229-4374-9f89-bd2062bb3250"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/fafcceeb-4e3b-40ad-9442-f6bee73c6c07/files/01ed4f32-782f-40ab-8bc8-324c6f2e6a80",
+            "projectName": "banktheme",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"dashboard.png\",\"type\":9,\"parentName\":\"images\",\"location\":\"/banktheme/UI Models/images\",\"parentId\":\"554e29f2-f229-4374-9f89-bd2062bb3250\",\"id\":\"00ebc6ca-1a06-4bb8-8aff-675f48f08f60\",\"projectId\":\"fafcceeb-4e3b-40ad-9442-f6bee73c6c07\",\"displayName\":\"dashboard.png-images\"}",
+            "fileName": "dashboard.png",
+            "displayName": {
+                "parentName": "images",
+                "displayName": "dashboard.png-images",
+                "name": "dashboard.png",
+                "location": "/banktheme/UI Models/images",
+                "id": "00ebc6ca-1a06-4bb8-8aff-675f48f08f60",
+                "type": 9,
+                "projectId": "fafcceeb-4e3b-40ad-9442-f6bee73c6c07",
+                "parentId": "554e29f2-f229-4374-9f89-bd2062bb3250"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/fafcceeb-4e3b-40ad-9442-f6bee73c6c07/files/00ebc6ca-1a06-4bb8-8aff-675f48f08f60",
+            "projectName": "banktheme",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"info.png\",\"type\":9,\"parentName\":\"images\",\"location\":\"/banktheme/UI Models/images\",\"parentId\":\"554e29f2-f229-4374-9f89-bd2062bb3250\",\"id\":\"8b749c15-761b-437f-afc6-5cafb43ac633\",\"projectId\":\"fafcceeb-4e3b-40ad-9442-f6bee73c6c07\",\"displayName\":\"info.png-images\"}",
+            "fileName": "info.png",
+            "displayName": {
+                "parentName": "images",
+                "displayName": "info.png-images",
+                "name": "info.png",
+                "location": "/banktheme/UI Models/images",
+                "id": "8b749c15-761b-437f-afc6-5cafb43ac633",
+                "type": 9,
+                "projectId": "fafcceeb-4e3b-40ad-9442-f6bee73c6c07",
+                "parentId": "554e29f2-f229-4374-9f89-bd2062bb3250"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/fafcceeb-4e3b-40ad-9442-f6bee73c6c07/files/8b749c15-761b-437f-afc6-5cafb43ac633",
+            "projectName": "banktheme",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"pointer.png\",\"type\":9,\"parentName\":\"images\",\"location\":\"/banktheme/UI Models/images\",\"parentId\":\"554e29f2-f229-4374-9f89-bd2062bb3250\",\"id\":\"0bfa15fa-79e9-46a0-8d1b-ae09eba65d61\",\"projectId\":\"fafcceeb-4e3b-40ad-9442-f6bee73c6c07\",\"displayName\":\"pointer.png-images\"}",
+            "fileName": "pointer.png",
+            "displayName": {
+                "parentName": "images",
+                "displayName": "pointer.png-images",
+                "name": "pointer.png",
+                "location": "/banktheme/UI Models/images",
+                "id": "0bfa15fa-79e9-46a0-8d1b-ae09eba65d61",
+                "type": 9,
+                "projectId": "fafcceeb-4e3b-40ad-9442-f6bee73c6c07",
+                "parentId": "554e29f2-f229-4374-9f89-bd2062bb3250"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/fafcceeb-4e3b-40ad-9442-f6bee73c6c07/files/0bfa15fa-79e9-46a0-8d1b-ae09eba65d61",
+            "projectName": "banktheme",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"notifications.png\",\"type\":9,\"parentName\":\"images\",\"location\":\"/banktheme/UI Models/images\",\"parentId\":\"554e29f2-f229-4374-9f89-bd2062bb3250\",\"id\":\"e52f0c8f-5ee2-45f2-84bf-6c4a716cfe19\",\"projectId\":\"fafcceeb-4e3b-40ad-9442-f6bee73c6c07\",\"displayName\":\"notifications.png-images\"}",
+            "fileName": "notifications.png",
+            "displayName": {
+                "parentName": "images",
+                "displayName": "notifications.png-images",
+                "name": "notifications.png",
+                "location": "/banktheme/UI Models/images",
+                "id": "e52f0c8f-5ee2-45f2-84bf-6c4a716cfe19",
+                "type": 9,
+                "projectId": "fafcceeb-4e3b-40ad-9442-f6bee73c6c07",
+                "parentId": "554e29f2-f229-4374-9f89-bd2062bb3250"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/fafcceeb-4e3b-40ad-9442-f6bee73c6c07/files/e52f0c8f-5ee2-45f2-84bf-6c4a716cfe19",
+            "projectName": "banktheme",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"easy-hero.png\",\"type\":9,\"parentName\":\"images\",\"location\":\"/banktheme/UI Models/images\",\"parentId\":\"554e29f2-f229-4374-9f89-bd2062bb3250\",\"id\":\"97da7d7b-0e0a-402a-9ad8-a963160bf7ac\",\"projectId\":\"fafcceeb-4e3b-40ad-9442-f6bee73c6c07\",\"displayName\":\"easy-hero.png-images\"}",
+            "fileName": "easy-hero.png",
+            "displayName": {
+                "parentName": "images",
+                "displayName": "easy-hero.png-images",
+                "name": "easy-hero.png",
+                "location": "/banktheme/UI Models/images",
+                "id": "97da7d7b-0e0a-402a-9ad8-a963160bf7ac",
+                "type": 9,
+                "projectId": "fafcceeb-4e3b-40ad-9442-f6bee73c6c07",
+                "parentId": "554e29f2-f229-4374-9f89-bd2062bb3250"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/fafcceeb-4e3b-40ad-9442-f6bee73c6c07/files/97da7d7b-0e0a-402a-9ad8-a963160bf7ac",
+            "projectName": "banktheme",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"piggy.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKYCApplications/UI Models/BankTheme\",\"parentId\":\"a67f1b0e-92bb-4baa-8a05-9eae057e5840\",\"id\":\"1d5a7644-7f9e-4c3b-ac1e-55ed204ce93d\",\"projectId\":\"abe205d7-6bbc-4a55-87eb-1c221e9f2fd4\",\"displayName\":\"piggy.png-BankTheme\"}",
+            "fileName": "piggy.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "piggy.png-BankTheme",
+                "name": "piggy.png",
+                "location": "/eKYCApplications/UI Models/BankTheme",
+                "id": "1d5a7644-7f9e-4c3b-ac1e-55ed204ce93d",
+                "type": 9,
+                "projectId": "abe205d7-6bbc-4a55-87eb-1c221e9f2fd4",
+                "parentId": "a67f1b0e-92bb-4baa-8a05-9eae057e5840"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/abe205d7-6bbc-4a55-87eb-1c221e9f2fd4/files/1d5a7644-7f9e-4c3b-ac1e-55ed204ce93d",
+            "projectName": "eKYCApplications",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"secure.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKYCApplications/UI Models/BankTheme\",\"parentId\":\"a67f1b0e-92bb-4baa-8a05-9eae057e5840\",\"id\":\"394e5256-eb7c-4f40-bc5f-8f1aac74f97a\",\"projectId\":\"abe205d7-6bbc-4a55-87eb-1c221e9f2fd4\",\"displayName\":\"secure.png-BankTheme\"}",
+            "fileName": "secure.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "secure.png-BankTheme",
+                "name": "secure.png",
+                "location": "/eKYCApplications/UI Models/BankTheme",
+                "id": "394e5256-eb7c-4f40-bc5f-8f1aac74f97a",
+                "type": 9,
+                "projectId": "abe205d7-6bbc-4a55-87eb-1c221e9f2fd4",
+                "parentId": "a67f1b0e-92bb-4baa-8a05-9eae057e5840"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/abe205d7-6bbc-4a55-87eb-1c221e9f2fd4/files/394e5256-eb7c-4f40-bc5f-8f1aac74f97a",
+            "projectName": "eKYCApplications",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"wallet.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKYCApplications/UI Models/BankTheme\",\"parentId\":\"a67f1b0e-92bb-4baa-8a05-9eae057e5840\",\"id\":\"fe1cdd93-f59d-4b10-9844-ed1e5a6b33ce\",\"projectId\":\"abe205d7-6bbc-4a55-87eb-1c221e9f2fd4\",\"displayName\":\"wallet.png-BankTheme\"}",
+            "fileName": "wallet.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "wallet.png-BankTheme",
+                "name": "wallet.png",
+                "location": "/eKYCApplications/UI Models/BankTheme",
+                "id": "fe1cdd93-f59d-4b10-9844-ed1e5a6b33ce",
+                "type": 9,
+                "projectId": "abe205d7-6bbc-4a55-87eb-1c221e9f2fd4",
+                "parentId": "a67f1b0e-92bb-4baa-8a05-9eae057e5840"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/abe205d7-6bbc-4a55-87eb-1c221e9f2fd4/files/fe1cdd93-f59d-4b10-9844-ed1e5a6b33ce",
+            "projectName": "eKYCApplications",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"verified.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKYCApplications/UI Models/BankTheme\",\"parentId\":\"a67f1b0e-92bb-4baa-8a05-9eae057e5840\",\"id\":\"6cddcf90-888a-471e-8230-09996c8f27b5\",\"projectId\":\"abe205d7-6bbc-4a55-87eb-1c221e9f2fd4\",\"displayName\":\"verified.png-BankTheme\"}",
+            "fileName": "verified.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "verified.png-BankTheme",
+                "name": "verified.png",
+                "location": "/eKYCApplications/UI Models/BankTheme",
+                "id": "6cddcf90-888a-471e-8230-09996c8f27b5",
+                "type": 9,
+                "projectId": "abe205d7-6bbc-4a55-87eb-1c221e9f2fd4",
+                "parentId": "a67f1b0e-92bb-4baa-8a05-9eae057e5840"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/abe205d7-6bbc-4a55-87eb-1c221e9f2fd4/files/6cddcf90-888a-471e-8230-09996c8f27b5",
+            "projectName": "eKYCApplications",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"career.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKYCApplications/UI Models/BankTheme\",\"parentId\":\"a67f1b0e-92bb-4baa-8a05-9eae057e5840\",\"id\":\"61a53ece-f220-414b-a4b1-20f084c751bb\",\"projectId\":\"abe205d7-6bbc-4a55-87eb-1c221e9f2fd4\",\"displayName\":\"career.png-BankTheme\"}",
+            "fileName": "career.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "career.png-BankTheme",
+                "name": "career.png",
+                "location": "/eKYCApplications/UI Models/BankTheme",
+                "id": "61a53ece-f220-414b-a4b1-20f084c751bb",
+                "type": 9,
+                "projectId": "abe205d7-6bbc-4a55-87eb-1c221e9f2fd4",
+                "parentId": "a67f1b0e-92bb-4baa-8a05-9eae057e5840"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/abe205d7-6bbc-4a55-87eb-1c221e9f2fd4/files/61a53ece-f220-414b-a4b1-20f084c751bb",
+            "projectName": "eKYCApplications",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"easy-hero.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKYCApplications/UI Models/BankTheme\",\"parentId\":\"a67f1b0e-92bb-4baa-8a05-9eae057e5840\",\"id\":\"313d2350-a3b5-411b-9edf-731d85f1e6c8\",\"projectId\":\"abe205d7-6bbc-4a55-87eb-1c221e9f2fd4\",\"displayName\":\"easy-hero.png-BankTheme\"}",
+            "fileName": "easy-hero.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "easy-hero.png-BankTheme",
+                "name": "easy-hero.png",
+                "location": "/eKYCApplications/UI Models/BankTheme",
+                "id": "313d2350-a3b5-411b-9edf-731d85f1e6c8",
+                "type": 9,
+                "projectId": "abe205d7-6bbc-4a55-87eb-1c221e9f2fd4",
+                "parentId": "a67f1b0e-92bb-4baa-8a05-9eae057e5840"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/abe205d7-6bbc-4a55-87eb-1c221e9f2fd4/files/313d2350-a3b5-411b-9edf-731d85f1e6c8",
+            "projectName": "eKYCApplications",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"large-enterprise.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKYCApplications/UI Models/BankTheme\",\"parentId\":\"a67f1b0e-92bb-4baa-8a05-9eae057e5840\",\"id\":\"26ecc0a5-2028-4e39-8f60-0ec9cca5c99f\",\"projectId\":\"abe205d7-6bbc-4a55-87eb-1c221e9f2fd4\",\"displayName\":\"large-enterprise.png-BankTheme\"}",
+            "fileName": "large-enterprise.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "large-enterprise.png-BankTheme",
+                "name": "large-enterprise.png",
+                "location": "/eKYCApplications/UI Models/BankTheme",
+                "id": "26ecc0a5-2028-4e39-8f60-0ec9cca5c99f",
+                "type": 9,
+                "projectId": "abe205d7-6bbc-4a55-87eb-1c221e9f2fd4",
+                "parentId": "a67f1b0e-92bb-4baa-8a05-9eae057e5840"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/abe205d7-6bbc-4a55-87eb-1c221e9f2fd4/files/26ecc0a5-2028-4e39-8f60-0ec9cca5c99f",
+            "projectName": "eKYCApplications",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"marketing__two_color.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKYCApplications/UI Models/BankTheme\",\"parentId\":\"a67f1b0e-92bb-4baa-8a05-9eae057e5840\",\"id\":\"e448c8c2-1476-4cf8-b979-dd86dc52a94a\",\"projectId\":\"abe205d7-6bbc-4a55-87eb-1c221e9f2fd4\",\"displayName\":\"marketing__two_color.png-BankTheme\"}",
+            "fileName": "marketing__two_color.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "marketing__two_color.png-BankTheme",
+                "name": "marketing__two_color.png",
+                "location": "/eKYCApplications/UI Models/BankTheme",
+                "id": "e448c8c2-1476-4cf8-b979-dd86dc52a94a",
+                "type": 9,
+                "projectId": "abe205d7-6bbc-4a55-87eb-1c221e9f2fd4",
+                "parentId": "a67f1b0e-92bb-4baa-8a05-9eae057e5840"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/abe205d7-6bbc-4a55-87eb-1c221e9f2fd4/files/e448c8c2-1476-4cf8-b979-dd86dc52a94a",
+            "projectName": "eKYCApplications",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"gears.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKYCApplications/UI Models/BankTheme\",\"parentId\":\"a67f1b0e-92bb-4baa-8a05-9eae057e5840\",\"id\":\"2d8866cb-04be-4085-8662-07605e025881\",\"projectId\":\"abe205d7-6bbc-4a55-87eb-1c221e9f2fd4\",\"displayName\":\"gears.png-BankTheme\"}",
+            "fileName": "gears.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "gears.png-BankTheme",
+                "name": "gears.png",
+                "location": "/eKYCApplications/UI Models/BankTheme",
+                "id": "2d8866cb-04be-4085-8662-07605e025881",
+                "type": 9,
+                "projectId": "abe205d7-6bbc-4a55-87eb-1c221e9f2fd4",
+                "parentId": "a67f1b0e-92bb-4baa-8a05-9eae057e5840"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/abe205d7-6bbc-4a55-87eb-1c221e9f2fd4/files/2d8866cb-04be-4085-8662-07605e025881",
+            "projectName": "eKYCApplications",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"notifications.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKYCApplications/UI Models/BankTheme\",\"parentId\":\"a67f1b0e-92bb-4baa-8a05-9eae057e5840\",\"id\":\"3e383e91-9668-4ba1-a85a-d9672091536b\",\"projectId\":\"abe205d7-6bbc-4a55-87eb-1c221e9f2fd4\",\"displayName\":\"notifications.png-BankTheme\"}",
+            "fileName": "notifications.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "notifications.png-BankTheme",
+                "name": "notifications.png",
+                "location": "/eKYCApplications/UI Models/BankTheme",
+                "id": "3e383e91-9668-4ba1-a85a-d9672091536b",
+                "type": 9,
+                "projectId": "abe205d7-6bbc-4a55-87eb-1c221e9f2fd4",
+                "parentId": "a67f1b0e-92bb-4baa-8a05-9eae057e5840"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/abe205d7-6bbc-4a55-87eb-1c221e9f2fd4/files/3e383e91-9668-4ba1-a85a-d9672091536b",
+            "projectName": "eKYCApplications",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"mail.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKYCApplications/UI Models/BankTheme\",\"parentId\":\"a67f1b0e-92bb-4baa-8a05-9eae057e5840\",\"id\":\"aa489d1f-910a-4850-9fd7-cf5372c6ffb7\",\"projectId\":\"abe205d7-6bbc-4a55-87eb-1c221e9f2fd4\",\"displayName\":\"mail.png-BankTheme\"}",
+            "fileName": "mail.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "mail.png-BankTheme",
+                "name": "mail.png",
+                "location": "/eKYCApplications/UI Models/BankTheme",
+                "id": "aa489d1f-910a-4850-9fd7-cf5372c6ffb7",
+                "type": 9,
+                "projectId": "abe205d7-6bbc-4a55-87eb-1c221e9f2fd4",
+                "parentId": "a67f1b0e-92bb-4baa-8a05-9eae057e5840"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/abe205d7-6bbc-4a55-87eb-1c221e9f2fd4/files/aa489d1f-910a-4850-9fd7-cf5372c6ffb7",
+            "projectName": "eKYCApplications",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"dashboard.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKYCApplications/UI Models/BankTheme\",\"parentId\":\"a67f1b0e-92bb-4baa-8a05-9eae057e5840\",\"id\":\"1c08771a-5bbd-4443-af9e-3ac295b42cc8\",\"projectId\":\"abe205d7-6bbc-4a55-87eb-1c221e9f2fd4\",\"displayName\":\"dashboard.png-BankTheme\"}",
+            "fileName": "dashboard.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "dashboard.png-BankTheme",
+                "name": "dashboard.png",
+                "location": "/eKYCApplications/UI Models/BankTheme",
+                "id": "1c08771a-5bbd-4443-af9e-3ac295b42cc8",
+                "type": 9,
+                "projectId": "abe205d7-6bbc-4a55-87eb-1c221e9f2fd4",
+                "parentId": "a67f1b0e-92bb-4baa-8a05-9eae057e5840"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/abe205d7-6bbc-4a55-87eb-1c221e9f2fd4/files/1c08771a-5bbd-4443-af9e-3ac295b42cc8",
+            "projectName": "eKYCApplications",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"pointer.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKYCApplications/UI Models/BankTheme\",\"parentId\":\"a67f1b0e-92bb-4baa-8a05-9eae057e5840\",\"id\":\"12f0b6d5-9249-4aa9-a337-69cfd3286c7c\",\"projectId\":\"abe205d7-6bbc-4a55-87eb-1c221e9f2fd4\",\"displayName\":\"pointer.png-BankTheme\"}",
+            "fileName": "pointer.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "pointer.png-BankTheme",
+                "name": "pointer.png",
+                "location": "/eKYCApplications/UI Models/BankTheme",
+                "id": "12f0b6d5-9249-4aa9-a337-69cfd3286c7c",
+                "type": 9,
+                "projectId": "abe205d7-6bbc-4a55-87eb-1c221e9f2fd4",
+                "parentId": "a67f1b0e-92bb-4baa-8a05-9eae057e5840"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/abe205d7-6bbc-4a55-87eb-1c221e9f2fd4/files/12f0b6d5-9249-4aa9-a337-69cfd3286c7c",
+            "projectName": "eKYCApplications",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"info.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKYCApplications/UI Models/BankTheme\",\"parentId\":\"a67f1b0e-92bb-4baa-8a05-9eae057e5840\",\"id\":\"402b9f26-a3c5-4226-a404-0011319ae5a1\",\"projectId\":\"abe205d7-6bbc-4a55-87eb-1c221e9f2fd4\",\"displayName\":\"info.png-BankTheme\"}",
+            "fileName": "info.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "info.png-BankTheme",
+                "name": "info.png",
+                "location": "/eKYCApplications/UI Models/BankTheme",
+                "id": "402b9f26-a3c5-4226-a404-0011319ae5a1",
+                "type": 9,
+                "projectId": "abe205d7-6bbc-4a55-87eb-1c221e9f2fd4",
+                "parentId": "a67f1b0e-92bb-4baa-8a05-9eae057e5840"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/abe205d7-6bbc-4a55-87eb-1c221e9f2fd4/files/402b9f26-a3c5-4226-a404-0011319ae5a1",
+            "projectName": "eKYCApplications",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"banner-fhd.jpg\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKYCApplications/UI Models/BankTheme\",\"parentId\":\"a67f1b0e-92bb-4baa-8a05-9eae057e5840\",\"id\":\"dd7ff5b4-c48f-43c0-846d-00a6b328d671\",\"projectId\":\"abe205d7-6bbc-4a55-87eb-1c221e9f2fd4\",\"displayName\":\"banner-fhd.jpg-BankTheme\"}",
+            "fileName": "banner-fhd.jpg",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "banner-fhd.jpg-BankTheme",
+                "name": "banner-fhd.jpg",
+                "location": "/eKYCApplications/UI Models/BankTheme",
+                "id": "dd7ff5b4-c48f-43c0-846d-00a6b328d671",
+                "type": 9,
+                "projectId": "abe205d7-6bbc-4a55-87eb-1c221e9f2fd4",
+                "parentId": "a67f1b0e-92bb-4baa-8a05-9eae057e5840"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/abe205d7-6bbc-4a55-87eb-1c221e9f2fd4/files/dd7ff5b4-c48f-43c0-846d-00a6b328d671",
+            "projectName": "eKYCApplications",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"kycBanner.png\",\"type\":9,\"parentName\":\"UI Models\",\"location\":\"/eKycAppl/UI Models\",\"parentId\":\"e53f5a3b-5aee-4344-9b80-f19f99327e9d\",\"id\":\"bb93a798-dbca-4a84-be9b-a6dfd91ea165\",\"projectId\":\"7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea\",\"displayName\":\"kycBanner.png-UI Models\"}",
+            "fileName": "kycBanner.png",
+            "displayName": {
+                "parentName": "UI Models",
+                "displayName": "kycBanner.png-UI Models",
+                "name": "kycBanner.png",
+                "location": "/eKycAppl/UI Models",
+                "id": "bb93a798-dbca-4a84-be9b-a6dfd91ea165",
+                "type": 9,
+                "projectId": "7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea",
+                "parentId": "e53f5a3b-5aee-4344-9b80-f19f99327e9d"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea/files/bb93a798-dbca-4a84-be9b-a6dfd91ea165",
+            "projectName": "eKycAppl",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"banner-fhd.jpg\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKycAppl/UI Models/BankTheme\",\"parentId\":\"c4dfd26c-ca04-414d-b8ae-2d5a703f0101\",\"id\":\"7bfc0984-198f-4e5b-95fd-202fb23164e6\",\"projectId\":\"7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea\",\"displayName\":\"banner-fhd.jpg-BankTheme\"}",
+            "fileName": "banner-fhd.jpg",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "banner-fhd.jpg-BankTheme",
+                "name": "banner-fhd.jpg",
+                "location": "/eKycAppl/UI Models/BankTheme",
+                "id": "7bfc0984-198f-4e5b-95fd-202fb23164e6",
+                "type": 9,
+                "projectId": "7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea",
+                "parentId": "c4dfd26c-ca04-414d-b8ae-2d5a703f0101"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea/files/7bfc0984-198f-4e5b-95fd-202fb23164e6",
+            "projectName": "eKycAppl",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"secure.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKycAppl/UI Models/BankTheme\",\"parentId\":\"c4dfd26c-ca04-414d-b8ae-2d5a703f0101\",\"id\":\"a9ab85d6-b03b-4c9f-85fd-7fb3e2095903\",\"projectId\":\"7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea\",\"displayName\":\"secure.png-BankTheme\"}",
+            "fileName": "secure.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "secure.png-BankTheme",
+                "name": "secure.png",
+                "location": "/eKycAppl/UI Models/BankTheme",
+                "id": "a9ab85d6-b03b-4c9f-85fd-7fb3e2095903",
+                "type": 9,
+                "projectId": "7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea",
+                "parentId": "c4dfd26c-ca04-414d-b8ae-2d5a703f0101"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea/files/a9ab85d6-b03b-4c9f-85fd-7fb3e2095903",
+            "projectName": "eKycAppl",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"piggy.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKycAppl/UI Models/BankTheme\",\"parentId\":\"c4dfd26c-ca04-414d-b8ae-2d5a703f0101\",\"id\":\"c9707a0e-ecd1-4821-a7a0-ff0a817d6e21\",\"projectId\":\"7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea\",\"displayName\":\"piggy.png-BankTheme\"}",
+            "fileName": "piggy.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "piggy.png-BankTheme",
+                "name": "piggy.png",
+                "location": "/eKycAppl/UI Models/BankTheme",
+                "id": "c9707a0e-ecd1-4821-a7a0-ff0a817d6e21",
+                "type": 9,
+                "projectId": "7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea",
+                "parentId": "c4dfd26c-ca04-414d-b8ae-2d5a703f0101"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea/files/c9707a0e-ecd1-4821-a7a0-ff0a817d6e21",
+            "projectName": "eKycAppl",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"verified.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKycAppl/UI Models/BankTheme\",\"parentId\":\"c4dfd26c-ca04-414d-b8ae-2d5a703f0101\",\"id\":\"4dd4709e-ef5d-45b2-ab3a-fd42630f87b7\",\"projectId\":\"7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea\",\"displayName\":\"verified.png-BankTheme\"}",
+            "fileName": "verified.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "verified.png-BankTheme",
+                "name": "verified.png",
+                "location": "/eKycAppl/UI Models/BankTheme",
+                "id": "4dd4709e-ef5d-45b2-ab3a-fd42630f87b7",
+                "type": 9,
+                "projectId": "7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea",
+                "parentId": "c4dfd26c-ca04-414d-b8ae-2d5a703f0101"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea/files/4dd4709e-ef5d-45b2-ab3a-fd42630f87b7",
+            "projectName": "eKycAppl",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"wallet.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKycAppl/UI Models/BankTheme\",\"parentId\":\"c4dfd26c-ca04-414d-b8ae-2d5a703f0101\",\"id\":\"0ff0c55a-bbf8-4b6d-b3e6-58e58b1a3fd1\",\"projectId\":\"7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea\",\"displayName\":\"wallet.png-BankTheme\"}",
+            "fileName": "wallet.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "wallet.png-BankTheme",
+                "name": "wallet.png",
+                "location": "/eKycAppl/UI Models/BankTheme",
+                "id": "0ff0c55a-bbf8-4b6d-b3e6-58e58b1a3fd1",
+                "type": 9,
+                "projectId": "7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea",
+                "parentId": "c4dfd26c-ca04-414d-b8ae-2d5a703f0101"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea/files/0ff0c55a-bbf8-4b6d-b3e6-58e58b1a3fd1",
+            "projectName": "eKycAppl",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"marketing__two_color.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKycAppl/UI Models/BankTheme\",\"parentId\":\"c4dfd26c-ca04-414d-b8ae-2d5a703f0101\",\"id\":\"d9dc1732-49fd-4fb8-80c8-08e9ce0d78de\",\"projectId\":\"7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea\",\"displayName\":\"marketing__two_color.png-BankTheme\"}",
+            "fileName": "marketing__two_color.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "marketing__two_color.png-BankTheme",
+                "name": "marketing__two_color.png",
+                "location": "/eKycAppl/UI Models/BankTheme",
+                "id": "d9dc1732-49fd-4fb8-80c8-08e9ce0d78de",
+                "type": 9,
+                "projectId": "7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea",
+                "parentId": "c4dfd26c-ca04-414d-b8ae-2d5a703f0101"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea/files/d9dc1732-49fd-4fb8-80c8-08e9ce0d78de",
+            "projectName": "eKycAppl",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"large-enterprise.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKycAppl/UI Models/BankTheme\",\"parentId\":\"c4dfd26c-ca04-414d-b8ae-2d5a703f0101\",\"id\":\"7dd1062b-3bde-4153-9b66-b4e52cf6d364\",\"projectId\":\"7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea\",\"displayName\":\"large-enterprise.png-BankTheme\"}",
+            "fileName": "large-enterprise.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "large-enterprise.png-BankTheme",
+                "name": "large-enterprise.png",
+                "location": "/eKycAppl/UI Models/BankTheme",
+                "id": "7dd1062b-3bde-4153-9b66-b4e52cf6d364",
+                "type": 9,
+                "projectId": "7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea",
+                "parentId": "c4dfd26c-ca04-414d-b8ae-2d5a703f0101"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea/files/7dd1062b-3bde-4153-9b66-b4e52cf6d364",
+            "projectName": "eKycAppl",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"easy-hero.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKycAppl/UI Models/BankTheme\",\"parentId\":\"c4dfd26c-ca04-414d-b8ae-2d5a703f0101\",\"id\":\"4f6a9fdf-8f24-4281-8892-5bb4a52f73de\",\"projectId\":\"7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea\",\"displayName\":\"easy-hero.png-BankTheme\"}",
+            "fileName": "easy-hero.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "easy-hero.png-BankTheme",
+                "name": "easy-hero.png",
+                "location": "/eKycAppl/UI Models/BankTheme",
+                "id": "4f6a9fdf-8f24-4281-8892-5bb4a52f73de",
+                "type": 9,
+                "projectId": "7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea",
+                "parentId": "c4dfd26c-ca04-414d-b8ae-2d5a703f0101"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea/files/4f6a9fdf-8f24-4281-8892-5bb4a52f73de",
+            "projectName": "eKycAppl",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"mail.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKycAppl/UI Models/BankTheme\",\"parentId\":\"c4dfd26c-ca04-414d-b8ae-2d5a703f0101\",\"id\":\"6bd378c2-24ef-4d4a-8d45-14a23c7aa5fb\",\"projectId\":\"7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea\",\"displayName\":\"mail.png-BankTheme\"}",
+            "fileName": "mail.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "mail.png-BankTheme",
+                "name": "mail.png",
+                "location": "/eKycAppl/UI Models/BankTheme",
+                "id": "6bd378c2-24ef-4d4a-8d45-14a23c7aa5fb",
+                "type": 9,
+                "projectId": "7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea",
+                "parentId": "c4dfd26c-ca04-414d-b8ae-2d5a703f0101"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea/files/6bd378c2-24ef-4d4a-8d45-14a23c7aa5fb",
+            "projectName": "eKycAppl",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"dashboard.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKycAppl/UI Models/BankTheme\",\"parentId\":\"c4dfd26c-ca04-414d-b8ae-2d5a703f0101\",\"id\":\"13ed6d81-41a5-4935-a1a4-516fcd782ce1\",\"projectId\":\"7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea\",\"displayName\":\"dashboard.png-BankTheme\"}",
+            "fileName": "dashboard.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "dashboard.png-BankTheme",
+                "name": "dashboard.png",
+                "location": "/eKycAppl/UI Models/BankTheme",
+                "id": "13ed6d81-41a5-4935-a1a4-516fcd782ce1",
+                "type": 9,
+                "projectId": "7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea",
+                "parentId": "c4dfd26c-ca04-414d-b8ae-2d5a703f0101"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea/files/13ed6d81-41a5-4935-a1a4-516fcd782ce1",
+            "projectName": "eKycAppl",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"info.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKycAppl/UI Models/BankTheme\",\"parentId\":\"c4dfd26c-ca04-414d-b8ae-2d5a703f0101\",\"id\":\"28469079-b056-4ee8-a07a-5a94a4624f63\",\"projectId\":\"7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea\",\"displayName\":\"info.png-BankTheme\"}",
+            "fileName": "info.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "info.png-BankTheme",
+                "name": "info.png",
+                "location": "/eKycAppl/UI Models/BankTheme",
+                "id": "28469079-b056-4ee8-a07a-5a94a4624f63",
+                "type": 9,
+                "projectId": "7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea",
+                "parentId": "c4dfd26c-ca04-414d-b8ae-2d5a703f0101"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea/files/28469079-b056-4ee8-a07a-5a94a4624f63",
+            "projectName": "eKycAppl",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"career.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKycAppl/UI Models/BankTheme\",\"parentId\":\"c4dfd26c-ca04-414d-b8ae-2d5a703f0101\",\"id\":\"c863b447-456f-4b31-874e-c664d23e9752\",\"projectId\":\"7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea\",\"displayName\":\"career.png-BankTheme\"}",
+            "fileName": "career.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "career.png-BankTheme",
+                "name": "career.png",
+                "location": "/eKycAppl/UI Models/BankTheme",
+                "id": "c863b447-456f-4b31-874e-c664d23e9752",
+                "type": 9,
+                "projectId": "7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea",
+                "parentId": "c4dfd26c-ca04-414d-b8ae-2d5a703f0101"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea/files/c863b447-456f-4b31-874e-c664d23e9752",
+            "projectName": "eKycAppl",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"pointer.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKycAppl/UI Models/BankTheme\",\"parentId\":\"c4dfd26c-ca04-414d-b8ae-2d5a703f0101\",\"id\":\"5f0c5864-42e9-4b0f-8041-c93e458bdb81\",\"projectId\":\"7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea\",\"displayName\":\"pointer.png-BankTheme\"}",
+            "fileName": "pointer.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "pointer.png-BankTheme",
+                "name": "pointer.png",
+                "location": "/eKycAppl/UI Models/BankTheme",
+                "id": "5f0c5864-42e9-4b0f-8041-c93e458bdb81",
+                "type": 9,
+                "projectId": "7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea",
+                "parentId": "c4dfd26c-ca04-414d-b8ae-2d5a703f0101"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea/files/5f0c5864-42e9-4b0f-8041-c93e458bdb81",
+            "projectName": "eKycAppl",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"notifications.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKycAppl/UI Models/BankTheme\",\"parentId\":\"c4dfd26c-ca04-414d-b8ae-2d5a703f0101\",\"id\":\"9221d3b9-3d85-40e7-b7dc-062e22f94bd3\",\"projectId\":\"7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea\",\"displayName\":\"notifications.png-BankTheme\"}",
+            "fileName": "notifications.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "notifications.png-BankTheme",
+                "name": "notifications.png",
+                "location": "/eKycAppl/UI Models/BankTheme",
+                "id": "9221d3b9-3d85-40e7-b7dc-062e22f94bd3",
+                "type": 9,
+                "projectId": "7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea",
+                "parentId": "c4dfd26c-ca04-414d-b8ae-2d5a703f0101"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea/files/9221d3b9-3d85-40e7-b7dc-062e22f94bd3",
+            "projectName": "eKycAppl",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"gears.png\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/eKycAppl/UI Models/BankTheme\",\"parentId\":\"c4dfd26c-ca04-414d-b8ae-2d5a703f0101\",\"id\":\"7f4e1968-0cd1-4462-b09d-9ecae899c83e\",\"projectId\":\"7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea\",\"displayName\":\"gears.png-BankTheme\"}",
+            "fileName": "gears.png",
+            "displayName": {
+                "parentName": "BankTheme",
+                "displayName": "gears.png-BankTheme",
+                "name": "gears.png",
+                "location": "/eKycAppl/UI Models/BankTheme",
+                "id": "7f4e1968-0cd1-4462-b09d-9ecae899c83e",
+                "type": 9,
+                "projectId": "7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea",
+                "parentId": "c4dfd26c-ca04-414d-b8ae-2d5a703f0101"
+            },
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/7a8a64c4-ea1c-432b-8a0c-4cabd3b876ea/files/7f4e1968-0cd1-4462-b09d-9ecae899c83e",
+            "projectName": "eKycAppl",
+            "type": "image"
+        },
+        {
+            "fileJson": "{\"name\":\"banktheme.css\",\"type\":8,\"parentName\":\"BankTheme\",\"location\":\"/EKYCDemoApp/UI Models/BankTheme\",\"properties\":{\"isWorkspaceReady\":true},\"meta\":null,\"size\":9038,\"errorMessage\":null,\"parentId\":\"6d13cfba-14c0-4eaf-8fe2-9f4c565f0fc0\",\"projectId\":\"682b6794-55a7-4470-b973-ed67c592e3cb\",\"referenceId\":null,\"namespaceId\":null,\"content\":null,\"id\":\"ad2ce3b8-8bc2-42a6-8cfe-9d957888d753\",\"createdOn\":\"2020-12-14T15:42:06.609+05:30\",\"modifiedOn\":\"2021-02-02T16:07:09.567+05:30\",\"modifiedBy\":null,\"createdBy\":null,\"rolePack\":null,\"contentAsString\":\"\",\"contentAsBytes\":null,\"buildProgress\":false,\"displayName\":\"banktheme.css-BankTheme\"}",
+            "fileName": "banktheme.css",
+            "displayName": "banktheme.css-BankTheme",
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/ad2ce3b8-8bc2-42a6-8cfe-9d957888d753",
+            "projectName": "EquatorEKYC",
+            "type": "css"
+        },
+        {
+            "fileJson": "{\"name\":\"happywomen.jpg\",\"type\":9,\"parentName\":\"BankTheme\",\"location\":\"/EKYCDemoApp/UI Models/BankTheme\",\"parentId\":\"6d13cfba-14c0-4eaf-8fe2-9f4c565f0fc0\",\"id\":\"c2c3c19f-9b65-4fbe-bb16-c095bfde314f\",\"projectId\":\"682b6794-55a7-4470-b973-ed67c592e3cb\",\"displayName\":\"happywomen.jpg-BankTheme\"}",
+            "fileName": "happywomen.jpg",
+            "displayName": "happywomen.jpg-BankTheme",
+            "variable": "",
+            "source": "http://localhost:3030/rest/projects/682b6794-55a7-4470-b973-ed67c592e3cb/files/c2c3c19f-9b65-4fbe-bb16-c095bfde314f",
+            "projectName": "EquatorEKYC",
+            "type": "image"
+        }
+    ],
+    "id": "mdt_visual_editor_root",
+    "validations": {},
+    "globalCss": "*{ box-sizing: border-box; } body{margin: 0;} .fix8d0a106e05b2{position: fixed;}#image-n7z0ifx89tb{margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}.banner-img{margin-top:0px;margin-bottom:0px;}.row{flex-direction:row;}"
+}}

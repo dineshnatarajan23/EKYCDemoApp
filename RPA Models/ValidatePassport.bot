@@ -1,0 +1,1759 @@
+{
+    "variables": [
+        {
+            "name": "passportDate",
+            "type": null,
+            "value": null
+        },
+        {
+            "name": "identityLink",
+            "type": null,
+            "value": null
+        }
+    ],
+    "isDebbugerEnable": "false",
+    "isValidSequence": true,
+    "breakPointEnable": "true",
+    "modelerModel": {
+        "process": {
+            "triggerBPMTask": {
+                "nodeName": "TriggerBPMTask",
+                "outgoing": "SequenceFlow_4htoxr",
+                "incoming": "SequenceFlow_8byxd5",
+                "businessProp": {
+                    "bpmRpaVariables": [{
+                        "Value": "botstatus",
+                        "Key": "status"
+                    }],
+                    "IsCommented": false,
+                    "PauseBeforeExeucution": "false"
+                },
+                "name": "Resume BPM",
+                "tasktCommandName": "TriggerBPMCommand",
+                "id": "TriggerBPMTask_p0hnuo",
+                "type": "rpa:triggerBPMTask",
+                "lineNumber": 15,
+                "events": []
+            },
+            "openTask": [
+                {
+                    "nodeName": "OpenTask",
+                    "outgoing": "SequenceFlow_1dcm8lk",
+                    "incoming": "SequenceFlow_5fmuwy",
+                    "businessProp": {
+                        "applicationName": "C:\\RPA Demo jan 13\\sprint-10\\POC-4\\ocrdata.txt",
+                        "IsCommented": true
+                    },
+                    "name": "Open Application",
+                    "tasktCommandName": "StartProcessCommand",
+                    "id": "OpenTask_jd8g8",
+                    "type": "rpa:openTask",
+                    "lineNumber": 4,
+                    "events": []
+                },
+                {
+                    "nodeName": "OpenTask",
+                    "outgoing": "SequenceFlow_1umr95k",
+                    "incoming": "SequenceFlow_1wx3n1g",
+                    "businessProp": {"applicationName": "notepad"},
+                    "name": "Open Application",
+                    "tasktCommandName": "StartProcessCommand",
+                    "id": "OpenTask_19f6xpp",
+                    "type": "rpa:openTask",
+                    "lineNumber": 2,
+                    "events": []
+                },
+                {
+                    "nodeName": "OpenTask",
+                    "outgoing": "SequenceFlow_10gv13r",
+                    "incoming": "SequenceFlow_k3q7n5",
+                    "businessProp": {
+                        "applicationName": "notepad",
+                        "IsCommented": true
+                    },
+                    "name": "Open Application",
+                    "tasktCommandName": "StartProcessCommand",
+                    "id": "OpenTask_11cgrb5",
+                    "type": "rpa:openTask",
+                    "lineNumber": 9,
+                    "events": []
+                }
+            ],
+            "regExExtractionTask": {
+                "nodeName": "RegExExtractionTask",
+                "outgoing": "SequenceFlow_k3q7n5",
+                "incoming": "SequenceFlow_temfz6",
+                "businessProp": {
+                    "regexPattern": "[0-9]{2} [A-Z]{1}[a-z]{2} [0-9]{4}",
+                    "regexValue": "extract1",
+                    "regexResult": "nextresult",
+                    "groupIndex": "0",
+                    "IsCommented": true,
+                    "PauseBeforeExeucution": "false"
+                },
+                "name": "RegEx Extraction",
+                "tasktCommandName": "RegExExtractorCommand",
+                "id": "RegExExtractionTask_1pxeven",
+                "type": "rpa:regExExtractionTask",
+                "lineNumber": 8,
+                "events": []
+            },
+            "delayExecutionTask": [
+                {
+                    "nodeName": "DelayExecutionTask",
+                    "outgoing": "SequenceFlow_edbgra",
+                    "incoming": "SequenceFlow_1ntpmvz",
+                    "businessProp": {
+                        "userInput": "4000",
+                        "IsCommented": true
+                    },
+                    "name": "Delay Execution",
+                    "tasktCommandName": "PauseCommand",
+                    "id": "DelayExecutionTask_1a9vwi8",
+                    "type": "rpa:delayExecutionTask",
+                    "lineNumber": 11,
+                    "events": []
+                },
+                {
+                    "nodeName": "DelayExecutionTask",
+                    "outgoing": "SequenceFlow_k14tt9",
+                    "incoming": "SequenceFlow_1h330dz",
+                    "businessProp": {"userInput": "5000"},
+                    "name": "Delay Execution",
+                    "tasktCommandName": "PauseCommand",
+                    "id": "DelayExecutionTask_kmlqnm",
+                    "type": "rpa:delayExecutionTask",
+                    "lineNumber": 13,
+                    "events": []
+                }
+            ],
+            "textExtractionTask": {
+                "nodeName": "TextExtractionTask",
+                "outgoing": "SequenceFlow_ypqoa5",
+                "incoming": "SequenceFlow_1rhkrhe",
+                "businessProp": {
+                    "extractionType": "Extract All After Text",
+                    "variableName": "extract1",
+                    "after_LeadingText": "Departments of State",
+                    "skipPastOccurences": "0",
+                    "extractionValue": "[a]"
+                },
+                "name": "Text Extraction",
+                "tasktCommandName": "TextExtractorCommand",
+                "id": "TextExtractionTask_m3lvdd",
+                "type": "rpa:textExtractionTask",
+                "lineNumber": 6,
+                "events": []
+            },
+            "inputTask": [
+                {
+                    "nodeName": "InputTask",
+                    "outgoing": "SequenceFlow_1ntpmvz",
+                    "incoming": "SequenceFlow_10gv13r",
+                    "businessProp": {
+                        "textToSend": "[passDate]\n\n[result]\n\n[nextresult]\n",
+                        "windowName": "Current Window",
+                        "IsCommented": true
+                    },
+                    "name": "Set Text",
+                    "tasktCommandName": "SendKeysCommand",
+                    "id": "InputTask_gc17bm",
+                    "type": "rpa:inputTask",
+                    "lineNumber": 10,
+                    "events": []
+                },
+                {
+                    "nodeName": "InputTask",
+                    "outgoing": "SequenceFlow_5fmuwy",
+                    "incoming": "SequenceFlow_1umr95k",
+                    "businessProp": {
+                        "textToSend": "Performing OCR on Passport...\n\n",
+                        "windowName": "[Current Window]"
+                    },
+                    "name": "Set Text",
+                    "tasktCommandName": "SendKeysCommand",
+                    "id": "InputTask_13f2xkb",
+                    "type": "rpa:inputTask",
+                    "lineNumber": 3,
+                    "events": []
+                }
+            ],
+            "subStringTask": {
+                "nodeName": "SubStringTask",
+                "outgoing": "SequenceFlow_temfz6",
+                "incoming": "SequenceFlow_ypqoa5",
+                "businessProp": {
+                    "outputTextLength": "13",
+                    "variableName": "result",
+                    "startFromPosition": "0",
+                    "inputValue": "extract1",
+                    "IsCommented": true,
+                    "PauseBeforeExeucution": "false"
+                },
+                "name": "Get Substring",
+                "tasktCommandName": "SubStringCommand",
+                "id": "SubStringTask_m92rhr",
+                "type": "rpa:subStringTask",
+                "lineNumber": 7,
+                "events": []
+            },
+            "sequenceFlow": [
+                {
+                    "targetRef": "InputTask_gc17bm",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_10gv13r",
+                    "sourceRef": "OpenTask_11cgrb5",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "OpenTask_11cgrb5",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_k3q7n5",
+                    "sourceRef": "RegExExtractionTask_1pxeven",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "DelayExecutionTask_1a9vwi8",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_1ntpmvz",
+                    "sourceRef": "InputTask_gc17bm",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "WriteFileTask_cfdku",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_1dcm8lk",
+                    "sourceRef": "OpenTask_jd8g8",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "TextExtractionTask_m3lvdd",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_1rhkrhe",
+                    "sourceRef": "WriteFileTask_cfdku",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "EndEvent_sq2gjzm",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_4htoxr",
+                    "sourceRef": "TriggerBPMTask_p0hnuo",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "IfCommandProcess_bc92by",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_edbgra",
+                    "sourceRef": "DelayExecutionTask_1a9vwi8",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "OpenTask_jd8g8",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_5fmuwy",
+                    "sourceRef": "InputTask_13f2xkb",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "TriggerBPMTask_p0hnuo",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_8byxd5",
+                    "sourceRef": "AdvanceKeyStrokes_th6xai",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "DelayExecutionTask_kmlqnm",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_1h330dz",
+                    "sourceRef": "IfCommandProcess_bc92by",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "AdvanceKeyStrokes_th6xai",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_k14tt9",
+                    "sourceRef": "DelayExecutionTask_kmlqnm",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "OcrTask_pki6ms",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_1bjmd6v",
+                    "sourceRef": "StartEvent_fyegf9",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "OpenTask_19f6xpp",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_1wx3n1g",
+                    "sourceRef": "OcrTask_pki6ms",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "InputTask_13f2xkb",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_1umr95k",
+                    "sourceRef": "OpenTask_19f6xpp",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "RegExExtractionTask_1pxeven",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_temfz6",
+                    "sourceRef": "SubStringTask_m92rhr",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "SubStringTask_m92rhr",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_ypqoa5",
+                    "sourceRef": "TextExtractionTask_m3lvdd",
+                    "type": "rpa:sequenceFlow"
+                }
+            ],
+            "ocrTask": {
+                "nodeName": "OcrTask",
+                "outgoing": "SequenceFlow_1wx3n1g",
+                "incoming": "SequenceFlow_1bjmd6v",
+                "businessProp": {
+                    "ocrProcessingType": "Web Link",
+                    "webPageLink": "[identityLink]",
+                    "variableName": "a",
+                    "ocrEngine": "Tesseract",
+                    "language": "eng",
+                    "IsCommented": false,
+                    "PauseBeforeExeucution": "false"
+                },
+                "name": "Perform OCR",
+                "tasktCommandName": "OCRCommandEngine",
+                "id": "OcrTask_pki6ms",
+                "type": "rpa:ocrTask",
+                "lineNumber": 1,
+                "events": []
+            },
+            "endEvent": {
+                "incoming": "SequenceFlow_4htoxr",
+                "businessProp": {},
+                "name": "End",
+                "id": "EndEvent_sq2gjzm",
+                "type": "rpa:endEvent"
+            },
+            "startEvent": {
+                "outgoing": "SequenceFlow_1bjmd6v",
+                "businessProp": {"GlobalVariables": [
+                    {"Gblvarible": "passportDate"},
+                    {"Gblvarible": "identityLink"}
+                ]},
+                "name": "Start",
+                "id": "StartEvent_fyegf9",
+                "type": "rpa:startEvent"
+            },
+            "ifCommandProcess": {
+                "isExpanded": "true",
+                "nodeName": "SubProcessEnd",
+                "setVariableTask": [
+                    {
+                        "nodeName": "SetVariableTask",
+                        "outgoing": "SequenceFlow_bs2mim",
+                        "incoming": "SequenceFlow_16dx9cw",
+                        "businessProp": {
+                            "name": "Bot Approved",
+                            "uservariableName": "[botstatus]",
+                            "userInput": "1"
+                        },
+                        "name": "Bot Approved",
+                        "tasktCommandName": "VariableCommand",
+                        "id": "SetVariableTask_15nuk2a",
+                        "type": "rpa:setVariableTask",
+                        "lineNumber": 14,
+                        "events": []
+                    },
+                    {
+                        "nodeName": "SetVariableTask",
+                        "outgoing": "SequenceFlow_1n8fibn",
+                        "incoming": "SequenceFlow_mytvuz",
+                        "businessProp": {
+                            "name": "Bot Rejected",
+                            "uservariableName": "[botstatus]",
+                            "userInput": "2"
+                        },
+                        "name": "Bot Rejected",
+                        "tasktCommandName": "VariableCommand",
+                        "id": "SetVariableTask_mmsqee",
+                        "type": "rpa:setVariableTask",
+                        "lineNumber": 14,
+                        "events": []
+                    }
+                ],
+                "outgoing": "SequenceFlow_1h330dz",
+                "incoming": "SequenceFlow_edbgra",
+                "commandType": "ifCommandProcess",
+                "ifCommandTask": {
+                    "nodeName": "IfCommandTask",
+                    "outgoing": [
+                        "SequenceFlow_16dx9cw",
+                        "SequenceFlow_mytvuz"
+                    ],
+                    "businessProp": {
+                        "ifActionType": "Variable Compare",
+                        "variableCompareOperand": "contains",
+                        "variableCompareValue1": "[extract1]",
+                        "variableCompareCaseSensitive": "No",
+                        "variableCompareValue2": "[passportDate]"
+                    },
+                    "name": "If Command",
+                    "tasktCommandName": "BeginIfCommand",
+                    "id": "IfCommandTask_krxv0i",
+                    "type": "rpa:ifCommandTask",
+                    "lineNumber": 13,
+                    "events": []
+                },
+                "businessProp": {},
+                "delayExecutionTask": [
+                    {
+                        "nodeName": "DelayExecutionTask",
+                        "outgoing": "SequenceFlow_43l8qy",
+                        "incoming": "SequenceFlow_16ozn8m",
+                        "businessProp": {"userInput": "3000"},
+                        "name": "Delay Execution",
+                        "tasktCommandName": "PauseCommand",
+                        "id": "DelayExecutionTask_5lr5uy",
+                        "type": "rpa:delayExecutionTask",
+                        "lineNumber": 16,
+                        "events": []
+                    },
+                    {
+                        "nodeName": "DelayExecutionTask",
+                        "outgoing": "SequenceFlow_1pmaopo",
+                        "incoming": "SequenceFlow_alocrl",
+                        "businessProp": {"userInput": "3000"},
+                        "name": "Delay Execution",
+                        "tasktCommandName": "PauseCommand",
+                        "id": "DelayExecutionTask_snz7jg",
+                        "type": "rpa:delayExecutionTask",
+                        "lineNumber": 16,
+                        "events": []
+                    }
+                ],
+                "type": "rpa:ifCommandProcess",
+                "inputTask": [
+                    {
+                        "nodeName": "InputTask",
+                        "incoming": "SequenceFlow_43l8qy",
+                        "businessProp": {
+                            "textToSend": "\nDate Matches. Pending Credit Score Check.",
+                            "windowName": "[Current Window]"
+                        },
+                        "name": "Set Text",
+                        "tasktCommandName": "SendKeysCommand",
+                        "id": "InputTask_blydsa",
+                        "type": "rpa:inputTask",
+                        "lineNumber": 17,
+                        "events": []
+                    },
+                    {
+                        "nodeName": "InputTask",
+                        "incoming": "SequenceFlow_1pmaopo",
+                        "businessProp": {
+                            "textToSend": "\nDate does not match. Application Rejected!",
+                            "windowName": "[Current Window]"
+                        },
+                        "name": "Set Text",
+                        "tasktCommandName": "SendKeysCommand",
+                        "id": "InputTask_1icv5yo",
+                        "type": "rpa:inputTask",
+                        "lineNumber": 17,
+                        "events": []
+                    }
+                ],
+                "sequenceFlow": [
+                    {
+                        "targetRef": "SetVariableTask_15nuk2a",
+                        "businessProp": {"condition": "true"},
+                        "name": "True",
+                        "tasktCommandName": "sequenceFlow",
+                        "id": "SequenceFlow_16dx9cw",
+                        "sourceRef": "IfCommandTask_krxv0i",
+                        "type": "rpa:sequenceFlow"
+                    },
+                    {
+                        "targetRef": "SetVariableTask_mmsqee",
+                        "businessProp": {
+                            "condition": "false",
+                            "name": "False"
+                        },
+                        "name": "False",
+                        "tasktCommandName": "sequenceFlow",
+                        "id": "SequenceFlow_mytvuz",
+                        "sourceRef": "IfCommandTask_krxv0i",
+                        "type": "rpa:sequenceFlow"
+                    },
+                    {
+                        "targetRef": "ActiveWindowTask_tj5t1h",
+                        "businessProp": {},
+                        "name": "",
+                        "tasktCommandName": "sequenceFlow",
+                        "id": "SequenceFlow_bs2mim",
+                        "sourceRef": "SetVariableTask_15nuk2a",
+                        "type": "rpa:sequenceFlow"
+                    },
+                    {
+                        "targetRef": "ActiveWindowTask_we6mpm",
+                        "businessProp": {},
+                        "name": "",
+                        "tasktCommandName": "sequenceFlow",
+                        "id": "SequenceFlow_1n8fibn",
+                        "sourceRef": "SetVariableTask_mmsqee",
+                        "type": "rpa:sequenceFlow"
+                    },
+                    {
+                        "targetRef": "DelayExecutionTask_5lr5uy",
+                        "businessProp": {},
+                        "name": "",
+                        "tasktCommandName": "sequenceFlow",
+                        "id": "SequenceFlow_16ozn8m",
+                        "sourceRef": "ActiveWindowTask_tj5t1h",
+                        "type": "rpa:sequenceFlow"
+                    },
+                    {
+                        "targetRef": "InputTask_blydsa",
+                        "businessProp": {},
+                        "name": "",
+                        "tasktCommandName": "sequenceFlow",
+                        "id": "SequenceFlow_43l8qy",
+                        "sourceRef": "DelayExecutionTask_5lr5uy",
+                        "type": "rpa:sequenceFlow"
+                    },
+                    {
+                        "targetRef": "DelayExecutionTask_snz7jg",
+                        "businessProp": {},
+                        "name": "",
+                        "tasktCommandName": "sequenceFlow",
+                        "id": "SequenceFlow_alocrl",
+                        "sourceRef": "ActiveWindowTask_we6mpm",
+                        "type": "rpa:sequenceFlow"
+                    },
+                    {
+                        "targetRef": "InputTask_1icv5yo",
+                        "businessProp": {},
+                        "name": "",
+                        "tasktCommandName": "sequenceFlow",
+                        "id": "SequenceFlow_1pmaopo",
+                        "sourceRef": "DelayExecutionTask_snz7jg",
+                        "type": "rpa:sequenceFlow"
+                    }
+                ],
+                "activeWindowTask": [
+                    {
+                        "nodeName": "ActiveWindowTask",
+                        "outgoing": "SequenceFlow_16ozn8m",
+                        "incoming": "SequenceFlow_bs2mim",
+                        "businessProp": {"activateWindowName": "[Current Window]"},
+                        "name": "Activate Window",
+                        "tasktCommandName": "ActivateWindowCommand",
+                        "id": "ActiveWindowTask_tj5t1h",
+                        "type": "rpa:activeWindowTask",
+                        "lineNumber": 15,
+                        "events": []
+                    },
+                    {
+                        "nodeName": "ActiveWindowTask",
+                        "outgoing": "SequenceFlow_alocrl",
+                        "incoming": "SequenceFlow_1n8fibn",
+                        "businessProp": {"activateWindowName": "[Current Window]"},
+                        "name": "Activate Window",
+                        "tasktCommandName": "ActivateWindowCommand",
+                        "id": "ActiveWindowTask_we6mpm",
+                        "type": "rpa:activeWindowTask",
+                        "lineNumber": 15,
+                        "events": []
+                    }
+                ],
+                "name": "Conditional Task",
+                "id": "IfCommandProcess_bc92by",
+                "lineNumber": 12
+            },
+            "writeFileTask": {
+                "nodeName": "WriteFileTask",
+                "outgoing": "SequenceFlow_1rhkrhe",
+                "incoming": "SequenceFlow_1dcm8lk",
+                "businessProp": {
+                    "ifActionType": "Override",
+                    "filepath": "C:\\Zenith-Demos\\KYC\\Attachment\\Female\\ocrdata.txt",
+                    "userInput": "[a]",
+                    "IsCommented": true,
+                    "PauseBeforeExeucution": "false"
+                },
+                "name": "Write File",
+                "tasktCommandName": "WriteTextFileCommand",
+                "id": "WriteFileTask_cfdku",
+                "type": "rpa:writeFileTask",
+                "lineNumber": 5,
+                "events": []
+            },
+            "id": "Process_1",
+            "advanceKeyStrokes": {
+                "nodeName": "AdvanceKeyStrokes",
+                "outgoing": "SequenceFlow_8byxd5",
+                "incoming": "SequenceFlow_k14tt9",
+                "businessProp": {
+                    "KeyStrokes": [
+                        {
+                            "Action": "Key Down",
+                            "Key": "Alt (Left) [LMenu]"
+                        },
+                        {
+                            "Action": "Key Press (Down + Up)",
+                            "Key": "F4 [F4]"
+                        },
+                        {
+                            "Action": "Key Up",
+                            "Key": "Alt (Left) [LMenu]"
+                        },
+                        {
+                            "Action": "Key Press (Down + Up)",
+                            "Key": "Right Arrow [Right]"
+                        },
+                        {
+                            "Action": "Key Press (Down + Up)",
+                            "Key": "Enter [Return]"
+                        }
+                    ],
+                    "windowName": "[Current Window]",
+                    "IsCommented": false
+                },
+                "name": "Send Keystrokes",
+                "tasktCommandName": "SendAdvancedKeyStrokesCommand",
+                "id": "AdvanceKeyStrokes_th6xai",
+                "type": "rpa:advanceKeyStrokes",
+                "lineNumber": 14,
+                "events": []
+            }
+        },
+        "BPMNDiagram": {
+            "bpmnElement": "Process_1",
+            "BPMNPlane": {
+                "BPMNShape": [
+                    {
+                        "bpmnElement": "TriggerBPMTask_p0hnuo",
+                        "Bounds": {
+                            "cx": 745.9999771118164,
+                            "cy": 1233.0000190734863,
+                            "x": 637.9199829101562,
+                            "width": 216.1599884033203,
+                            "y": 1213.02001953125,
+                            "height": 39.959999084472656
+                        },
+                        "id": "TriggerBPMTask_p0hnuo_ve"
+                    },
+                    {
+                        "bpmnElement": "OpenTask_jd8g8",
+                        "Bounds": {
+                            "cx": 268.9999771118164,
+                            "cy": 320.9999885559082,
+                            "x": 160.91998291015625,
+                            "width": 216.1599884033203,
+                            "y": 301.0199890136719,
+                            "height": 39.959999084472656
+                        },
+                        "id": "OpenTask_jd8g8_ve"
+                    },
+                    {
+                        "bpmnElement": "OpenTask_19f6xpp",
+                        "Bounds": {
+                            "cx": 268.9999771118164,
+                            "cy": 163.00000381469727,
+                            "x": 160.91998291015625,
+                            "width": 216.1599884033203,
+                            "y": 143.02000427246094,
+                            "height": 39.959999084472656
+                        },
+                        "id": "OpenTask_19f6xpp_ve"
+                    },
+                    {
+                        "bpmnElement": "OpenTask_11cgrb5",
+                        "Bounds": {
+                            "cx": 637.9999771118164,
+                            "cy": 302.9999885559082,
+                            "x": 529.9199829101562,
+                            "width": 216.1599884033203,
+                            "y": 283.0199890136719,
+                            "height": 39.959999084472656
+                        },
+                        "id": "OpenTask_11cgrb5_ve"
+                    },
+                    {
+                        "bpmnElement": "RegExExtractionTask_1pxeven",
+                        "Bounds": {
+                            "cx": 637.9999771118164,
+                            "cy": 240.00000381469727,
+                            "x": 529.9199829101562,
+                            "width": 216.1599884033203,
+                            "y": 220.02000427246094,
+                            "height": 39.959999084472656
+                        },
+                        "id": "RegExExtractionTask_1pxeven_ve"
+                    },
+                    {
+                        "bpmnElement": "DelayExecutionTask_1a9vwi8",
+                        "Bounds": {
+                            "cx": 637.9999850082395,
+                            "cy": 449.9999999853967,
+                            "x": 529.9199908065793,
+                            "width": 216.1599884033203,
+                            "y": 430.02000044316037,
+                            "height": 39.959999084472656
+                        },
+                        "id": "DelayExecutionTask_1a9vwi8_ve"
+                    },
+                    {
+                        "bpmnElement": "DelayExecutionTask_kmlqnm",
+                        "Bounds": {
+                            "cx": 745.9999771118164,
+                            "cy": 1074.0000190734863,
+                            "x": 637.9199829101562,
+                            "width": 216.1599884033203,
+                            "y": 1054.02001953125,
+                            "height": 39.959999084472656
+                        },
+                        "id": "DelayExecutionTask_kmlqnm_ve"
+                    },
+                    {
+                        "bpmnElement": "TextExtractionTask_m3lvdd",
+                        "Bounds": {
+                            "cx": 637.9999771118164,
+                            "cy": 84.00000381469727,
+                            "x": 529.9199829101562,
+                            "width": 216.1599884033203,
+                            "y": 64.02000427246094,
+                            "height": 39.959999084472656
+                        },
+                        "id": "TextExtractionTask_m3lvdd_ve"
+                    },
+                    {
+                        "bpmnElement": "InputTask_gc17bm",
+                        "Bounds": {
+                            "cx": 637.9999771118164,
+                            "cy": 376.9999885559082,
+                            "x": 529.9199829101562,
+                            "width": 216.1599884033203,
+                            "y": 357.0199890136719,
+                            "height": 39.959999084472656
+                        },
+                        "id": "InputTask_gc17bm_ve"
+                    },
+                    {
+                        "bpmnElement": "InputTask_13f2xkb",
+                        "Bounds": {
+                            "cx": 268.9999771118164,
+                            "cy": 240.00000381469727,
+                            "x": 160.91998291015625,
+                            "width": 216.1599884033203,
+                            "y": 220.02000427246094,
+                            "height": 39.959999084472656
+                        },
+                        "id": "InputTask_13f2xkb_ve"
+                    },
+                    {
+                        "bpmnElement": "SubStringTask_m92rhr",
+                        "Bounds": {
+                            "cx": 637.9999771118164,
+                            "cy": 163.00000381469727,
+                            "x": 529.9199829101562,
+                            "width": 216.1599884033203,
+                            "y": 143.02000427246094,
+                            "height": 39.959999084472656
+                        },
+                        "id": "SubStringTask_m92rhr_ve"
+                    },
+                    {
+                        "bpmnElement": "OcrTask_pki6ms",
+                        "Bounds": {
+                            "cx": 282.99999237060547,
+                            "cy": 84.00000381469727,
+                            "x": 174.9199981689453,
+                            "width": 216.1599884033203,
+                            "y": 64.02000427246094,
+                            "height": 39.959999084472656
+                        },
+                        "id": "OcrTask_pki6ms_ve"
+                    },
+                    {
+                        "bpmnElement": "EndEvent_sq2gjzm",
+                        "Bounds": {
+                            "cx": 746,
+                            "cy": 1327.0000190734863,
+                            "x": 694,
+                            "width": 104,
+                            "y": 1306.02001953125,
+                            "height": 41.959999084472656
+                        },
+                        "id": "EndEvent_sq2gjzm_ve"
+                    },
+                    {
+                        "bpmnElement": "StartEvent_fyegf9",
+                        "Bounds": {
+                            "cx": 88.00000002980232,
+                            "cy": 84.00000093907119,
+                            "x": 36.00000002980232,
+                            "width": 104,
+                            "y": 63.02000139683486,
+                            "height": 41.959999084472656
+                        },
+                        "id": "StartEvent_fyegf9_ve"
+                    },
+                    {
+                        "bpmnElement": "IfCommandProcess_bc92by",
+                        "Bounds": {
+                            "cx": 809,
+                            "cy": 808.25,
+                            "x": 390,
+                            "width": 838,
+                            "y": 517.5,
+                            "height": 581.5
+                        },
+                        "id": "IfCommandProcess_bc92by_ve"
+                    },
+                    {
+                        "bpmnElement": "SetVariableTask_15nuk2a",
+                        "Bounds": {
+                            "cx": 582.9999771118164,
+                            "cy": 61,
+                            "x": 474.91998291015625,
+                            "width": 216.1599884033203,
+                            "y": 41.02000045776367,
+                            "height": 39.959999084472656
+                        },
+                        "id": "SetVariableTask_15nuk2a_ve"
+                    },
+                    {
+                        "bpmnElement": "SetVariableTask_mmsqee",
+                        "Bounds": {
+                            "cx": 165.9999771118164,
+                            "cy": 217.00000381469727,
+                            "x": 57.91998291015625,
+                            "width": 216.1599884033203,
+                            "y": 197.02000427246094,
+                            "height": 39.959999084472656
+                        },
+                        "id": "SetVariableTask_mmsqee_ve"
+                    },
+                    {
+                        "bpmnElement": "IfCommandTask_krxv0i",
+                        "Bounds": {
+                            "cx": 153.0625,
+                            "cy": 60.828125,
+                            "x": 120,
+                            "width": 66.125,
+                            "y": 47.5,
+                            "height": 73.34375
+                        },
+                        "id": "IfCommandTask_krxv0i_ve"
+                    },
+                    {
+                        "bpmnElement": "DelayExecutionTask_5lr5uy",
+                        "Bounds": {
+                            "cx": 582.9999771118164,
+                            "cy": 227.23189163208008,
+                            "x": 474.91998291015625,
+                            "width": 216.1599884033203,
+                            "y": 207.25189208984375,
+                            "height": 39.959999084472656
+                        },
+                        "id": "DelayExecutionTask_5lr5uy_ve"
+                    },
+                    {
+                        "bpmnElement": "DelayExecutionTask_snz7jg",
+                        "Bounds": {
+                            "cx": 165.9999771118164,
+                            "cy": 377.00000047683716,
+                            "x": 57.91998291015625,
+                            "width": 216.1599884033203,
+                            "y": 357.02000093460083,
+                            "height": 39.959999084472656
+                        },
+                        "id": "DelayExecutionTask_snz7jg_ve"
+                    },
+                    {
+                        "bpmnElement": "InputTask_blydsa",
+                        "Bounds": {
+                            "cx": 582.9999771118164,
+                            "cy": 320.9999885559082,
+                            "x": 474.91998291015625,
+                            "width": 216.1599884033203,
+                            "y": 301.0199890136719,
+                            "height": 39.959999084472656
+                        },
+                        "id": "InputTask_blydsa_ve"
+                    },
+                    {
+                        "bpmnElement": "InputTask_1icv5yo",
+                        "Bounds": {
+                            "cx": 165.9999771118164,
+                            "cy": 450,
+                            "x": 57.91998291015625,
+                            "width": 216.1599884033203,
+                            "y": 430.0200004577637,
+                            "height": 39.959999084472656
+                        },
+                        "id": "InputTask_1icv5yo_ve"
+                    },
+                    {
+                        "bpmnElement": "ActiveWindowTask_tj5t1h",
+                        "Bounds": {
+                            "cx": 582.9999771118164,
+                            "cy": 148.50001907348633,
+                            "x": 474.91998291015625,
+                            "width": 216.1599884033203,
+                            "y": 128.52001953125,
+                            "height": 39.959999084472656
+                        },
+                        "id": "ActiveWindowTask_tj5t1h_ve"
+                    },
+                    {
+                        "bpmnElement": "ActiveWindowTask_we6mpm",
+                        "Bounds": {
+                            "cx": 165.9999771118164,
+                            "cy": 302.9999885559082,
+                            "x": 57.91998291015625,
+                            "width": 216.1599884033203,
+                            "y": 283.0199890136719,
+                            "height": 39.959999084472656
+                        },
+                        "id": "ActiveWindowTask_we6mpm_ve"
+                    },
+                    {
+                        "bpmnElement": "WriteFileTask_cfdku",
+                        "Bounds": {
+                            "cx": 268.9999771118164,
+                            "cy": 399.9999885559082,
+                            "x": 160.91998291015625,
+                            "width": 216.1599884033203,
+                            "y": 380.0199890136719,
+                            "height": 39.959999084472656
+                        },
+                        "id": "WriteFileTask_cfdku_ve"
+                    },
+                    {
+                        "bpmnElement": "AdvanceKeyStrokes_th6xai",
+                        "Bounds": {
+                            "cx": 745.9999771118164,
+                            "cy": 1149.0000190734863,
+                            "x": 637.9199829101562,
+                            "width": 216.1599884033203,
+                            "y": 1129.02001953125,
+                            "height": 39.959999084472656
+                        },
+                        "id": "AdvanceKeyStrokes_th6xai_ve"
+                    }
+                ],
+                "BPMNEdge": [
+                    {
+                        "waypoint": [
+                            {
+                                "x": "637.9999829101563",
+                                "y": "322.97998901367185"
+                            },
+                            {
+                                "x": "637.9999829101563",
+                                "y": "357.0199890136719"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_10gv13r",
+                        "id": "SequenceFlow_10gv13r_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "637.9999829101563",
+                                "y": "259.9800042724609"
+                            },
+                            {
+                                "x": "637.9999829101563",
+                                "y": "283.0199890136719"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_k3q7n5",
+                        "id": "SequenceFlow_k3q7n5_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "637.9999829101563",
+                                "y": "396.97998901367185"
+                            },
+                            {
+                                "x": "637.9999908065794",
+                                "y": "430.02000044316037"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_1ntpmvz",
+                        "id": "SequenceFlow_1ntpmvz_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "268.99998291015623",
+                                "y": "340.97998901367185"
+                            },
+                            {
+                                "x": "268.99998291015623",
+                                "y": "380.0199890136719"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_1dcm8lk",
+                        "id": "SequenceFlow_1dcm8lk_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "377.0799829101562",
+                                "y": "399.9999890136719"
+                            },
+                            {
+                                "x": "453.49998291015623",
+                                "y": "399.9999890136719"
+                            },
+                            {
+                                "x": "453.49998291015623",
+                                "y": "84.00000427246094"
+                            },
+                            {
+                                "x": "529.9199829101562",
+                                "y": "84.00000427246094"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_1rhkrhe",
+                        "id": "SequenceFlow_1rhkrhe_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "745.9999829101563",
+                                "y": "1252.98001953125"
+                            },
+                            {
+                                "x": "746",
+                                "y": "1306.02001953125"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_4htoxr",
+                        "id": "SequenceFlow_4htoxr_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "637.9999908065794",
+                                "y": "469.98000044316035"
+                            },
+                            {
+                                "x": "637.9999908065794",
+                                "y": "493.7400002215802"
+                            },
+                            {
+                                "x": "809",
+                                "y": "493.7400002215802"
+                            },
+                            {
+                                "x": "809",
+                                "y": "517.5"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_edbgra",
+                        "id": "SequenceFlow_edbgra_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "268.99998291015623",
+                                "y": "259.9800042724609"
+                            },
+                            {
+                                "x": "268.99998291015623",
+                                "y": "301.0199890136719"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_5fmuwy",
+                        "id": "SequenceFlow_5fmuwy_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "745.9999829101563",
+                                "y": "1168.98001953125"
+                            },
+                            {
+                                "x": "745.9999829101563",
+                                "y": "1213.02001953125"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_8byxd5",
+                        "id": "SequenceFlow_8byxd5_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "1228",
+                                "y": "808.25"
+                            },
+                            {
+                                "x": "932.9599914550781",
+                                "y": "808.25"
+                            },
+                            {
+                                "x": "932.9599914550781",
+                                "y": "1074.00001953125"
+                            },
+                            {
+                                "x": "637.9199829101562",
+                                "y": "1074.00001953125"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_1h330dz",
+                        "id": "SequenceFlow_1h330dz_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "745.9999829101563",
+                                "y": "1093.98001953125"
+                            },
+                            {
+                                "x": "745.9999829101563",
+                                "y": "1129.02001953125"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_k14tt9",
+                        "id": "SequenceFlow_k14tt9_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "140.00000002980232",
+                                "y": "84.00000139683486"
+                            },
+                            {
+                                "x": "174.9199981689453",
+                                "y": "84.00000427246094"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_1bjmd6v",
+                        "id": "SequenceFlow_1bjmd6v_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "282.9999981689453",
+                                "y": "103.98000427246095"
+                            },
+                            {
+                                "x": "282.9999981689453",
+                                "y": "123.50000427246094"
+                            },
+                            {
+                                "x": "268.99998291015623",
+                                "y": "123.50000427246094"
+                            },
+                            {
+                                "x": "268.99998291015623",
+                                "y": "143.02000427246094"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_1wx3n1g",
+                        "id": "SequenceFlow_1wx3n1g_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "268.99998291015623",
+                                "y": "182.98000427246095"
+                            },
+                            {
+                                "x": "268.99998291015623",
+                                "y": "220.02000427246094"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_1umr95k",
+                        "id": "SequenceFlow_1umr95k_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "637.9999829101563",
+                                "y": "182.98000427246095"
+                            },
+                            {
+                                "x": "637.9999829101563",
+                                "y": "220.02000427246094"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_temfz6",
+                        "id": "SequenceFlow_temfz6_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "637.9999829101563",
+                                "y": "103.98000427246095"
+                            },
+                            {
+                                "x": "637.9999829101563",
+                                "y": "143.02000427246094"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_ypqoa5",
+                        "id": "SequenceFlow_ypqoa5_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "170",
+                                "y": "72.5"
+                            },
+                            {
+                                "x": "322.4599914550781",
+                                "y": "72.5"
+                            },
+                            {
+                                "x": "322.4599914550781",
+                                "y": "61.000000457763676"
+                            },
+                            {
+                                "x": "474.91998291015625",
+                                "y": "61.000000457763676"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_16dx9cw",
+                        "id": "SequenceFlow_16dx9cw_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "145",
+                                "y": "97.5"
+                            },
+                            {
+                                "x": "145",
+                                "y": "147.26000213623047"
+                            },
+                            {
+                                "x": "165.99998291015623",
+                                "y": "147.26000213623047"
+                            },
+                            {
+                                "x": "165.99998291015623",
+                                "y": "197.02000427246094"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_mytvuz",
+                        "id": "SequenceFlow_mytvuz_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "582.9999829101563",
+                                "y": "80.98000045776368"
+                            },
+                            {
+                                "x": "582.9999829101563",
+                                "y": "128.52001953125"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_bs2mim",
+                        "id": "SequenceFlow_bs2mim_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "165.99998291015623",
+                                "y": "236.98000427246095"
+                            },
+                            {
+                                "x": "165.99998291015623",
+                                "y": "283.0199890136719"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_1n8fibn",
+                        "id": "SequenceFlow_1n8fibn_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "582.9999829101563",
+                                "y": "168.48001953125"
+                            },
+                            {
+                                "x": "582.9999829101563",
+                                "y": "207.25189208984375"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_16ozn8m",
+                        "id": "SequenceFlow_16ozn8m_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "582.9999829101563",
+                                "y": "247.21189208984376"
+                            },
+                            {
+                                "x": "582.9999829101563",
+                                "y": "301.0199890136719"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_43l8qy",
+                        "id": "SequenceFlow_43l8qy_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "165.99998291015623",
+                                "y": "322.97998901367185"
+                            },
+                            {
+                                "x": "165.99998291015623",
+                                "y": "357.02000093460083"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_alocrl",
+                        "id": "SequenceFlow_alocrl_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "165.99998291015623",
+                                "y": "396.9800009346008"
+                            },
+                            {
+                                "x": "165.99998291015623",
+                                "y": "430.0200004577637"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_1pmaopo",
+                        "id": "SequenceFlow_1pmaopo_ve"
+                    }
+                ]
+            },
+            "id": "Process_1_ve"
+        },
+        "variables": [
+            {
+                "businessProp": {
+                    "uservariableName": "validDate",
+                    "userInput": "06"
+                },
+                "tasktCommandName": "AddVariableCommand",
+                "id": "var_.t170685p",
+                "type": "rpa:addVariableTask"
+            },
+            {
+                "businessProp": {
+                    "uservariableName": "passportPath",
+                    "userInput": "http://localhost:3030/rest/documentstore/document/29e6d3ca-9618-4263-9fb9-70338bb1fb3b?preview=true"
+                },
+                "tasktCommandName": "AddVariableCommand",
+                "id": "var_.kesirw4s",
+                "type": "rpa:addVariableTask"
+            },
+            {
+                "businessProp": {
+                    "uservariableName": "botstatus",
+                    "userInput": "0"
+                },
+                "tasktCommandName": "AddVariableCommand",
+                "id": "var_.k96gil92",
+                "type": "rpa:addVariableTask"
+            },
+            {
+                "businessProp": {
+                    "uservariableName": "passDate",
+                    "userInput": "20 Mar 2023"
+                },
+                "tasktCommandName": "AddVariableCommand",
+                "id": "var_.948v0ke2",
+                "type": "rpa:addVariableTask"
+            },
+            {
+                "businessProp": {
+                    "uservariableName": "path2",
+                    "userInput": "http://localhost:3030/rest/documentstore/document/423c5094-a9a4-415f-8df2-954590c703fb?preview=true"
+                },
+                "tasktCommandName": "AddVariableCommand",
+                "id": "var_.3mg4fa6k",
+                "type": "rpa:addVariableTask"
+            }
+        ],
+        "collaboration": {}
+    },
+    "description": "",
+    "uiModelerVersion": "7.0.5",
+    "isValidProcess": true,
+    "responseMessage": "",
+    "tasktActions": [
+        {
+            "businessProp": {
+                "uservariableName": "path2",
+                "userInput": "http://localhost:3030/rest/documentstore/document/423c5094-a9a4-415f-8df2-954590c703fb?preview=true"
+            },
+            "tasktCommandName": "AddVariableCommand",
+            "id": "var_.3mg4fa6k",
+            "type": "rpa:addVariableTask"
+        },
+        {
+            "businessProp": {
+                "uservariableName": "passDate",
+                "userInput": "20 Mar 2023"
+            },
+            "tasktCommandName": "AddVariableCommand",
+            "id": "var_.948v0ke2",
+            "type": "rpa:addVariableTask"
+        },
+        {
+            "businessProp": {
+                "uservariableName": "botstatus",
+                "userInput": "0"
+            },
+            "tasktCommandName": "AddVariableCommand",
+            "id": "var_.k96gil92",
+            "type": "rpa:addVariableTask"
+        },
+        {
+            "businessProp": {
+                "uservariableName": "passportPath",
+                "userInput": "http://localhost:3030/rest/documentstore/document/29e6d3ca-9618-4263-9fb9-70338bb1fb3b?preview=true"
+            },
+            "tasktCommandName": "AddVariableCommand",
+            "id": "var_.kesirw4s",
+            "type": "rpa:addVariableTask"
+        },
+        {
+            "businessProp": {
+                "uservariableName": "validDate",
+                "userInput": "06"
+            },
+            "tasktCommandName": "AddVariableCommand",
+            "id": "var_.t170685p",
+            "type": "rpa:addVariableTask"
+        },
+        {
+            "nodeName": "OcrTask",
+            "outgoing": "SequenceFlow_1wx3n1g",
+            "incoming": "SequenceFlow_1bjmd6v",
+            "businessProp": {
+                "ocrProcessingType": "Web Link",
+                "webPageLink": "[identityLink]",
+                "variableName": "a",
+                "ocrEngine": "Tesseract",
+                "language": "eng",
+                "IsCommented": false,
+                "PauseBeforeExeucution": "false"
+            },
+            "name": "Perform OCR",
+            "tasktCommandName": "OCRCommandEngine",
+            "id": "OcrTask_pki6ms",
+            "type": "rpa:ocrTask",
+            "lineNumber": 1,
+            "events": []
+        },
+        {
+            "nodeName": "OpenTask",
+            "outgoing": "SequenceFlow_1umr95k",
+            "incoming": "SequenceFlow_1wx3n1g",
+            "businessProp": {"applicationName": "notepad"},
+            "name": "Open Application",
+            "tasktCommandName": "StartProcessCommand",
+            "id": "OpenTask_19f6xpp",
+            "type": "rpa:openTask",
+            "lineNumber": 2,
+            "events": []
+        },
+        {
+            "nodeName": "InputTask",
+            "outgoing": "SequenceFlow_5fmuwy",
+            "incoming": "SequenceFlow_1umr95k",
+            "businessProp": {
+                "textToSend": "Performing OCR on Passport...\n\n",
+                "windowName": "[Current Window]"
+            },
+            "name": "Set Text",
+            "tasktCommandName": "SendKeysCommand",
+            "id": "InputTask_13f2xkb",
+            "type": "rpa:inputTask",
+            "lineNumber": 3,
+            "events": []
+        },
+        {
+            "nodeName": "TextExtractionTask",
+            "outgoing": "SequenceFlow_ypqoa5",
+            "incoming": "SequenceFlow_1rhkrhe",
+            "businessProp": {
+                "extractionType": "Extract All After Text",
+                "variableName": "extract1",
+                "after_LeadingText": "Departments of State",
+                "skipPastOccurences": "0",
+                "extractionValue": "[a]"
+            },
+            "name": "Text Extraction",
+            "tasktCommandName": "TextExtractorCommand",
+            "id": "TextExtractionTask_m3lvdd",
+            "type": "rpa:textExtractionTask",
+            "lineNumber": 6,
+            "events": []
+        },
+        {
+            "nodeName": "IfCommandTask",
+            "outgoing": [
+                "SequenceFlow_16dx9cw",
+                "SequenceFlow_mytvuz"
+            ],
+            "businessProp": {
+                "ifActionType": "Variable Compare",
+                "variableCompareOperand": "contains",
+                "variableCompareValue1": "[extract1]",
+                "variableCompareCaseSensitive": "No",
+                "variableCompareValue2": "[passportDate]"
+            },
+            "name": "If Command",
+            "tasktCommandName": "BeginIfCommand",
+            "id": "IfCommandTask_krxv0i",
+            "type": "rpa:ifCommandTask",
+            "lineNumber": 13,
+            "events": []
+        },
+        {
+            "targetRef": "SetVariableTask_15nuk2a",
+            "businessProp": {"condition": "true"},
+            "name": "True",
+            "tasktCommandName": "sequenceFlow",
+            "id": "SequenceFlow_16dx9cw",
+            "sourceRef": "IfCommandTask_krxv0i",
+            "type": "rpa:sequenceFlow"
+        },
+        {
+            "nodeName": "SetVariableTask",
+            "outgoing": "SequenceFlow_bs2mim",
+            "incoming": "SequenceFlow_16dx9cw",
+            "businessProp": {
+                "name": "Bot Approved",
+                "uservariableName": "[botstatus]",
+                "userInput": "1"
+            },
+            "name": "Bot Approved",
+            "tasktCommandName": "VariableCommand",
+            "id": "SetVariableTask_15nuk2a",
+            "type": "rpa:setVariableTask",
+            "lineNumber": 14,
+            "events": []
+        },
+        {
+            "nodeName": "ActiveWindowTask",
+            "outgoing": "SequenceFlow_16ozn8m",
+            "incoming": "SequenceFlow_bs2mim",
+            "businessProp": {"activateWindowName": "[Current Window]"},
+            "name": "Activate Window",
+            "tasktCommandName": "ActivateWindowCommand",
+            "id": "ActiveWindowTask_tj5t1h",
+            "type": "rpa:activeWindowTask",
+            "lineNumber": 15,
+            "events": []
+        },
+        {
+            "nodeName": "DelayExecutionTask",
+            "outgoing": "SequenceFlow_43l8qy",
+            "incoming": "SequenceFlow_16ozn8m",
+            "businessProp": {"userInput": "3000"},
+            "name": "Delay Execution",
+            "tasktCommandName": "PauseCommand",
+            "id": "DelayExecutionTask_5lr5uy",
+            "type": "rpa:delayExecutionTask",
+            "lineNumber": 16,
+            "events": []
+        },
+        {
+            "nodeName": "InputTask",
+            "incoming": "SequenceFlow_43l8qy",
+            "businessProp": {
+                "textToSend": "\nDate Matches. Pending Credit Score Check.",
+                "windowName": "[Current Window]"
+            },
+            "name": "Set Text",
+            "tasktCommandName": "SendKeysCommand",
+            "id": "InputTask_blydsa",
+            "type": "rpa:inputTask",
+            "lineNumber": 17,
+            "events": []
+        },
+        {
+            "targetRef": "SetVariableTask_mmsqee",
+            "businessProp": {
+                "condition": "false",
+                "name": "False"
+            },
+            "name": "False",
+            "tasktCommandName": "sequenceFlow",
+            "id": "SequenceFlow_mytvuz",
+            "sourceRef": "IfCommandTask_krxv0i",
+            "type": "rpa:sequenceFlow"
+        },
+        {
+            "nodeName": "SetVariableTask",
+            "outgoing": "SequenceFlow_1n8fibn",
+            "incoming": "SequenceFlow_mytvuz",
+            "businessProp": {
+                "name": "Bot Rejected",
+                "uservariableName": "[botstatus]",
+                "userInput": "2"
+            },
+            "name": "Bot Rejected",
+            "tasktCommandName": "VariableCommand",
+            "id": "SetVariableTask_mmsqee",
+            "type": "rpa:setVariableTask",
+            "lineNumber": 14,
+            "events": []
+        },
+        {
+            "nodeName": "ActiveWindowTask",
+            "outgoing": "SequenceFlow_alocrl",
+            "incoming": "SequenceFlow_1n8fibn",
+            "businessProp": {"activateWindowName": "[Current Window]"},
+            "name": "Activate Window",
+            "tasktCommandName": "ActivateWindowCommand",
+            "id": "ActiveWindowTask_we6mpm",
+            "type": "rpa:activeWindowTask",
+            "lineNumber": 15,
+            "events": []
+        },
+        {
+            "nodeName": "DelayExecutionTask",
+            "outgoing": "SequenceFlow_1pmaopo",
+            "incoming": "SequenceFlow_alocrl",
+            "businessProp": {"userInput": "3000"},
+            "name": "Delay Execution",
+            "tasktCommandName": "PauseCommand",
+            "id": "DelayExecutionTask_snz7jg",
+            "type": "rpa:delayExecutionTask",
+            "lineNumber": 16,
+            "events": []
+        },
+        {
+            "nodeName": "InputTask",
+            "incoming": "SequenceFlow_1pmaopo",
+            "businessProp": {
+                "textToSend": "\nDate does not match. Application Rejected!",
+                "windowName": "[Current Window]"
+            },
+            "name": "Set Text",
+            "tasktCommandName": "SendKeysCommand",
+            "id": "InputTask_1icv5yo",
+            "type": "rpa:inputTask",
+            "lineNumber": 17,
+            "events": []
+        },
+        {
+            "businessProp": {"IsCommented": false},
+            "tasktCommandName": "EndIfCommand",
+            "id": "EndIfTask",
+            "type": "rpa:endIfTask"
+        },
+        {
+            "nodeName": "DelayExecutionTask",
+            "outgoing": "SequenceFlow_k14tt9",
+            "incoming": "SequenceFlow_1h330dz",
+            "businessProp": {"userInput": "5000"},
+            "name": "Delay Execution",
+            "tasktCommandName": "PauseCommand",
+            "id": "DelayExecutionTask_kmlqnm",
+            "type": "rpa:delayExecutionTask",
+            "lineNumber": 13,
+            "events": []
+        },
+        {
+            "nodeName": "AdvanceKeyStrokes",
+            "outgoing": "SequenceFlow_8byxd5",
+            "incoming": "SequenceFlow_k14tt9",
+            "businessProp": {
+                "KeyStrokes": [
+                    {
+                        "Action": "Key Down",
+                        "Key": "Alt (Left) [LMenu]"
+                    },
+                    {
+                        "Action": "Key Press (Down + Up)",
+                        "Key": "F4 [F4]"
+                    },
+                    {
+                        "Action": "Key Up",
+                        "Key": "Alt (Left) [LMenu]"
+                    },
+                    {
+                        "Action": "Key Press (Down + Up)",
+                        "Key": "Right Arrow [Right]"
+                    },
+                    {
+                        "Action": "Key Press (Down + Up)",
+                        "Key": "Enter [Return]"
+                    }
+                ],
+                "windowName": "[Current Window]",
+                "IsCommented": false
+            },
+            "name": "Send Keystrokes",
+            "tasktCommandName": "SendAdvancedKeyStrokesCommand",
+            "id": "AdvanceKeyStrokes_th6xai",
+            "type": "rpa:advanceKeyStrokes",
+            "lineNumber": 14,
+            "events": []
+        },
+        {
+            "nodeName": "TriggerBPMTask",
+            "outgoing": "SequenceFlow_4htoxr",
+            "incoming": "SequenceFlow_8byxd5",
+            "businessProp": {
+                "bpmRpaVariables": [{
+                    "Value": "botstatus",
+                    "Key": "status"
+                }],
+                "IsCommented": false,
+                "PauseBeforeExeucution": "false"
+            },
+            "name": "Resume BPM",
+            "tasktCommandName": "TriggerBPMCommand",
+            "id": "TriggerBPMTask_p0hnuo",
+            "type": "rpa:triggerBPMTask",
+            "lineNumber": 15,
+            "events": []
+        }
+    ]
+}

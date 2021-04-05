@@ -1,0 +1,11 @@
+.db-cell9 table thead th{
+    background-color:rgb(251, 172, 54) !important;
+    border: 0px;
+    
+}
+
+.header {
+    background-color:rgb(251, 172, 54) !important;
+    font-size: 14pt;
+    font-weight: bold;
+}

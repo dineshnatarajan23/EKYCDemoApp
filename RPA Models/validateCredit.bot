@@ -1,0 +1,2158 @@
+{
+    "variables": [
+        {
+            "name": "gfirstname",
+            "type": null,
+            "value": null
+        },
+        {
+            "name": "glastname",
+            "type": null,
+            "value": null
+        },
+        {
+            "name": "gemail",
+            "type": null,
+            "value": null
+        },
+        {
+            "name": "gssn",
+            "type": null,
+            "value": null
+        },
+        {
+            "name": "mincreditscore",
+            "type": null,
+            "value": null
+        }
+    ],
+    "isDebbugerEnable": "false",
+    "isValidSequence": true,
+    "breakPointEnable": "true",
+    "modelerModel": {
+        "process": {
+            "sequenceFlow": [
+                {
+                    "targetRef": "SubProcess_1lhjt2w",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_1jdaghc",
+                    "sourceRef": "StartEvent_rcqzfz",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "SubProcess_86iovs",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_1d6jj2c",
+                    "sourceRef": "SubProcess_1lhjt2w",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "EndEvent_qp0t0n",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_tbvap0",
+                    "sourceRef": "TriggerBPMTask_1gxs754",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "IfCommandProcess_1pdawxs",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_brvcss",
+                    "sourceRef": "SubProcess_86iovs",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "TriggerBPMTask_1gxs754",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_fu5woa",
+                    "sourceRef": "CloseBrowserWebTask_11y7tul",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "CloseBrowserWebTask_11y7tul",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_ukfnfc",
+                    "sourceRef": "DelayExecutionTask_1a2wtsa",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "DelayExecutionTask_1j7p851",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_10tojt",
+                    "sourceRef": "IfCommandProcess_1pdawxs",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "AdvanceKeyStrokes_17yzj2p",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_qmhd9b",
+                    "sourceRef": "DelayExecutionTask_1j7p851",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "DelayExecutionTask_1a2wtsa",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_14eelh3",
+                    "sourceRef": "AdvanceKeyStrokes_17yzj2p",
+                    "type": "rpa:sequenceFlow"
+                }
+            ],
+            "subProcess": [
+                {
+                    "isExpanded": "true",
+                    "nodeName": "SubProcessEnd",
+                    "sequenceFlow": {
+                        "targetRef": "NavigateURLWebTask_1mykne6",
+                        "businessProp": {},
+                        "name": "",
+                        "tasktCommandName": "sequenceFlow",
+                        "id": "SequenceFlow_dwsl9p",
+                        "sourceRef": "CreateBrowserWebTask_6zg9he",
+                        "type": "rpa:sequenceFlow"
+                    },
+                    "outgoing": "SequenceFlow_1d6jj2c",
+                    "incoming": "SequenceFlow_1jdaghc",
+                    "createBrowserWebTask": {
+                        "nodeName": "CreateBrowserWebTask",
+                        "outgoing": "SequenceFlow_dwsl9p",
+                        "businessProp": {
+                            "createInstanceTracking": "Forget Instance",
+                            "windowStateOption": "Normal",
+                            "browserInstanceName": "chrome",
+                            "browserEngineType": "Chrome"
+                        },
+                        "name": "Open Browser",
+                        "tasktCommandName": "SeleniumBrowserCreateCommand",
+                        "id": "CreateBrowserWebTask_6zg9he",
+                        "type": "rpa:createBrowserWebTask",
+                        "lineNumber": 2,
+                        "events": []
+                    },
+                    "navigateURLWebTask": {
+                        "nodeName": "NavigateURLWebTask",
+                        "incoming": "SequenceFlow_dwsl9p",
+                        "businessProp": {
+                            "navigateURL": "[vURL]",
+                            "browserInstanceName": "chrome"
+                        },
+                        "name": "Navigate To URL",
+                        "tasktCommandName": "SeleniumBrowserNavigateURLCommand",
+                        "id": "NavigateURLWebTask_1mykne6",
+                        "type": "rpa:navigateURLWebTask",
+                        "lineNumber": 3,
+                        "events": []
+                    },
+                    "businessProp": {"name": "Open Browser"},
+                    "name": "Open Browser",
+                    "id": "SubProcess_1lhjt2w",
+                    "type": "rpa:subProcess",
+                    "lineNumber": 1
+                },
+                {
+                    "isExpanded": "true",
+                    "nodeName": "SubProcessEnd",
+                    "outgoing": "SequenceFlow_brvcss",
+                    "incoming": "SequenceFlow_1d6jj2c",
+                    "businessProp": {"name": "Calculate Credit Score"},
+                    "delayExecutionTask": [
+                        {
+                            "nodeName": "DelayExecutionTask",
+                            "outgoing": "SequenceFlow_x4pek5",
+                            "incoming": "SequenceFlow_v71hwv",
+                            "businessProp": {
+                                "name": "Wait for Credit Score Result",
+                                "userInput": "5000"
+                            },
+                            "name": "Wait for Credit Score Result",
+                            "tasktCommandName": "PauseCommand",
+                            "id": "DelayExecutionTask_xul3f1",
+                            "type": "rpa:delayExecutionTask",
+                            "lineNumber": 12,
+                            "events": []
+                        },
+                        {
+                            "nodeName": "DelayExecutionTask",
+                            "outgoing": "SequenceFlow_1wmpdw9",
+                            "incoming": "SequenceFlow_1wlny64",
+                            "businessProp": {"userInput": "5000"},
+                            "name": "Delay Execution",
+                            "tasktCommandName": "PauseCommand",
+                            "id": "DelayExecutionTask_me65oa",
+                            "type": "rpa:delayExecutionTask",
+                            "lineNumber": 4,
+                            "events": []
+                        }
+                    ],
+                    "type": "rpa:subProcess",
+                    "setWindowStateTask": {
+                        "nodeName": "SetWindowStateTask",
+                        "outgoing": "SequenceFlow_10bcgvb",
+                        "incoming": "SequenceFlow_1wmpdw9",
+                        "businessProp": {
+                            "requestType": "Maximize",
+                            "windowName": "Credit Score Check - Google Chrome",
+                            "IsCommented": true
+                        },
+                        "name": "Set Window State",
+                        "tasktCommandName": "SetWindowStateCommand",
+                        "id": "SetWindowStateTask_1712lzm",
+                        "type": "rpa:setWindowStateTask",
+                        "lineNumber": 5,
+                        "events": []
+                    },
+                    "sequenceFlow": [
+                        {
+                            "targetRef": "ElementActionWebTask_92m05f",
+                            "businessProp": {},
+                            "name": "",
+                            "tasktCommandName": "sequenceFlow",
+                            "id": "SequenceFlow_11kc9ox",
+                            "sourceRef": "ElementActionWebTask_5nhq7y",
+                            "type": "rpa:sequenceFlow"
+                        },
+                        {
+                            "targetRef": "ElementActionWebTask_rkd0z9",
+                            "businessProp": {},
+                            "name": "",
+                            "tasktCommandName": "sequenceFlow",
+                            "id": "SequenceFlow_b0tm6g",
+                            "sourceRef": "ElementActionWebTask_92m05f",
+                            "type": "rpa:sequenceFlow"
+                        },
+                        {
+                            "targetRef": "ElementActionWebTask_jyzvkl",
+                            "businessProp": {},
+                            "name": "",
+                            "tasktCommandName": "sequenceFlow",
+                            "id": "SequenceFlow_13u3lqe",
+                            "sourceRef": "ElementActionWebTask_rkd0z9",
+                            "type": "rpa:sequenceFlow"
+                        },
+                        {
+                            "targetRef": "ElementActionWebTask_1xbgf4c",
+                            "businessProp": {},
+                            "name": "",
+                            "tasktCommandName": "sequenceFlow",
+                            "id": "SequenceFlow_1n1xqwv",
+                            "sourceRef": "ElementActionWebTask_jyzvkl",
+                            "type": "rpa:sequenceFlow"
+                        },
+                        {
+                            "targetRef": "ElementActionWebTask_1eqq6hh",
+                            "businessProp": {},
+                            "name": "",
+                            "tasktCommandName": "sequenceFlow",
+                            "id": "SequenceFlow_1fiwa0z",
+                            "sourceRef": "ElementActionWebTask_1xbgf4c",
+                            "type": "rpa:sequenceFlow"
+                        },
+                        {
+                            "targetRef": "ElementActionWebTask_h0vuqz",
+                            "businessProp": {},
+                            "name": "",
+                            "tasktCommandName": "sequenceFlow",
+                            "id": "SequenceFlow_x4pek5",
+                            "sourceRef": "DelayExecutionTask_xul3f1",
+                            "type": "rpa:sequenceFlow"
+                        },
+                        {
+                            "targetRef": "DelayExecutionTask_xul3f1",
+                            "businessProp": {},
+                            "name": "",
+                            "tasktCommandName": "sequenceFlow",
+                            "id": "SequenceFlow_v71hwv",
+                            "sourceRef": "ElementActionWebTask_1eqq6hh",
+                            "type": "rpa:sequenceFlow"
+                        },
+                        {
+                            "targetRef": "DelayExecutionTask_me65oa",
+                            "businessProp": {},
+                            "name": "",
+                            "tasktCommandName": "sequenceFlow",
+                            "id": "SequenceFlow_1wlny64",
+                            "sourceRef": "ActiveWindowTask_nqzy5t",
+                            "type": "rpa:sequenceFlow"
+                        },
+                        {
+                            "targetRef": "SetWindowStateTask_1712lzm",
+                            "businessProp": {},
+                            "name": "",
+                            "tasktCommandName": "sequenceFlow",
+                            "id": "SequenceFlow_1wmpdw9",
+                            "sourceRef": "DelayExecutionTask_me65oa",
+                            "type": "rpa:sequenceFlow"
+                        },
+                        {
+                            "targetRef": "ElementActionWebTask_5nhq7y",
+                            "businessProp": {},
+                            "name": "",
+                            "tasktCommandName": "sequenceFlow",
+                            "id": "SequenceFlow_10bcgvb",
+                            "sourceRef": "SetWindowStateTask_1712lzm",
+                            "type": "rpa:sequenceFlow"
+                        }
+                    ],
+                    "activeWindowTask": {
+                        "nodeName": "ActiveWindowTask",
+                        "outgoing": "SequenceFlow_1wlny64",
+                        "businessProp": {"activateWindowName": "[Current Window]"},
+                        "name": "Activate Window",
+                        "tasktCommandName": "ActivateWindowCommand",
+                        "id": "ActiveWindowTask_nqzy5t",
+                        "type": "rpa:activeWindowTask",
+                        "lineNumber": 3,
+                        "events": []
+                    },
+                    "name": "Calculate Credit Score",
+                    "id": "SubProcess_86iovs",
+                    "lineNumber": 2,
+                    "elementActionWebTask": [
+                        {
+                            "nodeName": "ElementActionWebTask",
+                            "outgoing": "SequenceFlow_11kc9ox",
+                            "incoming": "SequenceFlow_10bcgvb",
+                            "businessProp": {
+                                "seleniumSearchParameter": "//*[@id=\"fname\"]",
+                                "elementActionParameter": "Yes",
+                                "seleniumElementAction": "Set Text",
+                                "name": "Set First Name",
+                                "browserInstanceName": "chrome",
+                                "elementTextToSet": "[gfirstname]",
+                                "seleniumSearchType": "Find Element By XPath"
+                            },
+                            "name": "Set First Name",
+                            "tasktCommandName": "SeleniumBrowserElementActionCommand",
+                            "id": "ElementActionWebTask_5nhq7y",
+                            "type": "rpa:elementActionWebTask",
+                            "lineNumber": 6,
+                            "events": []
+                        },
+                        {
+                            "nodeName": "ElementActionWebTask",
+                            "outgoing": "SequenceFlow_b0tm6g",
+                            "incoming": "SequenceFlow_11kc9ox",
+                            "businessProp": {
+                                "seleniumSearchParameter": "//*[@id=\"lname\"]",
+                                "elementActionParameter": "Yes",
+                                "seleniumElementAction": "Set Text",
+                                "name": "Set Last Name",
+                                "elementTextToSet": "[glastname]",
+                                "browserInstanceName": "chrome",
+                                "seleniumSearchType": "Find Element By XPath"
+                            },
+                            "name": "Set Last Name",
+                            "tasktCommandName": "SeleniumBrowserElementActionCommand",
+                            "id": "ElementActionWebTask_92m05f",
+                            "type": "rpa:elementActionWebTask",
+                            "lineNumber": 7,
+                            "events": []
+                        },
+                        {
+                            "nodeName": "ElementActionWebTask",
+                            "outgoing": "SequenceFlow_13u3lqe",
+                            "incoming": "SequenceFlow_b0tm6g",
+                            "businessProp": {
+                                "seleniumSearchParameter": "//*[@id=\"emailid\"]",
+                                "elementActionParameter": "Yes",
+                                "seleniumElementAction": "Set Text",
+                                "browserInstanceName": "chrome",
+                                "elementTextToSet": "[gemail]",
+                                "name": "Set Email Id",
+                                "seleniumSearchType": "Find Element By XPath"
+                            },
+                            "name": "Set Email Id",
+                            "tasktCommandName": "SeleniumBrowserElementActionCommand",
+                            "id": "ElementActionWebTask_rkd0z9",
+                            "type": "rpa:elementActionWebTask",
+                            "lineNumber": 8,
+                            "events": []
+                        },
+                        {
+                            "nodeName": "ElementActionWebTask",
+                            "outgoing": "SequenceFlow_1n1xqwv",
+                            "incoming": "SequenceFlow_13u3lqe",
+                            "businessProp": {
+                                "seleniumSearchParameter": "//*[@id=\"ssn\"]",
+                                "elementActionParameter": "Yes",
+                                "seleniumElementAction": "Set Text",
+                                "name": "Set SSN",
+                                "browserInstanceName": "chrome",
+                                "elementTextToSet": "[gssn]",
+                                "seleniumSearchType": "Find Element By XPath"
+                            },
+                            "name": "Set SSN",
+                            "tasktCommandName": "SeleniumBrowserElementActionCommand",
+                            "id": "ElementActionWebTask_jyzvkl",
+                            "type": "rpa:elementActionWebTask",
+                            "lineNumber": 9,
+                            "events": []
+                        },
+                        {
+                            "nodeName": "ElementActionWebTask",
+                            "outgoing": "SequenceFlow_1fiwa0z",
+                            "incoming": "SequenceFlow_1n1xqwv",
+                            "businessProp": {
+                                "seleniumSearchParameter": "//*[@id=\"drvlic\"]",
+                                "elementActionParameter": "Yes",
+                                "seleniumElementAction": "Set Text",
+                                "name": "Set Driving License",
+                                "browserInstanceName": "chrome",
+                                "elementTextToSet": "1234568",
+                                "seleniumSearchType": "Find Element By XPath"
+                            },
+                            "name": "Set Driving License",
+                            "tasktCommandName": "SeleniumBrowserElementActionCommand",
+                            "id": "ElementActionWebTask_1xbgf4c",
+                            "type": "rpa:elementActionWebTask",
+                            "lineNumber": 10,
+                            "events": []
+                        },
+                        {
+                            "nodeName": "ElementActionWebTask",
+                            "outgoing": "SequenceFlow_v71hwv",
+                            "incoming": "SequenceFlow_1fiwa0z",
+                            "businessProp": {
+                                "seleniumSearchParameter": "//*[@id=\"submit\"]",
+                                "seleniumElementAction": "Invoke Click",
+                                "name": "Click Submit",
+                                "browserInstanceName": "chrome",
+                                "seleniumSearchType": "Find Element By XPath"
+                            },
+                            "name": "Click Submit",
+                            "tasktCommandName": "SeleniumBrowserElementActionCommand",
+                            "id": "ElementActionWebTask_1eqq6hh",
+                            "type": "rpa:elementActionWebTask",
+                            "lineNumber": 11,
+                            "events": []
+                        },
+                        {
+                            "nodeName": "ElementActionWebTask",
+                            "incoming": "SequenceFlow_x4pek5",
+                            "businessProp": {
+                                "seleniumSearchParameter": "//*[@id=\"score\"]",
+                                "seleniumElementAction": "Get Text",
+                                "getTextVariable": "creditscore",
+                                "browserInstanceName": "chrome",
+                                "name": "Get Credit Score",
+                                "seleniumSearchType": "Find Element By XPath"
+                            },
+                            "name": "Get Credit Score",
+                            "tasktCommandName": "SeleniumBrowserElementActionCommand",
+                            "id": "ElementActionWebTask_h0vuqz",
+                            "type": "rpa:elementActionWebTask",
+                            "lineNumber": 13,
+                            "events": []
+                        }
+                    ]
+                }
+            ],
+            "triggerBPMTask": {
+                "nodeName": "TriggerBPMTask",
+                "outgoing": "SequenceFlow_tbvap0",
+                "incoming": "SequenceFlow_fu5woa",
+                "businessProp": {
+                    "bpmRpaVariables": [{
+                        "Value": "creditstatus",
+                        "Key": "status"
+                    }],
+                    "IsCommented": false
+                },
+                "name": "Resume BPM",
+                "tasktCommandName": "TriggerBPMCommand",
+                "id": "TriggerBPMTask_1gxs754",
+                "type": "rpa:triggerBPMTask",
+                "lineNumber": 8,
+                "events": []
+            },
+            "endEvent": {
+                "incoming": "SequenceFlow_tbvap0",
+                "businessProp": {},
+                "name": "End",
+                "id": "EndEvent_qp0t0n",
+                "type": "rpa:endEvent"
+            },
+            "startEvent": {
+                "outgoing": "SequenceFlow_1jdaghc",
+                "businessProp": {"GlobalVariables": [
+                    {"Gblvarible": "gfirstname"},
+                    {"Gblvarible": "glastname"},
+                    {"Gblvarible": "gemail"},
+                    {"Gblvarible": "gssn"},
+                    {"Gblvarible": "mincreditscore"}
+                ]},
+                "name": "Start",
+                "id": "StartEvent_rcqzfz",
+                "type": "rpa:startEvent"
+            },
+            "ifCommandProcess": {
+                "isExpanded": "true",
+                "nodeName": "SubProcessEnd",
+                "setVariableTask": [
+                    {
+                        "nodeName": "SetVariableTask",
+                        "outgoing": "SequenceFlow_1jp8fcf",
+                        "incoming": "SequenceFlow_70acvy",
+                        "businessProp": {
+                            "name": "Assign Rejection Status Flag",
+                            "uservariableName": "creditstatus",
+                            "userInput": "0"
+                        },
+                        "name": "Assign Rejection Status Flag",
+                        "tasktCommandName": "VariableCommand",
+                        "id": "SetVariableTask_1m0xtbo",
+                        "type": "rpa:setVariableTask",
+                        "lineNumber": 5,
+                        "events": []
+                    },
+                    {
+                        "nodeName": "SetVariableTask",
+                        "outgoing": "SequenceFlow_1lmly6x",
+                        "incoming": "SequenceFlow_1u5twqs",
+                        "businessProp": {
+                            "name": "Assign Approved Status Flag",
+                            "uservariableName": "creditstatus",
+                            "userInput": "1"
+                        },
+                        "name": "Assign Approved Status Flag",
+                        "tasktCommandName": "VariableCommand",
+                        "id": "SetVariableTask_2ykrko",
+                        "type": "rpa:setVariableTask",
+                        "lineNumber": 5,
+                        "events": []
+                    }
+                ],
+                "outgoing": "SequenceFlow_10tojt",
+                "incoming": "SequenceFlow_brvcss",
+                "commandType": "ifCommandProcess",
+                "openTask": [
+                    {
+                        "nodeName": "OpenTask",
+                        "outgoing": "SequenceFlow_j4khs0",
+                        "incoming": "SequenceFlow_1jp8fcf",
+                        "businessProp": {"applicationName": "notepad"},
+                        "name": "Open Application",
+                        "tasktCommandName": "StartProcessCommand",
+                        "id": "OpenTask_qf7owb",
+                        "type": "rpa:openTask",
+                        "lineNumber": 6,
+                        "events": []
+                    },
+                    {
+                        "nodeName": "OpenTask",
+                        "outgoing": "SequenceFlow_116x0fe",
+                        "incoming": "SequenceFlow_1lmly6x",
+                        "businessProp": {"applicationName": "notepad"},
+                        "name": "Open Application",
+                        "tasktCommandName": "StartProcessCommand",
+                        "id": "OpenTask_1wmbdzu",
+                        "type": "rpa:openTask",
+                        "lineNumber": 6,
+                        "events": []
+                    }
+                ],
+                "ifCommandTask": {
+                    "nodeName": "IfCommandTask",
+                    "outgoing": [
+                        "SequenceFlow_70acvy",
+                        "SequenceFlow_1u5twqs"
+                    ],
+                    "businessProp": {
+                        "ifActionType": "Value",
+                        "valueValue2": "[mincreditscore]",
+                        "valueValue1": "[creditscore]",
+                        "name": "Credit Score Compare",
+                        "valueOperand": "is less than or equal to"
+                    },
+                    "name": "Credit Score Compare",
+                    "tasktCommandName": "BeginIfCommand",
+                    "id": "IfCommandTask_ue04qn",
+                    "type": "rpa:ifCommandTask",
+                    "lineNumber": 4,
+                    "events": []
+                },
+                "businessProp": {},
+                "type": "rpa:ifCommandProcess",
+                "inputTask": [
+                    {
+                        "nodeName": "InputTask",
+                        "incoming": "SequenceFlow_j4khs0",
+                        "businessProp": {
+                            "textToSend": "comparing values\n\nGenerated credit score is [creditscore] \nExpected credit score is  [mincreditscore]\n\nNeed validator's approval",
+                            "windowName": "[Current Window]"
+                        },
+                        "name": "Set Text",
+                        "tasktCommandName": "SendKeysCommand",
+                        "id": "InputTask_1mkz49s",
+                        "type": "rpa:inputTask",
+                        "lineNumber": 7,
+                        "events": []
+                    },
+                    {
+                        "nodeName": "InputTask",
+                        "incoming": "SequenceFlow_116x0fe",
+                        "businessProp": {
+                            "textToSend": "comparing values\n\nGenerated credit score is [creditscore] \nExpected credit score is  [mincreditscore]\n\nAuto Approved!",
+                            "windowName": "[Current Window]"
+                        },
+                        "name": "Set Text",
+                        "tasktCommandName": "SendKeysCommand",
+                        "id": "InputTask_kbcjdu",
+                        "type": "rpa:inputTask",
+                        "lineNumber": 7,
+                        "events": []
+                    }
+                ],
+                "sequenceFlow": [
+                    {
+                        "targetRef": "SetVariableTask_1m0xtbo",
+                        "businessProp": {"condition": "true"},
+                        "name": "True",
+                        "tasktCommandName": "sequenceFlow",
+                        "id": "SequenceFlow_70acvy",
+                        "sourceRef": "IfCommandTask_ue04qn",
+                        "type": "rpa:sequenceFlow"
+                    },
+                    {
+                        "targetRef": "SetVariableTask_2ykrko",
+                        "businessProp": {
+                            "condition": "false",
+                            "name": "False"
+                        },
+                        "name": "False",
+                        "tasktCommandName": "sequenceFlow",
+                        "id": "SequenceFlow_1u5twqs",
+                        "sourceRef": "IfCommandTask_ue04qn",
+                        "type": "rpa:sequenceFlow"
+                    },
+                    {
+                        "targetRef": "OpenTask_qf7owb",
+                        "businessProp": {},
+                        "name": "",
+                        "tasktCommandName": "sequenceFlow",
+                        "id": "SequenceFlow_1jp8fcf",
+                        "sourceRef": "SetVariableTask_1m0xtbo",
+                        "type": "rpa:sequenceFlow"
+                    },
+                    {
+                        "targetRef": "InputTask_1mkz49s",
+                        "businessProp": {},
+                        "name": "",
+                        "tasktCommandName": "sequenceFlow",
+                        "id": "SequenceFlow_j4khs0",
+                        "sourceRef": "OpenTask_qf7owb",
+                        "type": "rpa:sequenceFlow"
+                    },
+                    {
+                        "targetRef": "OpenTask_1wmbdzu",
+                        "businessProp": {},
+                        "name": "",
+                        "tasktCommandName": "sequenceFlow",
+                        "id": "SequenceFlow_1lmly6x",
+                        "sourceRef": "SetVariableTask_2ykrko",
+                        "type": "rpa:sequenceFlow"
+                    },
+                    {
+                        "targetRef": "InputTask_kbcjdu",
+                        "businessProp": {},
+                        "name": "",
+                        "tasktCommandName": "sequenceFlow",
+                        "id": "SequenceFlow_116x0fe",
+                        "sourceRef": "OpenTask_1wmbdzu",
+                        "type": "rpa:sequenceFlow"
+                    }
+                ],
+                "name": "Conditional Task",
+                "id": "IfCommandProcess_1pdawxs",
+                "lineNumber": 3
+            },
+            "id": "Process_1",
+            "closeBrowserWebTask": {
+                "nodeName": "CloseBrowserWebTask",
+                "outgoing": "SequenceFlow_fu5woa",
+                "incoming": "SequenceFlow_ukfnfc",
+                "businessProp": {"browserInstanceName": "chrome"},
+                "name": "Close Browser",
+                "tasktCommandName": "SeleniumBrowserCloseCommand",
+                "id": "CloseBrowserWebTask_11y7tul",
+                "type": "rpa:closeBrowserWebTask",
+                "lineNumber": 7,
+                "events": []
+            },
+            "delayExecutionTask": [
+                {
+                    "nodeName": "DelayExecutionTask",
+                    "outgoing": "SequenceFlow_ukfnfc",
+                    "incoming": "SequenceFlow_14eelh3",
+                    "businessProp": {
+                        "userInput": "3000",
+                        "IsCommented": true,
+                        "PauseBeforeExeucution": "false"
+                    },
+                    "name": "Delay Execution",
+                    "tasktCommandName": "PauseCommand",
+                    "id": "DelayExecutionTask_1a2wtsa",
+                    "type": "rpa:delayExecutionTask",
+                    "lineNumber": 6,
+                    "events": []
+                },
+                {
+                    "nodeName": "DelayExecutionTask",
+                    "outgoing": "SequenceFlow_qmhd9b",
+                    "incoming": "SequenceFlow_10tojt",
+                    "businessProp": {"userInput": "5000"},
+                    "name": "Delay Execution",
+                    "tasktCommandName": "PauseCommand",
+                    "id": "DelayExecutionTask_1j7p851",
+                    "type": "rpa:delayExecutionTask",
+                    "lineNumber": 4,
+                    "events": []
+                }
+            ],
+            "advanceKeyStrokes": {
+                "nodeName": "AdvanceKeyStrokes",
+                "outgoing": "SequenceFlow_14eelh3",
+                "incoming": "SequenceFlow_qmhd9b",
+                "businessProp": {
+                    "KeyStrokes": [
+                        {
+                            "Action": "Key Down",
+                            "Key": "Alt (Left) [LMenu]"
+                        },
+                        {
+                            "Action": "Key Press (Down + Up)",
+                            "Key": "F4 [F4]"
+                        },
+                        {
+                            "Action": "Key Up",
+                            "Key": "Alt (Left) [LMenu]"
+                        },
+                        {
+                            "Action": "Key Press (Down + Up)",
+                            "Key": "Right Arrow [Right]"
+                        },
+                        {
+                            "Action": "Key Press (Down + Up)",
+                            "Key": "Enter [Return]"
+                        }
+                    ],
+                    "windowName": "[Current Window]"
+                },
+                "name": "Send Keystrokes",
+                "tasktCommandName": "SendAdvancedKeyStrokesCommand",
+                "id": "AdvanceKeyStrokes_17yzj2p",
+                "type": "rpa:advanceKeyStrokes",
+                "lineNumber": 5,
+                "events": []
+            }
+        },
+        "BPMNDiagram": {
+            "bpmnElement": "Process_1",
+            "BPMNPlane": {
+                "BPMNShape": [
+                    {
+                        "bpmnElement": "SubProcess_1lhjt2w",
+                        "Bounds": {
+                            "cx": 418,
+                            "cy": 311,
+                            "x": 82.06253051757812,
+                            "width": 671.8749389648438,
+                            "y": 238.79953002929688,
+                            "height": 144.40093994140625
+                        },
+                        "id": "SubProcess_1lhjt2w_ve"
+                    },
+                    {
+                        "bpmnElement": "CreateBrowserWebTask_6zg9he",
+                        "Bounds": {
+                            "cx": 217.52000476300714,
+                            "cy": 75.00000183314091,
+                            "x": 109.44001056134698,
+                            "width": 216.1599884033203,
+                            "y": 55.020002290904586,
+                            "height": 39.959999084472656
+                        },
+                        "id": "CreateBrowserWebTask_6zg9he_ve"
+                    },
+                    {
+                        "bpmnElement": "NavigateURLWebTask_1mykne6",
+                        "Bounds": {
+                            "cx": 509.5200047767164,
+                            "cy": 75.00000183314091,
+                            "x": 401.44001057505625,
+                            "width": 216.1599884033203,
+                            "y": 55.020002290904586,
+                            "height": 39.959999084472656
+                        },
+                        "id": "NavigateURLWebTask_1mykne6_ve"
+                    },
+                    {
+                        "bpmnElement": "SubProcess_86iovs",
+                        "Bounds": {
+                            "cx": 417.9999694824219,
+                            "cy": 735.6999816894531,
+                            "x": 106.71697998046875,
+                            "width": 622.5659790039062,
+                            "y": 429.1999816894531,
+                            "height": 613
+                        },
+                        "id": "SubProcess_86iovs_ve"
+                    },
+                    {
+                        "bpmnElement": "DelayExecutionTask_xul3f1",
+                        "Bounds": {
+                            "cx": 458.16492978261476,
+                            "cy": 350.29845610260963,
+                            "x": 350.0849355809546,
+                            "width": 216.1599884033203,
+                            "y": 330.3184565603733,
+                            "height": 39.959999084472656
+                        },
+                        "id": "DelayExecutionTask_xul3f1_ve"
+                    },
+                    {
+                        "bpmnElement": "DelayExecutionTask_me65oa",
+                        "Bounds": {
+                            "cx": 164.00000040756277,
+                            "cy": 176.39839782744548,
+                            "x": 55.92000620590261,
+                            "width": 216.1599884033203,
+                            "y": 156.41839828520915,
+                            "height": 39.959999084472656
+                        },
+                        "id": "DelayExecutionTask_me65oa_ve"
+                    },
+                    {
+                        "bpmnElement": "SetWindowStateTask_1712lzm",
+                        "Bounds": {
+                            "cx": 160.28306579589844,
+                            "cy": 240.80006790161133,
+                            "x": 52.20307159423828,
+                            "width": 216.1599884033203,
+                            "y": 220.820068359375,
+                            "height": 39.959999084472656
+                        },
+                        "id": "SetWindowStateTask_1712lzm_ve"
+                    },
+                    {
+                        "bpmnElement": "ActiveWindowTask_nqzy5t",
+                        "Bounds": {
+                            "cx": 163.99998524546663,
+                            "cy": 89.99999745219975,
+                            "x": 55.919991043806476,
+                            "width": 216.1599884033203,
+                            "y": 70.01999790996342,
+                            "height": 39.959999084472656
+                        },
+                        "id": "ActiveWindowTask_nqzy5t_ve"
+                    },
+                    {
+                        "bpmnElement": "ElementActionWebTask_5nhq7y",
+                        "Bounds": {
+                            "cx": 163.9999851487737,
+                            "cy": 311.0000027063479,
+                            "x": 55.91999094711355,
+                            "width": 216.1599884033203,
+                            "y": 291.0200031641116,
+                            "height": 39.959999084472656
+                        },
+                        "id": "ElementActionWebTask_5nhq7y_ve"
+                    },
+                    {
+                        "bpmnElement": "ElementActionWebTask_92m05f",
+                        "Bounds": {
+                            "cx": 164.00000040756254,
+                            "cy": 397.29845603734157,
+                            "x": 55.92000620590238,
+                            "width": 216.1599884033203,
+                            "y": 377.31845649510524,
+                            "height": 39.959999084472656
+                        },
+                        "id": "ElementActionWebTask_92m05f_ve"
+                    },
+                    {
+                        "bpmnElement": "ElementActionWebTask_rkd0z9",
+                        "Bounds": {
+                            "cx": 164.00000040756254,
+                            "cy": 473.29845610260963,
+                            "x": 55.92000620590238,
+                            "width": 216.1599884033203,
+                            "y": 453.3184565603733,
+                            "height": 39.959999084472656
+                        },
+                        "id": "ElementActionWebTask_rkd0z9_ve"
+                    },
+                    {
+                        "bpmnElement": "ElementActionWebTask_jyzvkl",
+                        "Bounds": {
+                            "cx": 458.16492983937246,
+                            "cy": 89.99999745219975,
+                            "x": 350.0849356377123,
+                            "width": 216.1599884033203,
+                            "y": 70.01999790996342,
+                            "height": 39.959999084472656
+                        },
+                        "id": "ElementActionWebTask_jyzvkl_ve"
+                    },
+                    {
+                        "bpmnElement": "ElementActionWebTask_1xbgf4c",
+                        "Bounds": {
+                            "cx": 458.16492983937246,
+                            "cy": 176.39839782744548,
+                            "x": 350.0849356377123,
+                            "width": 216.1599884033203,
+                            "y": 156.41839828520915,
+                            "height": 39.959999084472656
+                        },
+                        "id": "ElementActionWebTask_1xbgf4c_ve"
+                    },
+                    {
+                        "bpmnElement": "ElementActionWebTask_1eqq6hh",
+                        "Bounds": {
+                            "cx": 458.16492983937246,
+                            "cy": 266.0000027063479,
+                            "x": 350.0849356377123,
+                            "width": 216.1599884033203,
+                            "y": 246.02000316411159,
+                            "height": 39.959999084472656
+                        },
+                        "id": "ElementActionWebTask_1eqq6hh_ve"
+                    },
+                    {
+                        "bpmnElement": "ElementActionWebTask_h0vuqz",
+                        "Bounds": {
+                            "cx": 458.16492983937246,
+                            "cy": 449.29845610260963,
+                            "x": 350.0849356377123,
+                            "width": 216.1599884033203,
+                            "y": 429.3184565603733,
+                            "height": 39.959999084472656
+                        },
+                        "id": "ElementActionWebTask_h0vuqz_ve"
+                    },
+                    {
+                        "bpmnElement": "TriggerBPMTask_1gxs754",
+                        "Bounds": {
+                            "cx": 418.00000762939453,
+                            "cy": 1892.0000190734863,
+                            "x": 309.9200134277344,
+                            "width": 216.1599884033203,
+                            "y": 1872.02001953125,
+                            "height": 39.959999084472656
+                        },
+                        "id": "TriggerBPMTask_1gxs754_ve"
+                    },
+                    {
+                        "bpmnElement": "EndEvent_qp0t0n",
+                        "Bounds": {
+                            "cx": 418,
+                            "cy": 1970.0000190734863,
+                            "x": 366,
+                            "width": 104,
+                            "y": 1949.02001953125,
+                            "height": 41.959999084472656
+                        },
+                        "id": "EndEvent_qp0t0n_ve"
+                    },
+                    {
+                        "bpmnElement": "StartEvent_rcqzfz",
+                        "Bounds": {
+                            "cx": 418.000005453825,
+                            "cy": 141.79845227030592,
+                            "x": 366.000005453825,
+                            "width": 104,
+                            "y": 120.81845272806959,
+                            "height": 41.959999084472656
+                        },
+                        "id": "StartEvent_rcqzfz_ve"
+                    },
+                    {
+                        "bpmnElement": "IfCommandProcess_1pdawxs",
+                        "Bounds": {
+                            "cx": 396.57092666625977,
+                            "cy": 1311.6920166015625,
+                            "x": 59.141910552978516,
+                            "width": 674.8580322265625,
+                            "y": 1123.384033203125,
+                            "height": 376.615966796875
+                        },
+                        "id": "IfCommandProcess_1pdawxs_ve"
+                    },
+                    {
+                        "bpmnElement": "SetVariableTask_1m0xtbo",
+                        "Bounds": {
+                            "cx": 134.99999349342397,
+                            "cy": 144.99999989298658,
+                            "x": 26.919999291763816,
+                            "width": 216.1599884033203,
+                            "y": 125.02000035075025,
+                            "height": 39.959999084472656
+                        },
+                        "id": "SetVariableTask_1m0xtbo_ve"
+                    },
+                    {
+                        "bpmnElement": "SetVariableTask_2ykrko",
+                        "Bounds": {
+                            "cx": 540.7694820692977,
+                            "cy": 144.99999989298658,
+                            "x": 432.6894878676376,
+                            "width": 216.1599884033203,
+                            "y": 125.02000035075025,
+                            "height": 39.959999084472656
+                        },
+                        "id": "SetVariableTask_2ykrko_ve"
+                    },
+                    {
+                        "bpmnElement": "OpenTask_qf7owb",
+                        "Bounds": {
+                            "cx": 134.99999350309372,
+                            "cy": 217.61598587036133,
+                            "x": 26.919999301433563,
+                            "width": 216.1599884033203,
+                            "y": 197.635986328125,
+                            "height": 39.959999084472656
+                        },
+                        "id": "OpenTask_qf7owb_ve"
+                    },
+                    {
+                        "bpmnElement": "OpenTask_1wmbdzu",
+                        "Bounds": {
+                            "cx": 540.7694820165634,
+                            "cy": 217.61598587036133,
+                            "x": 432.68948781490326,
+                            "width": 216.1599884033203,
+                            "y": 197.635986328125,
+                            "height": 39.959999084472656
+                        },
+                        "id": "OpenTask_1wmbdzu_ve"
+                    },
+                    {
+                        "bpmnElement": "IfCommandTask_ue04qn",
+                        "Bounds": {
+                            "cx": 361.2422087490563,
+                            "cy": 51.8281272798763,
+                            "x": 301.7890837490563,
+                            "width": 118.90625,
+                            "y": 38.5000022798763,
+                            "height": 73.34375
+                        },
+                        "id": "IfCommandTask_ue04qn_ve"
+                    },
+                    {
+                        "bpmnElement": "InputTask_1mkz49s",
+                        "Bounds": {
+                            "cx": 134.99999344348907,
+                            "cy": 290.6159858703613,
+                            "x": 26.91999924182892,
+                            "width": 216.1599884033203,
+                            "y": 270.635986328125,
+                            "height": 39.959999084472656
+                        },
+                        "id": "InputTask_1mkz49s_ve"
+                    },
+                    {
+                        "bpmnElement": "InputTask_kbcjdu",
+                        "Bounds": {
+                            "cx": 540.7694820692977,
+                            "cy": 290.61598575115204,
+                            "x": 432.6894878676376,
+                            "width": 216.1599884033203,
+                            "y": 270.6359862089157,
+                            "height": 39.959999084472656
+                        },
+                        "id": "InputTask_kbcjdu_ve"
+                    },
+                    {
+                        "bpmnElement": "CloseBrowserWebTask_11y7tul",
+                        "Bounds": {
+                            "cx": 418.00000762939453,
+                            "cy": 1815.0000190734863,
+                            "x": 309.9200134277344,
+                            "width": 216.1599884033203,
+                            "y": 1795.02001953125,
+                            "height": 39.959999084472656
+                        },
+                        "id": "CloseBrowserWebTask_11y7tul_ve"
+                    },
+                    {
+                        "bpmnElement": "DelayExecutionTask_1a2wtsa",
+                        "Bounds": {
+                            "cx": 418.00000762939453,
+                            "cy": 1740.0000190734863,
+                            "x": 309.9200134277344,
+                            "width": 216.1599884033203,
+                            "y": 1720.02001953125,
+                            "height": 39.959999084472656
+                        },
+                        "id": "DelayExecutionTask_1a2wtsa_ve"
+                    },
+                    {
+                        "bpmnElement": "DelayExecutionTask_1j7p851",
+                        "Bounds": {
+                            "cx": 418.00000762939453,
+                            "cy": 1569.0000190734863,
+                            "x": 309.9200134277344,
+                            "width": 216.1599884033203,
+                            "y": 1549.02001953125,
+                            "height": 39.959999084472656
+                        },
+                        "id": "DelayExecutionTask_1j7p851_ve"
+                    },
+                    {
+                        "bpmnElement": "AdvanceKeyStrokes_17yzj2p",
+                        "Bounds": {
+                            "cx": 418.00000762939453,
+                            "cy": 1642.0000190734863,
+                            "x": 309.9200134277344,
+                            "width": 216.1599884033203,
+                            "y": 1622.02001953125,
+                            "height": 39.959999084472656
+                        },
+                        "id": "AdvanceKeyStrokes_17yzj2p_ve"
+                    }
+                ],
+                "BPMNEdge": [
+                    {
+                        "waypoint": [
+                            {
+                                "x": "418.000005453825",
+                                "y": "162.7784527280696"
+                            },
+                            {
+                                "x": "418",
+                                "y": "238.79953002929688"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_1jdaghc",
+                        "id": "SequenceFlow_1jdaghc_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "418",
+                                "y": "383.2004699707031"
+                            },
+                            {
+                                "x": "417.9999694824219",
+                                "y": "429.1999816894531"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_1d6jj2c",
+                        "id": "SequenceFlow_1d6jj2c_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "418.00001342773436",
+                                "y": "1911.98001953125"
+                            },
+                            {
+                                "x": "418",
+                                "y": "1949.02001953125"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_tbvap0",
+                        "id": "SequenceFlow_tbvap0_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "417.9999694824219",
+                                "y": "1042.1999816894531"
+                            },
+                            {
+                                "x": "417.9999694824219",
+                                "y": "1082.792007446289"
+                            },
+                            {
+                                "x": "396.57092666625977",
+                                "y": "1082.792007446289"
+                            },
+                            {
+                                "x": "396.57092666625977",
+                                "y": "1123.384033203125"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_brvcss",
+                        "id": "SequenceFlow_brvcss_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "418.00001342773436",
+                                "y": "1834.98001953125"
+                            },
+                            {
+                                "x": "418.00001342773436",
+                                "y": "1872.02001953125"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_fu5woa",
+                        "id": "SequenceFlow_fu5woa_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "418.00001342773436",
+                                "y": "1759.98001953125"
+                            },
+                            {
+                                "x": "418.00001342773436",
+                                "y": "1795.02001953125"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_ukfnfc",
+                        "id": "SequenceFlow_ukfnfc_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "396.57092666625977",
+                                "y": "1500"
+                            },
+                            {
+                                "x": "396.57092666625977",
+                                "y": "1524.510009765625"
+                            },
+                            {
+                                "x": "418.00001342773436",
+                                "y": "1524.510009765625"
+                            },
+                            {
+                                "x": "418.00001342773436",
+                                "y": "1549.02001953125"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_10tojt",
+                        "id": "SequenceFlow_10tojt_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "418.00001342773436",
+                                "y": "1588.98001953125"
+                            },
+                            {
+                                "x": "418.00001342773436",
+                                "y": "1622.02001953125"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_qmhd9b",
+                        "id": "SequenceFlow_qmhd9b_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "418.00001342773436",
+                                "y": "1661.98001953125"
+                            },
+                            {
+                                "x": "418.00001342773436",
+                                "y": "1720.02001953125"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_14eelh3",
+                        "id": "SequenceFlow_14eelh3_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "325.60001056134695",
+                                "y": "75.00000229090459"
+                            },
+                            {
+                                "x": "401.44001057505625",
+                                "y": "75.00000229090459"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_dwsl9p",
+                        "id": "SequenceFlow_dwsl9p_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "163.99999094711353",
+                                "y": "330.98000316411157"
+                            },
+                            {
+                                "x": "164.00000620590237",
+                                "y": "377.31845649510524"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_11kc9ox",
+                        "id": "SequenceFlow_11kc9ox_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "164.00000620590237",
+                                "y": "417.2784564951052"
+                            },
+                            {
+                                "x": "164.00000620590237",
+                                "y": "453.3184565603733"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_b0tm6g",
+                        "id": "SequenceFlow_b0tm6g_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "272.08000620590235",
+                                "y": "473.2984565603733"
+                            },
+                            {
+                                "x": "311.0824709218073",
+                                "y": "473.2984565603733"
+                            },
+                            {
+                                "x": "311.0824709218073",
+                                "y": "89.99999790996343"
+                            },
+                            {
+                                "x": "350.0849356377123",
+                                "y": "89.99999790996343"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_13u3lqe",
+                        "id": "SequenceFlow_13u3lqe_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "458.1649356377123",
+                                "y": "109.97999790996343"
+                            },
+                            {
+                                "x": "458.1649356377123",
+                                "y": "156.41839828520915"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_1n1xqwv",
+                        "id": "SequenceFlow_1n1xqwv_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "458.1649356377123",
+                                "y": "196.37839828520916"
+                            },
+                            {
+                                "x": "458.1649356377123",
+                                "y": "246.02000316411159"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_1fiwa0z",
+                        "id": "SequenceFlow_1fiwa0z_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "458.1649355809546",
+                                "y": "370.2784565603733"
+                            },
+                            {
+                                "x": "458.1649356377123",
+                                "y": "429.3184565603733"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_x4pek5",
+                        "id": "SequenceFlow_x4pek5_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "458.1649356377123",
+                                "y": "285.98000316411157"
+                            },
+                            {
+                                "x": "458.1649355809546",
+                                "y": "330.3184565603733"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_v71hwv",
+                        "id": "SequenceFlow_v71hwv_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "163.99999104380646",
+                                "y": "109.97999790996343"
+                            },
+                            {
+                                "x": "164.0000062059026",
+                                "y": "156.41839828520915"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_1wlny64",
+                        "id": "SequenceFlow_1wlny64_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "164.0000062059026",
+                                "y": "196.37839828520916"
+                            },
+                            {
+                                "x": "164.0000062059026",
+                                "y": "208.5992333222921"
+                            },
+                            {
+                                "x": "160.28307159423827",
+                                "y": "208.5992333222921"
+                            },
+                            {
+                                "x": "160.28307159423827",
+                                "y": "220.820068359375"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_1wmpdw9",
+                        "id": "SequenceFlow_1wmpdw9_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "160.28307159423827",
+                                "y": "260.780068359375"
+                            },
+                            {
+                                "x": "160.28307159423827",
+                                "y": "275.9000357617433"
+                            },
+                            {
+                                "x": "163.99999094711353",
+                                "y": "275.9000357617433"
+                            },
+                            {
+                                "x": "163.99999094711353",
+                                "y": "291.0200031641116"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_10bcgvb",
+                        "id": "SequenceFlow_10bcgvb_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "301.7890837490563",
+                                "y": "63.5000022798763"
+                            },
+                            {
+                                "x": "272.43454152041005",
+                                "y": "63.5000022798763"
+                            },
+                            {
+                                "x": "272.43454152041005",
+                                "y": "145.00000035075024"
+                            },
+                            {
+                                "x": "243.0799992917638",
+                                "y": "145.00000035075024"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_70acvy",
+                        "id": "SequenceFlow_70acvy_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "351.7890837490563",
+                                "y": "63.5000022798763"
+                            },
+                            {
+                                "x": "392.23928580834695",
+                                "y": "63.5000022798763"
+                            },
+                            {
+                                "x": "392.23928580834695",
+                                "y": "145.00000035075024"
+                            },
+                            {
+                                "x": "432.6894878676376",
+                                "y": "145.00000035075024"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_1u5twqs",
+                        "id": "SequenceFlow_1u5twqs_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "134.9999992917638",
+                                "y": "164.98000035075026"
+                            },
+                            {
+                                "x": "134.99999930143355",
+                                "y": "197.635986328125"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_1jp8fcf",
+                        "id": "SequenceFlow_1jp8fcf_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "134.99999930143355",
+                                "y": "237.595986328125"
+                            },
+                            {
+                                "x": "134.9999992418289",
+                                "y": "270.635986328125"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_j4khs0",
+                        "id": "SequenceFlow_j4khs0_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "540.7694878676376",
+                                "y": "164.98000035075026"
+                            },
+                            {
+                                "x": "540.7694878149033",
+                                "y": "197.635986328125"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_1lmly6x",
+                        "id": "SequenceFlow_1lmly6x_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "540.7694878149033",
+                                "y": "237.595986328125"
+                            },
+                            {
+                                "x": "540.7694878676376",
+                                "y": "270.6359862089157"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_116x0fe",
+                        "id": "SequenceFlow_116x0fe_ve"
+                    }
+                ]
+            },
+            "id": "Process_1_ve"
+        },
+        "variables": [
+            {
+                "businessProp": {
+                    "uservariableName": "vSsnImgPath",
+                    "userInput": "C:\\RPA Demo\\Vega-3\\KYC\\DOCS\\Social Security Number.jpg"
+                },
+                "tasktCommandName": "AddVariableCommand",
+                "id": "var_.l7z72e6u",
+                "type": "rpa:addVariableTask"
+            },
+            {
+                "businessProp": {
+                    "uservariableName": "vEmailId",
+                    "userInput": "John@hotmail.com"
+                },
+                "tasktCommandName": "AddVariableCommand",
+                "id": "var_.ok8ledu7",
+                "type": "rpa:addVariableTask"
+            },
+            {
+                "businessProp": {
+                    "uservariableName": "vStatus",
+                    "userInput": "0"
+                },
+                "tasktCommandName": "AddVariableCommand",
+                "id": "var_.72etwdoy",
+                "type": "rpa:addVariableTask"
+            },
+            {
+                "businessProp": {
+                    "uservariableName": "vMailPath",
+                    "userInput": "C:\\RPA Demo\\Vega-3\\KYC\\Application_Approved.pdf"
+                },
+                "tasktCommandName": "AddVariableCommand",
+                "id": "var_.3gsi9u9d",
+                "type": "rpa:addVariableTask"
+            },
+            {
+                "businessProp": {
+                    "uservariableName": "vCcMail",
+                    "userInput": "rajakumar.chamarthi@asg.com"
+                },
+                "tasktCommandName": "AddVariableCommand",
+                "id": "var_.1ddbrgom",
+                "type": "rpa:addVariableTask"
+            },
+            {
+                "businessProp": {
+                    "uservariableName": "vToMail",
+                    "userInput": "RaghavSanjeev.N@asg.com"
+                },
+                "tasktCommandName": "AddVariableCommand",
+                "id": "var_.jckb2uvd",
+                "type": "rpa:addVariableTask"
+            },
+            {
+                "businessProp": {
+                    "uservariableName": "creditstatus",
+                    "userInput": "999"
+                },
+                "tasktCommandName": "AddVariableCommand",
+                "id": "var_.0lgbyxhp",
+                "type": "rpa:addVariableTask"
+            },
+            {
+                "businessProp": {
+                    "uservariableName": "vDLImgPath",
+                    "userInput": "C:\\Zenith-Demos\\KYC\\RPA\\creditscore\\driverLicense.jpg"
+                },
+                "tasktCommandName": "AddVariableCommand",
+                "id": "var_.hkffmon2",
+                "type": "rpa:addVariableTask"
+            },
+            {
+                "businessProp": {
+                    "uservariableName": "addPath",
+                    "userInput": "http://localhost:3030/rest/documentstore/document/9e830a38-8783-46ae-a41d-c7f1fce06257?preview=true"
+                },
+                "tasktCommandName": "AddVariableCommand",
+                "id": "var_.udrjdgas",
+                "type": "rpa:addVariableTask"
+            },
+            {
+                "businessProp": {
+                    "uservariableName": "vURL",
+                    "userInput": "C:\\Zenith-Demos\\E-KYC Application\\RPA\\creditscore\\index.html"
+                },
+                "tasktCommandName": "AddVariableCommand",
+                "id": "var_.h91a6ws1",
+                "type": "rpa:addVariableTask"
+            }
+        ],
+        "collaboration": {}
+    },
+    "description": "",
+    "uiModelerVersion": "7.0.5",
+    "isValidProcess": true,
+    "responseMessage": "",
+    "tasktActions": [
+        {
+            "businessProp": {
+                "uservariableName": "vURL",
+                "userInput": "C:\\Zenith-Demos\\E-KYC Application\\RPA\\creditscore\\index.html"
+            },
+            "tasktCommandName": "AddVariableCommand",
+            "id": "var_.h91a6ws1",
+            "type": "rpa:addVariableTask"
+        },
+        {
+            "businessProp": {
+                "uservariableName": "addPath",
+                "userInput": "http://localhost:3030/rest/documentstore/document/9e830a38-8783-46ae-a41d-c7f1fce06257?preview=true"
+            },
+            "tasktCommandName": "AddVariableCommand",
+            "id": "var_.udrjdgas",
+            "type": "rpa:addVariableTask"
+        },
+        {
+            "businessProp": {
+                "uservariableName": "vDLImgPath",
+                "userInput": "C:\\Zenith-Demos\\KYC\\RPA\\creditscore\\driverLicense.jpg"
+            },
+            "tasktCommandName": "AddVariableCommand",
+            "id": "var_.hkffmon2",
+            "type": "rpa:addVariableTask"
+        },
+        {
+            "businessProp": {
+                "uservariableName": "creditstatus",
+                "userInput": "999"
+            },
+            "tasktCommandName": "AddVariableCommand",
+            "id": "var_.0lgbyxhp",
+            "type": "rpa:addVariableTask"
+        },
+        {
+            "businessProp": {
+                "uservariableName": "vToMail",
+                "userInput": "RaghavSanjeev.N@asg.com"
+            },
+            "tasktCommandName": "AddVariableCommand",
+            "id": "var_.jckb2uvd",
+            "type": "rpa:addVariableTask"
+        },
+        {
+            "businessProp": {
+                "uservariableName": "vCcMail",
+                "userInput": "rajakumar.chamarthi@asg.com"
+            },
+            "tasktCommandName": "AddVariableCommand",
+            "id": "var_.1ddbrgom",
+            "type": "rpa:addVariableTask"
+        },
+        {
+            "businessProp": {
+                "uservariableName": "vMailPath",
+                "userInput": "C:\\RPA Demo\\Vega-3\\KYC\\Application_Approved.pdf"
+            },
+            "tasktCommandName": "AddVariableCommand",
+            "id": "var_.3gsi9u9d",
+            "type": "rpa:addVariableTask"
+        },
+        {
+            "businessProp": {
+                "uservariableName": "vStatus",
+                "userInput": "0"
+            },
+            "tasktCommandName": "AddVariableCommand",
+            "id": "var_.72etwdoy",
+            "type": "rpa:addVariableTask"
+        },
+        {
+            "businessProp": {
+                "uservariableName": "vEmailId",
+                "userInput": "John@hotmail.com"
+            },
+            "tasktCommandName": "AddVariableCommand",
+            "id": "var_.ok8ledu7",
+            "type": "rpa:addVariableTask"
+        },
+        {
+            "businessProp": {
+                "uservariableName": "vSsnImgPath",
+                "userInput": "C:\\RPA Demo\\Vega-3\\KYC\\DOCS\\Social Security Number.jpg"
+            },
+            "tasktCommandName": "AddVariableCommand",
+            "id": "var_.l7z72e6u",
+            "type": "rpa:addVariableTask"
+        },
+        {
+            "nodeName": "CreateBrowserWebTask",
+            "outgoing": "SequenceFlow_dwsl9p",
+            "businessProp": {
+                "createInstanceTracking": "Forget Instance",
+                "windowStateOption": "Normal",
+                "browserInstanceName": "chrome",
+                "browserEngineType": "Chrome"
+            },
+            "name": "Open Browser",
+            "tasktCommandName": "SeleniumBrowserCreateCommand",
+            "id": "CreateBrowserWebTask_6zg9he",
+            "type": "rpa:createBrowserWebTask",
+            "lineNumber": 2,
+            "events": []
+        },
+        {
+            "nodeName": "NavigateURLWebTask",
+            "incoming": "SequenceFlow_dwsl9p",
+            "businessProp": {
+                "navigateURL": "[vURL]",
+                "browserInstanceName": "chrome"
+            },
+            "name": "Navigate To URL",
+            "tasktCommandName": "SeleniumBrowserNavigateURLCommand",
+            "id": "NavigateURLWebTask_1mykne6",
+            "type": "rpa:navigateURLWebTask",
+            "lineNumber": 3,
+            "events": []
+        },
+        {
+            "nodeName": "ActiveWindowTask",
+            "outgoing": "SequenceFlow_1wlny64",
+            "businessProp": {"activateWindowName": "[Current Window]"},
+            "name": "Activate Window",
+            "tasktCommandName": "ActivateWindowCommand",
+            "id": "ActiveWindowTask_nqzy5t",
+            "type": "rpa:activeWindowTask",
+            "lineNumber": 3,
+            "events": []
+        },
+        {
+            "nodeName": "DelayExecutionTask",
+            "outgoing": "SequenceFlow_1wmpdw9",
+            "incoming": "SequenceFlow_1wlny64",
+            "businessProp": {"userInput": "5000"},
+            "name": "Delay Execution",
+            "tasktCommandName": "PauseCommand",
+            "id": "DelayExecutionTask_me65oa",
+            "type": "rpa:delayExecutionTask",
+            "lineNumber": 4,
+            "events": []
+        },
+        {
+            "nodeName": "ElementActionWebTask",
+            "outgoing": "SequenceFlow_11kc9ox",
+            "incoming": "SequenceFlow_10bcgvb",
+            "businessProp": {
+                "seleniumSearchParameter": "//*[@id=\"fname\"]",
+                "elementActionParameter": "Yes",
+                "seleniumElementAction": "Set Text",
+                "name": "Set First Name",
+                "browserInstanceName": "chrome",
+                "elementTextToSet": "[gfirstname]",
+                "seleniumSearchType": "Find Element By XPath"
+            },
+            "name": "Set First Name",
+            "tasktCommandName": "SeleniumBrowserElementActionCommand",
+            "id": "ElementActionWebTask_5nhq7y",
+            "type": "rpa:elementActionWebTask",
+            "lineNumber": 6,
+            "events": []
+        },
+        {
+            "nodeName": "ElementActionWebTask",
+            "outgoing": "SequenceFlow_b0tm6g",
+            "incoming": "SequenceFlow_11kc9ox",
+            "businessProp": {
+                "seleniumSearchParameter": "//*[@id=\"lname\"]",
+                "elementActionParameter": "Yes",
+                "seleniumElementAction": "Set Text",
+                "name": "Set Last Name",
+                "elementTextToSet": "[glastname]",
+                "browserInstanceName": "chrome",
+                "seleniumSearchType": "Find Element By XPath"
+            },
+            "name": "Set Last Name",
+            "tasktCommandName": "SeleniumBrowserElementActionCommand",
+            "id": "ElementActionWebTask_92m05f",
+            "type": "rpa:elementActionWebTask",
+            "lineNumber": 7,
+            "events": []
+        },
+        {
+            "nodeName": "ElementActionWebTask",
+            "outgoing": "SequenceFlow_13u3lqe",
+            "incoming": "SequenceFlow_b0tm6g",
+            "businessProp": {
+                "seleniumSearchParameter": "//*[@id=\"emailid\"]",
+                "elementActionParameter": "Yes",
+                "seleniumElementAction": "Set Text",
+                "browserInstanceName": "chrome",
+                "elementTextToSet": "[gemail]",
+                "name": "Set Email Id",
+                "seleniumSearchType": "Find Element By XPath"
+            },
+            "name": "Set Email Id",
+            "tasktCommandName": "SeleniumBrowserElementActionCommand",
+            "id": "ElementActionWebTask_rkd0z9",
+            "type": "rpa:elementActionWebTask",
+            "lineNumber": 8,
+            "events": []
+        },
+        {
+            "nodeName": "ElementActionWebTask",
+            "outgoing": "SequenceFlow_1n1xqwv",
+            "incoming": "SequenceFlow_13u3lqe",
+            "businessProp": {
+                "seleniumSearchParameter": "//*[@id=\"ssn\"]",
+                "elementActionParameter": "Yes",
+                "seleniumElementAction": "Set Text",
+                "name": "Set SSN",
+                "browserInstanceName": "chrome",
+                "elementTextToSet": "[gssn]",
+                "seleniumSearchType": "Find Element By XPath"
+            },
+            "name": "Set SSN",
+            "tasktCommandName": "SeleniumBrowserElementActionCommand",
+            "id": "ElementActionWebTask_jyzvkl",
+            "type": "rpa:elementActionWebTask",
+            "lineNumber": 9,
+            "events": []
+        },
+        {
+            "nodeName": "ElementActionWebTask",
+            "outgoing": "SequenceFlow_1fiwa0z",
+            "incoming": "SequenceFlow_1n1xqwv",
+            "businessProp": {
+                "seleniumSearchParameter": "//*[@id=\"drvlic\"]",
+                "elementActionParameter": "Yes",
+                "seleniumElementAction": "Set Text",
+                "name": "Set Driving License",
+                "browserInstanceName": "chrome",
+                "elementTextToSet": "1234568",
+                "seleniumSearchType": "Find Element By XPath"
+            },
+            "name": "Set Driving License",
+            "tasktCommandName": "SeleniumBrowserElementActionCommand",
+            "id": "ElementActionWebTask_1xbgf4c",
+            "type": "rpa:elementActionWebTask",
+            "lineNumber": 10,
+            "events": []
+        },
+        {
+            "nodeName": "ElementActionWebTask",
+            "outgoing": "SequenceFlow_v71hwv",
+            "incoming": "SequenceFlow_1fiwa0z",
+            "businessProp": {
+                "seleniumSearchParameter": "//*[@id=\"submit\"]",
+                "seleniumElementAction": "Invoke Click",
+                "name": "Click Submit",
+                "browserInstanceName": "chrome",
+                "seleniumSearchType": "Find Element By XPath"
+            },
+            "name": "Click Submit",
+            "tasktCommandName": "SeleniumBrowserElementActionCommand",
+            "id": "ElementActionWebTask_1eqq6hh",
+            "type": "rpa:elementActionWebTask",
+            "lineNumber": 11,
+            "events": []
+        },
+        {
+            "nodeName": "DelayExecutionTask",
+            "outgoing": "SequenceFlow_x4pek5",
+            "incoming": "SequenceFlow_v71hwv",
+            "businessProp": {
+                "name": "Wait for Credit Score Result",
+                "userInput": "5000"
+            },
+            "name": "Wait for Credit Score Result",
+            "tasktCommandName": "PauseCommand",
+            "id": "DelayExecutionTask_xul3f1",
+            "type": "rpa:delayExecutionTask",
+            "lineNumber": 12,
+            "events": []
+        },
+        {
+            "nodeName": "ElementActionWebTask",
+            "incoming": "SequenceFlow_x4pek5",
+            "businessProp": {
+                "seleniumSearchParameter": "//*[@id=\"score\"]",
+                "seleniumElementAction": "Get Text",
+                "getTextVariable": "creditscore",
+                "browserInstanceName": "chrome",
+                "name": "Get Credit Score",
+                "seleniumSearchType": "Find Element By XPath"
+            },
+            "name": "Get Credit Score",
+            "tasktCommandName": "SeleniumBrowserElementActionCommand",
+            "id": "ElementActionWebTask_h0vuqz",
+            "type": "rpa:elementActionWebTask",
+            "lineNumber": 13,
+            "events": []
+        },
+        {
+            "nodeName": "IfCommandTask",
+            "outgoing": [
+                "SequenceFlow_70acvy",
+                "SequenceFlow_1u5twqs"
+            ],
+            "businessProp": {
+                "ifActionType": "Value",
+                "valueValue2": "[mincreditscore]",
+                "valueValue1": "[creditscore]",
+                "name": "Credit Score Compare",
+                "valueOperand": "is less than or equal to"
+            },
+            "name": "Credit Score Compare",
+            "tasktCommandName": "BeginIfCommand",
+            "id": "IfCommandTask_ue04qn",
+            "type": "rpa:ifCommandTask",
+            "lineNumber": 4,
+            "events": []
+        },
+        {
+            "targetRef": "SetVariableTask_1m0xtbo",
+            "businessProp": {"condition": "true"},
+            "name": "True",
+            "tasktCommandName": "sequenceFlow",
+            "id": "SequenceFlow_70acvy",
+            "sourceRef": "IfCommandTask_ue04qn",
+            "type": "rpa:sequenceFlow"
+        },
+        {
+            "nodeName": "SetVariableTask",
+            "outgoing": "SequenceFlow_1jp8fcf",
+            "incoming": "SequenceFlow_70acvy",
+            "businessProp": {
+                "name": "Assign Rejection Status Flag",
+                "uservariableName": "creditstatus",
+                "userInput": "0"
+            },
+            "name": "Assign Rejection Status Flag",
+            "tasktCommandName": "VariableCommand",
+            "id": "SetVariableTask_1m0xtbo",
+            "type": "rpa:setVariableTask",
+            "lineNumber": 5,
+            "events": []
+        },
+        {
+            "nodeName": "OpenTask",
+            "outgoing": "SequenceFlow_j4khs0",
+            "incoming": "SequenceFlow_1jp8fcf",
+            "businessProp": {"applicationName": "notepad"},
+            "name": "Open Application",
+            "tasktCommandName": "StartProcessCommand",
+            "id": "OpenTask_qf7owb",
+            "type": "rpa:openTask",
+            "lineNumber": 6,
+            "events": []
+        },
+        {
+            "nodeName": "InputTask",
+            "incoming": "SequenceFlow_j4khs0",
+            "businessProp": {
+                "textToSend": "comparing values\n\nGenerated credit score is [creditscore] \nExpected credit score is  [mincreditscore]\n\nNeed validator's approval",
+                "windowName": "[Current Window]"
+            },
+            "name": "Set Text",
+            "tasktCommandName": "SendKeysCommand",
+            "id": "InputTask_1mkz49s",
+            "type": "rpa:inputTask",
+            "lineNumber": 7,
+            "events": []
+        },
+        {
+            "targetRef": "SetVariableTask_2ykrko",
+            "businessProp": {
+                "condition": "false",
+                "name": "False"
+            },
+            "name": "False",
+            "tasktCommandName": "sequenceFlow",
+            "id": "SequenceFlow_1u5twqs",
+            "sourceRef": "IfCommandTask_ue04qn",
+            "type": "rpa:sequenceFlow"
+        },
+        {
+            "nodeName": "SetVariableTask",
+            "outgoing": "SequenceFlow_1lmly6x",
+            "incoming": "SequenceFlow_1u5twqs",
+            "businessProp": {
+                "name": "Assign Approved Status Flag",
+                "uservariableName": "creditstatus",
+                "userInput": "1"
+            },
+            "name": "Assign Approved Status Flag",
+            "tasktCommandName": "VariableCommand",
+            "id": "SetVariableTask_2ykrko",
+            "type": "rpa:setVariableTask",
+            "lineNumber": 5,
+            "events": []
+        },
+        {
+            "nodeName": "OpenTask",
+            "outgoing": "SequenceFlow_116x0fe",
+            "incoming": "SequenceFlow_1lmly6x",
+            "businessProp": {"applicationName": "notepad"},
+            "name": "Open Application",
+            "tasktCommandName": "StartProcessCommand",
+            "id": "OpenTask_1wmbdzu",
+            "type": "rpa:openTask",
+            "lineNumber": 6,
+            "events": []
+        },
+        {
+            "nodeName": "InputTask",
+            "incoming": "SequenceFlow_116x0fe",
+            "businessProp": {
+                "textToSend": "comparing values\n\nGenerated credit score is [creditscore] \nExpected credit score is  [mincreditscore]\n\nAuto Approved!",
+                "windowName": "[Current Window]"
+            },
+            "name": "Set Text",
+            "tasktCommandName": "SendKeysCommand",
+            "id": "InputTask_kbcjdu",
+            "type": "rpa:inputTask",
+            "lineNumber": 7,
+            "events": []
+        },
+        {
+            "businessProp": {"IsCommented": false},
+            "tasktCommandName": "EndIfCommand",
+            "id": "EndIfTask",
+            "type": "rpa:endIfTask"
+        },
+        {
+            "nodeName": "DelayExecutionTask",
+            "outgoing": "SequenceFlow_qmhd9b",
+            "incoming": "SequenceFlow_10tojt",
+            "businessProp": {"userInput": "5000"},
+            "name": "Delay Execution",
+            "tasktCommandName": "PauseCommand",
+            "id": "DelayExecutionTask_1j7p851",
+            "type": "rpa:delayExecutionTask",
+            "lineNumber": 4,
+            "events": []
+        },
+        {
+            "nodeName": "AdvanceKeyStrokes",
+            "outgoing": "SequenceFlow_14eelh3",
+            "incoming": "SequenceFlow_qmhd9b",
+            "businessProp": {
+                "KeyStrokes": [
+                    {
+                        "Action": "Key Down",
+                        "Key": "Alt (Left) [LMenu]"
+                    },
+                    {
+                        "Action": "Key Press (Down + Up)",
+                        "Key": "F4 [F4]"
+                    },
+                    {
+                        "Action": "Key Up",
+                        "Key": "Alt (Left) [LMenu]"
+                    },
+                    {
+                        "Action": "Key Press (Down + Up)",
+                        "Key": "Right Arrow [Right]"
+                    },
+                    {
+                        "Action": "Key Press (Down + Up)",
+                        "Key": "Enter [Return]"
+                    }
+                ],
+                "windowName": "[Current Window]"
+            },
+            "name": "Send Keystrokes",
+            "tasktCommandName": "SendAdvancedKeyStrokesCommand",
+            "id": "AdvanceKeyStrokes_17yzj2p",
+            "type": "rpa:advanceKeyStrokes",
+            "lineNumber": 5,
+            "events": []
+        },
+        {
+            "nodeName": "CloseBrowserWebTask",
+            "outgoing": "SequenceFlow_fu5woa",
+            "incoming": "SequenceFlow_ukfnfc",
+            "businessProp": {"browserInstanceName": "chrome"},
+            "name": "Close Browser",
+            "tasktCommandName": "SeleniumBrowserCloseCommand",
+            "id": "CloseBrowserWebTask_11y7tul",
+            "type": "rpa:closeBrowserWebTask",
+            "lineNumber": 7,
+            "events": []
+        },
+        {
+            "nodeName": "TriggerBPMTask",
+            "outgoing": "SequenceFlow_tbvap0",
+            "incoming": "SequenceFlow_fu5woa",
+            "businessProp": {
+                "bpmRpaVariables": [{
+                    "Value": "creditstatus",
+                    "Key": "status"
+                }],
+                "IsCommented": false
+            },
+            "name": "Resume BPM",
+            "tasktCommandName": "TriggerBPMCommand",
+            "id": "TriggerBPMTask_1gxs754",
+            "type": "rpa:triggerBPMTask",
+            "lineNumber": 8,
+            "events": []
+        }
+    ]
+}

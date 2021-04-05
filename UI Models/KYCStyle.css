@@ -1,0 +1,110 @@
+:root {
+
+    --zen-body-bg-color: #fcd295;
+    --zen-body-bg-img: none;
+   
+    --zen-pri-color: #ffffff;
+    --zen-pri-lighten-color: #fafafa;
+    --zen-sec-color: #303030;
+    --zen-bg-contrast1-color: #303030;
+    --zen-bg-contrast2-color: #ffffff;
+    --zen-bg-contrast3-color: #dddddd;
+    
+    --zen-control-bg-color: transparent;
+    --zen-control-border-color: #dddddd;
+    
+    --zen-flush-color: #fcd295;
+    
+    --zen-box-shadow:  0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+
+    --zen-body-bg-attachment: scroll;
+    --zen-body-bg-blend: normal;
+    --zen-body-bg-clip: border-box;
+    --zen-body-bg-origin: padding-box;
+    --zen-body-bg-position: 0% 0%;
+    --zen-body-bg-repeat: repeat;
+    --zen-body-bg-size: auto;
+    
+}
+
+body {
+    background-color: var(--zen-body-bg-color) !important;
+}
+
+.header {
+    background: #fcc472;
+}
+
+.um-control {
+    border: 0px !important;
+}
+
+.header {
+    color: var(--zen-bg-contrast1-color);
+}
+
+.jexcel>thead>tr>td,.jexcel>thead>tr>td.selected {
+    font-size: 11pt;
+    font-weight: bold;
+    background-color: var(--zen-bg-contrast2-color) !important;
+}
+
+.jexcel>tbody>tr.selected {
+    background-color: var(--zen-bg-contrast3-color);
+}
+
+.jexcel {
+    border: 1px solid;
+    border-color: var(--zen-bg-contrast3-color);
+}
+
+.mat-tab-label-active {
+    border-bottom: 0;
+}
+
+.mat-tab-label {
+    border-left: 0;
+}
+
+.mat-tab-label-active .um-mat-label {
+    border-bottom-color: var(--zen-bg-contrast3-color);
+}
+
+.um-control img {
+    border: 2px solid;
+    border-color: var(--zen-bg-contrast3-color);
+    margin-top: 25px;
+}
+
+.section-header mat-label {
+    font-size: 15pt;
+}
+
+mat-tab-body {
+    min-height: 650px;
+    padding-top: 40px !important;
+}
+
+
+.um-control.row {
+    padding: 0px;
+}
+
+.input-top-label.addprooflbl {
+    margin-left: 8px;
+}
+
+.mat-tab-group .mat-form-field {
+    border: 0;
+    border-bottom: 1px solid;
+}
+
+.um-control img.docimg {
+    cursor: zoom-in;
+}
+
+@media only screen and (max-width: 600px) {
+    #leftImgCont{
+        display:none;
+    }
+}

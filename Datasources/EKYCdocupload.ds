@@ -1,0 +1,19 @@
+{
+    "webServiceContent": [],
+    "filePath": "C:\\Studio_Workspace\\Workspace\\default_user\\Projects\\EKYCDemoApp\\Datasources\\EKYCdocupload.ds",
+    "content": {
+        "datasourceType": 2,
+        "modifiedOn": "2021-04-01 23:07:29.863",
+        "datasourceProperties": {
+            "contentServiceVersion": "11.1",
+            "defaultConfig": {"repoIds": ["38157850-CDC0-4A99-8EBA-3CD03B301D56"]},
+            "datasourceId": "1e5b2350-9c81-4afb-9d27-043c3c4964fc",
+            "id": "03f80a70-0bc9-4e43-812e-5c0eeda1cee7",
+            "discoveryUrl": "http://mobviewqa01cx.asg.com:3111/mobius/rest/resources"
+        },
+        "name": "EKYCdocupload",
+        "id": "1e5b2350-9c81-4afb-9d27-043c3c4964fc",
+        "applicationId": "682b6794-55a7-4470-b973-ed67c592e3cb",
+        "createdOn": "2021-04-01 23:07:29.863"
+    }
+}

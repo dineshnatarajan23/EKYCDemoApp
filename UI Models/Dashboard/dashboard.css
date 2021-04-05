@@ -1,0 +1,87 @@
+body{
+    font-size: 11pt;
+}
+
+
+.row{
+    flex-wrap: wrap;
+}
+
+.db-label-color{
+    color: #303030;
+}
+
+.db-md-label-color{
+    color: #facd60;
+}
+
+.db-md-label-color2{
+    color: #fb7756;
+}
+
+.db-lg-label-color{
+    color: #facd60;
+}
+
+.db-cell{
+    min-height: 200px;
+    min-width: 150px;
+    border: 1px solid #ddd;
+    color: #303030;
+}
+
+.db-cell-sm{
+    min-height: 50% !important;
+}
+
+.db-cell-label{
+    font-size: 12pt;
+    text-align: center;
+}
+
+.db-cell-label-md{
+    font-size: 18pt;
+    text-align: center;
+}
+
+.db-cell-label-lg{
+    font-size: 42pt;
+    text-align: center;
+}
+
+.db-cell-label-xl{
+    font-size: 72pt;
+    text-align: center;
+}
+
+.db-cell-top-lbl{
+    top: 5px;
+    right: 5px;
+    text-align: center;
+}
+
+.db-cell-center-lbl{
+    text-align: center;
+    padding:0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.db-cell-center-lbl um-mat-label{
+    padding:0;
+    margin:0;
+}
+
+.db-cell-bottom-lbl{
+    bottom: 5px;
+    left: 8px;
+    text-align: center;
+}
+
+.db-cell-icon-lg{
+    width: 60px;
+    height: auto;
+}
+
+.db-cell .um-canvas{
+    border: 0;
+}
